@@ -12,3 +12,6 @@ f:\Documents\Visual Studio 2012\Projects\BuildUp_teretana\BuildUp_teretana\obj\D
 f:\Documents\Visual Studio 2012\Projects\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.FrmIzmjeni.resources
 f:\Documents\Visual Studio 2012\Projects\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.GlavnaForma.resources
 f:\Documents\Visual Studio 2012\Projects\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.FrmIzvješćeONapretku.resources
+F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\bin\Debug\BuildUp_teretana.exe.config
+F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.exe
+F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.pdb

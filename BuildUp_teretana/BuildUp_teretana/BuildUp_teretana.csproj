@@ -44,11 +44,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DodajMjestoVježbanja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajMjestoVježbanja.Designer.cs">
+      <DependentUpon>DodajMjestoVježbanja.cs</DependentUpon>
+    </Compile>
     <Compile Include="DodajČlana.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DodajČlana.Designer.cs">
       <DependentUpon>DodajČlana.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodajČlanuMjestoVježbanja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajČlanuMjestoVježbanja.Designer.cs">
+      <DependentUpon>DodajČlanuMjestoVježbanja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Evidencija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Evidencija.Designer.cs">
+      <DependentUpon>Evidencija.cs</DependentUpon>
     </Compile>
     <Compile Include="GlavnaForma.cs">
       <SubType>Form</SubType>
@@ -82,8 +100,17 @@
     <Compile Include="Članovi.Designer.cs">
       <DependentUpon>Članovi.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DodajMjestoVježbanja.resx">
+      <DependentUpon>DodajMjestoVježbanja.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DodajČlana.resx">
       <DependentUpon>DodajČlana.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajČlanuMjestoVježbanja.resx">
+      <DependentUpon>DodajČlanuMjestoVježbanja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Evidencija.resx">
+      <DependentUpon>Evidencija.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GlavnaForma.resx">
       <DependentUpon>GlavnaForma.cs</DependentUpon>
