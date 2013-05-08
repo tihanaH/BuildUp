@@ -1,0 +1,14 @@
+f:\documents\visual studio 2012\Projects\BuildUp_teretana\BuildUp_teretana\bin\Debug\BuildUp_teretana.exe.config
+f:\Documents\Visual Studio 2012\Projects\BuildUp_teretana\BuildUp_teretana\bin\Debug\BuildUp_teretana.exe
+f:\Documents\Visual Studio 2012\Projects\BuildUp_teretana\BuildUp_teretana\bin\Debug\BuildUp_teretana.pdb
+f:\Documents\Visual Studio 2012\Projects\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.csprojResolveAssemblyReference.cache
+f:\Documents\Visual Studio 2012\Projects\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.FrmLogin.resources
+f:\Documents\Visual Studio 2012\Projects\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.Properties.Resources.resources
+f:\Documents\Visual Studio 2012\Projects\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.csproj.GenerateResource.Cache
+f:\Documents\Visual Studio 2012\Projects\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.exe
+f:\Documents\Visual Studio 2012\Projects\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.pdb
+f:\Documents\Visual Studio 2012\Projects\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.FrmDodajČlana.resources
+f:\Documents\Visual Studio 2012\Projects\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.FrmČlanovi.resources
+f:\Documents\Visual Studio 2012\Projects\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.FrmIzmjeni.resources
+f:\Documents\Visual Studio 2012\Projects\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.GlavnaForma.resources
+f:\Documents\Visual Studio 2012\Projects\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.FrmIzvješćeONapretku.resources
