@@ -26,5 +26,10 @@ namespace BuildUp_teretana
         {
 
         }
+
+        private void btnLogin_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }

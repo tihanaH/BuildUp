@@ -32,6 +32,11 @@
             this.lblNazivMjestaVjezbanja = new System.Windows.Forms.Label();
             this.lblMaxRazina = new System.Windows.Forms.Label();
             this.lblKalorijeRazina = new System.Windows.Forms.Label();
+            this.txtIDMjestaVjezbanja = new System.Windows.Forms.TextBox();
+            this.txtPotrosnjaKalorijaRazina = new System.Windows.Forms.TextBox();
+            this.txtMaxRazina = new System.Windows.Forms.TextBox();
+            this.txtNazivMjestaVjezbanja = new System.Windows.Forms.TextBox();
+            this.btnDodajMjestoVjezbanjaOK = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblIDMjestaVjezbanja
@@ -64,17 +69,59 @@
             // lblKalorijeRazina
             // 
             this.lblKalorijeRazina.AutoSize = true;
-            this.lblKalorijeRazina.Location = new System.Drawing.Point(22, 166);
+            this.lblKalorijeRazina.Location = new System.Drawing.Point(119, 126);
             this.lblKalorijeRazina.Name = "lblKalorijeRazina";
-            this.lblKalorijeRazina.Size = new System.Drawing.Size(155, 13);
+            this.lblKalorijeRazina.Size = new System.Drawing.Size(147, 13);
             this.lblKalorijeRazina.TabIndex = 3;
-            this.lblKalorijeRazina.Text = "Potrošnja kalorija za 1. razinu/h";
+            this.lblKalorijeRazina.Text = "Potrošnja kalorija - 1. razina/h";
+            // 
+            // txtIDMjestaVjezbanja
+            // 
+            this.txtIDMjestaVjezbanja.Location = new System.Drawing.Point(136, 27);
+            this.txtIDMjestaVjezbanja.Name = "txtIDMjestaVjezbanja";
+            this.txtIDMjestaVjezbanja.Size = new System.Drawing.Size(62, 20);
+            this.txtIDMjestaVjezbanja.TabIndex = 4;
+            // 
+            // txtPotrosnjaKalorijaRazina
+            // 
+            this.txtPotrosnjaKalorijaRazina.Location = new System.Drawing.Point(122, 143);
+            this.txtPotrosnjaKalorijaRazina.Name = "txtPotrosnjaKalorijaRazina";
+            this.txtPotrosnjaKalorijaRazina.Size = new System.Drawing.Size(78, 20);
+            this.txtPotrosnjaKalorijaRazina.TabIndex = 5;
+            // 
+            // txtMaxRazina
+            // 
+            this.txtMaxRazina.Location = new System.Drawing.Point(25, 143);
+            this.txtMaxRazina.Name = "txtMaxRazina";
+            this.txtMaxRazina.Size = new System.Drawing.Size(62, 20);
+            this.txtMaxRazina.TabIndex = 6;
+            // 
+            // txtNazivMjestaVjezbanja
+            // 
+            this.txtNazivMjestaVjezbanja.Location = new System.Drawing.Point(74, 76);
+            this.txtNazivMjestaVjezbanja.Name = "txtNazivMjestaVjezbanja";
+            this.txtNazivMjestaVjezbanja.Size = new System.Drawing.Size(187, 20);
+            this.txtNazivMjestaVjezbanja.TabIndex = 7;
+            // 
+            // btnDodajMjestoVjezbanjaOK
+            // 
+            this.btnDodajMjestoVjezbanjaOK.Location = new System.Drawing.Point(95, 200);
+            this.btnDodajMjestoVjezbanjaOK.Name = "btnDodajMjestoVjezbanjaOK";
+            this.btnDodajMjestoVjezbanjaOK.Size = new System.Drawing.Size(85, 37);
+            this.btnDodajMjestoVjezbanjaOK.TabIndex = 8;
+            this.btnDodajMjestoVjezbanjaOK.Text = "OK";
+            this.btnDodajMjestoVjezbanjaOK.UseVisualStyleBackColor = true;
             // 
             // FrmDodajMjestoVjezbanja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(477, 349);
+            this.ClientSize = new System.Drawing.Size(282, 259);
+            this.Controls.Add(this.btnDodajMjestoVjezbanjaOK);
+            this.Controls.Add(this.txtNazivMjestaVjezbanja);
+            this.Controls.Add(this.txtMaxRazina);
+            this.Controls.Add(this.txtPotrosnjaKalorijaRazina);
+            this.Controls.Add(this.txtIDMjestaVjezbanja);
             this.Controls.Add(this.lblKalorijeRazina);
             this.Controls.Add(this.lblMaxRazina);
             this.Controls.Add(this.lblNazivMjestaVjezbanja);
@@ -92,5 +139,10 @@
         private System.Windows.Forms.Label lblNazivMjestaVjezbanja;
         private System.Windows.Forms.Label lblMaxRazina;
         private System.Windows.Forms.Label lblKalorijeRazina;
+        private System.Windows.Forms.TextBox txtIDMjestaVjezbanja;
+        private System.Windows.Forms.TextBox txtPotrosnjaKalorijaRazina;
+        private System.Windows.Forms.TextBox txtMaxRazina;
+        private System.Windows.Forms.TextBox txtNazivMjestaVjezbanja;
+        private System.Windows.Forms.Button btnDodajMjestoVjezbanjaOK;
     }
 }

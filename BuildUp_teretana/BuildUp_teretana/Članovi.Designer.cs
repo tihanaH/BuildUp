@@ -112,6 +112,10 @@
             this.splitContainer1.Location = new System.Drawing.Point(12, 56);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
             this.splitContainer1.Size = new System.Drawing.Size(549, 430);
             this.splitContainer1.SplitterDistance = 331;
             this.splitContainer1.TabIndex = 8;

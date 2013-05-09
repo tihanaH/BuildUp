@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace BuildUp_teretana
 {
-    public partial class FrmČlanovi : Form
+    public partial class FrmClanarine : Form
     {
-        public FrmČlanovi()
+        public FrmClanarine()
         {
             InitializeComponent();
-        }
-
-        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
