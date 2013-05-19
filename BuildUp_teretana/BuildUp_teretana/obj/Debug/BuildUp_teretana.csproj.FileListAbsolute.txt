@@ -29,3 +29,6 @@ F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_
 F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.Properties.Resources.resources
 F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.FrmČlanovi.resources
 F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.csproj.GenerateResource.Cache
+C:\Users\Marko\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\bin\Debug\BuildUp_teretana.exe.config
+C:\Users\Marko\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.exe
+C:\Users\Marko\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.pdb
