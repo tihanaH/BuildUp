@@ -1,6 +1,6 @@
 ﻿namespace BuildUp_teretana
 {
-    partial class GlavnaForma
+    partial class frmGlavnaForma
     {
         /// <summary>
         /// Required designer variable.
@@ -70,7 +70,7 @@
             this.btnLogout.Text = "Log out";
             this.btnLogout.UseVisualStyleBackColor = true;
             // 
-            // GlavnaForma
+            // frmGlavnaForma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -79,7 +79,7 @@
             this.Controls.Add(this.btnClanarine);
             this.Controls.Add(this.btnMjestoVjezbanja);
             this.Controls.Add(this.btnClanovi);
-            this.Name = "GlavnaForma";
+            this.Name = "frmGlavnaForma";
             this.Text = "GlavnaForma";
             this.ResumeLayout(false);
 

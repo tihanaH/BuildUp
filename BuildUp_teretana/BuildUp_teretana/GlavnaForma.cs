@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BuildUp_teretana
 {
-    public partial class GlavnaForma : Form
+    public partial class frmGlavnaForma : Form
     {
-        public GlavnaForma()
+        public frmGlavnaForma()
         {
             InitializeComponent();
         }
