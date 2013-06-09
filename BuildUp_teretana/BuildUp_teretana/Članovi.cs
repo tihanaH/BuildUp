@@ -21,5 +21,29 @@ namespace BuildUp_teretana
         {
 
         }
+
+        private void btnDodajClan_Click(object sender, EventArgs e)
+        {
+            FrmDodajČlana FormaDodajClana = new FrmDodajČlana();
+            FormaDodajClana.ShowDialog();
+        }
+
+        private void btnIzmjeniClan_Click(object sender, EventArgs e)
+        {
+            FrmIzmjeni FormaIzmjeni = new FrmIzmjeni();
+            FormaIzmjeni.ShowDialog();
+        }
+
+        private void btnEvidencija_Click(object sender, EventArgs e)
+        {
+            FrmEvidencija FormaEvidencija = new FrmEvidencija();
+            FormaEvidencija.ShowDialog();
+        }
+
+        private void btnDodajMjestoVjezbanjaClan_Click(object sender, EventArgs e)
+        {
+            FrmDodajČlanuMjestoVježbanja FormaDodajClanuMjestoVjezbanja = new FrmDodajČlanuMjestoVježbanja();
+            FormaDodajClanuMjestoVjezbanja.ShowDialog();
+        }
     }
 }

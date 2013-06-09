@@ -31,5 +31,11 @@ namespace BuildUp_teretana
         {
 
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            frmGlavnaForma GlavnaForma = new frmGlavnaForma();
+            GlavnaForma.ShowDialog();
+        }
     }
 }

@@ -16,5 +16,23 @@ namespace BuildUp_teretana
         {
             InitializeComponent();
         }
+
+        private void btnClanovi_Click(object sender, EventArgs e)
+        {
+             FrmČlanovi FormaClanovi = new FrmČlanovi();
+             FormaClanovi.ShowDialog();
+        }
+
+        private void btnMjestoVjezbanja_Click(object sender, EventArgs e)
+        {
+            FrmDodajMjestoVjezbanja DodajMjestoVjezbanja = new FrmDodajMjestoVjezbanja();
+            DodajMjestoVjezbanja.ShowDialog();
+        }
+
+        private void btnClanarine_Click(object sender, EventArgs e)
+        {
+            FrmClanarine FormaClanarine = new FrmClanarine();
+            FormaClanarine.ShowDialog();
+        }
     }
 }

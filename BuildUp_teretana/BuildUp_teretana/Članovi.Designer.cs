@@ -70,6 +70,7 @@
             this.btnDodajClan.TabIndex = 3;
             this.btnDodajClan.Text = "Dodaj";
             this.btnDodajClan.UseVisualStyleBackColor = true;
+            this.btnDodajClan.Click += new System.EventHandler(this.btnDodajClan_Click);
             // 
             // btnBrisiClan
             // 
@@ -88,6 +89,7 @@
             this.btnIzmjeniClan.TabIndex = 5;
             this.btnIzmjeniClan.Text = "Izmjeni";
             this.btnIzmjeniClan.UseVisualStyleBackColor = true;
+            this.btnIzmjeniClan.Click += new System.EventHandler(this.btnIzmjeniClan_Click);
             // 
             // btnKreirajIzvjesce
             // 
@@ -106,6 +108,7 @@
             this.btnEvidencija.TabIndex = 7;
             this.btnEvidencija.Text = "Evidencija";
             this.btnEvidencija.UseVisualStyleBackColor = true;
+            this.btnEvidencija.Click += new System.EventHandler(this.btnEvidencija_Click);
             // 
             // splitContainer1
             // 
@@ -128,6 +131,7 @@
             this.btnDodajMjestoVjezbanjaClan.TabIndex = 9;
             this.btnDodajMjestoVjezbanjaClan.Text = "Dodaj mjesto vježbanja";
             this.btnDodajMjestoVjezbanjaClan.UseVisualStyleBackColor = true;
+            this.btnDodajMjestoVjezbanjaClan.Click += new System.EventHandler(this.btnDodajMjestoVjezbanjaClan_Click);
             // 
             // btnBrisiMjestoVjezbanjaClan
             // 
