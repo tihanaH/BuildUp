@@ -39,7 +39,7 @@
             // 
             // btnClanovi
             // 
-            this.btnClanovi.Location = new System.Drawing.Point(12, 171);
+            this.btnClanovi.Location = new System.Drawing.Point(12, 253);
             this.btnClanovi.Name = "btnClanovi";
             this.btnClanovi.Size = new System.Drawing.Size(117, 49);
             this.btnClanovi.TabIndex = 0;
@@ -49,7 +49,7 @@
             // 
             // btnMjestoVjezbanja
             // 
-            this.btnMjestoVjezbanja.Location = new System.Drawing.Point(170, 171);
+            this.btnMjestoVjezbanja.Location = new System.Drawing.Point(296, 253);
             this.btnMjestoVjezbanja.Name = "btnMjestoVjezbanja";
             this.btnMjestoVjezbanja.Size = new System.Drawing.Size(117, 49);
             this.btnMjestoVjezbanja.TabIndex = 1;
@@ -59,7 +59,7 @@
             // 
             // btnClanarine
             // 
-            this.btnClanarine.Location = new System.Drawing.Point(90, 239);
+            this.btnClanarine.Location = new System.Drawing.Point(154, 253);
             this.btnClanarine.Name = "btnClanarine";
             this.btnClanarine.Size = new System.Drawing.Size(117, 49);
             this.btnClanarine.TabIndex = 2;
@@ -69,9 +69,9 @@
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(69, 311);
+            this.btnLogout.Location = new System.Drawing.Point(127, 322);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(155, 36);
+            this.btnLogout.Size = new System.Drawing.Size(167, 46);
             this.btnLogout.TabIndex = 3;
             this.btnLogout.Text = "Log out";
             this.btnLogout.UseVisualStyleBackColor = true;
@@ -81,8 +81,8 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(275, 137);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.Size = new System.Drawing.Size(401, 230);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
@@ -90,7 +90,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(304, 359);
+            this.ClientSize = new System.Drawing.Size(425, 387);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnClanarine);
@@ -100,7 +100,6 @@
             this.Text = "GlavnaForma";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
