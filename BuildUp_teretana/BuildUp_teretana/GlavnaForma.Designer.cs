@@ -39,9 +39,9 @@
             // 
             // btnClanovi
             // 
-            this.btnClanovi.Location = new System.Drawing.Point(12, 171);
+            this.btnClanovi.Location = new System.Drawing.Point(151, 237);
             this.btnClanovi.Name = "btnClanovi";
-            this.btnClanovi.Size = new System.Drawing.Size(117, 49);
+            this.btnClanovi.Size = new System.Drawing.Size(119, 49);
             this.btnClanovi.TabIndex = 0;
             this.btnClanovi.Text = "Članovi";
             this.btnClanovi.UseVisualStyleBackColor = true;
@@ -49,9 +49,9 @@
             // 
             // btnMjestoVjezbanja
             // 
-            this.btnMjestoVjezbanja.Location = new System.Drawing.Point(170, 171);
+            this.btnMjestoVjezbanja.Location = new System.Drawing.Point(289, 237);
             this.btnMjestoVjezbanja.Name = "btnMjestoVjezbanja";
-            this.btnMjestoVjezbanja.Size = new System.Drawing.Size(117, 49);
+            this.btnMjestoVjezbanja.Size = new System.Drawing.Size(120, 49);
             this.btnMjestoVjezbanja.TabIndex = 1;
             this.btnMjestoVjezbanja.Text = "Mjesto vježbanja";
             this.btnMjestoVjezbanja.UseVisualStyleBackColor = true;
@@ -59,9 +59,9 @@
             // 
             // btnClanarine
             // 
-            this.btnClanarine.Location = new System.Drawing.Point(90, 239);
+            this.btnClanarine.Location = new System.Drawing.Point(12, 237);
             this.btnClanarine.Name = "btnClanarine";
-            this.btnClanarine.Size = new System.Drawing.Size(117, 49);
+            this.btnClanarine.Size = new System.Drawing.Size(120, 49);
             this.btnClanarine.TabIndex = 2;
             this.btnClanarine.Text = "Članarine";
             this.btnClanarine.UseVisualStyleBackColor = true;
@@ -69,9 +69,9 @@
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(69, 311);
+            this.btnLogout.Location = new System.Drawing.Point(132, 308);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(155, 36);
+            this.btnLogout.Size = new System.Drawing.Size(150, 49);
             this.btnLogout.TabIndex = 3;
             this.btnLogout.Text = "Log out";
             this.btnLogout.UseVisualStyleBackColor = true;
@@ -81,8 +81,8 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(275, 137);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.Size = new System.Drawing.Size(397, 205);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
@@ -90,17 +90,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(304, 359);
+            this.ClientSize = new System.Drawing.Size(421, 376);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnClanarine);
             this.Controls.Add(this.btnMjestoVjezbanja);
             this.Controls.Add(this.btnClanovi);
             this.Name = "frmGlavnaForma";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "GlavnaForma";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
