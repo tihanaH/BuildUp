@@ -33,7 +33,7 @@
             this.lblKorisnickoIme = new System.Windows.Forms.Label();
             this.txtKorisnickoIme = new System.Windows.Forms.TextBox();
             this.lblLozinka = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtLozinka = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -41,69 +41,75 @@
             // btnLogin
             // 
             this.btnLogin.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.btnLogin.Location = new System.Drawing.Point(89, 256);
+            this.btnLogin.Location = new System.Drawing.Point(119, 315);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(109, 34);
+            this.btnLogin.Size = new System.Drawing.Size(145, 42);
             this.btnLogin.TabIndex = 0;
             this.btnLogin.Text = "Log In";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            this.btnLogin.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnLogin_MouseClick);
             // 
             // lblKorisnickoIme
             // 
             this.lblKorisnickoIme.AutoSize = true;
-            this.lblKorisnickoIme.Location = new System.Drawing.Point(30, 179);
+            this.lblKorisnickoIme.Location = new System.Drawing.Point(40, 220);
+            this.lblKorisnickoIme.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblKorisnickoIme.Name = "lblKorisnickoIme";
-            this.lblKorisnickoIme.Size = new System.Drawing.Size(75, 13);
+            this.lblKorisnickoIme.Size = new System.Drawing.Size(99, 17);
             this.lblKorisnickoIme.TabIndex = 1;
             this.lblKorisnickoIme.Text = "Korisničko ime";
             // 
             // txtKorisnickoIme
             // 
-            this.txtKorisnickoIme.Location = new System.Drawing.Point(109, 176);
+            this.txtKorisnickoIme.Location = new System.Drawing.Point(145, 217);
+            this.txtKorisnickoIme.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtKorisnickoIme.Name = "txtKorisnickoIme";
-            this.txtKorisnickoIme.Size = new System.Drawing.Size(136, 20);
+            this.txtKorisnickoIme.Size = new System.Drawing.Size(180, 22);
             this.txtKorisnickoIme.TabIndex = 2;
             // 
             // lblLozinka
             // 
             this.lblLozinka.AutoSize = true;
-            this.lblLozinka.Location = new System.Drawing.Point(32, 212);
+            this.lblLozinka.Location = new System.Drawing.Point(43, 261);
+            this.lblLozinka.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLozinka.Name = "lblLozinka";
-            this.lblLozinka.Size = new System.Drawing.Size(44, 13);
+            this.lblLozinka.Size = new System.Drawing.Size(57, 17);
             this.lblLozinka.TabIndex = 3;
             this.lblLozinka.Text = "Lozinka";
             // 
-            // textBox1
+            // txtLozinka
             // 
-            this.textBox1.Location = new System.Drawing.Point(109, 209);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(136, 20);
-            this.textBox1.TabIndex = 4;
+            this.txtLozinka.Location = new System.Drawing.Point(145, 257);
+            this.txtLozinka.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLozinka.Name = "txtLozinka";
+            this.txtLozinka.PasswordChar = '*';
+            this.txtLozinka.Size = new System.Drawing.Size(180, 22);
+            this.txtLozinka.TabIndex = 4;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(16, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(275, 137);
+            this.pictureBox1.Size = new System.Drawing.Size(367, 169);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
             // FrmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(298, 307);
+            this.ClientSize = new System.Drawing.Size(397, 378);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtLozinka);
             this.Controls.Add(this.lblLozinka);
             this.Controls.Add(this.txtKorisnickoIme);
             this.Controls.Add(this.lblKorisnickoIme);
             this.Controls.Add(this.btnLogin);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmLogin";
             this.Text = "BuildUp Log In";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -118,7 +124,7 @@
         private System.Windows.Forms.Label lblKorisnickoIme;
         private System.Windows.Forms.TextBox txtKorisnickoIme;
         private System.Windows.Forms.Label lblLozinka;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtLozinka;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

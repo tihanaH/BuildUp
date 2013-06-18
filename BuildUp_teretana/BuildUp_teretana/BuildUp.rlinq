@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DomainModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="2.0.0.0" name="BuildUp" namespace="BuildUp_teretana" showPropertiesCompartment="true" xmlns="http://www.telerik.com/ORM">
+  <orm:orm name="BuildUp" backend="postgresql" xmlns:orm="http://tempuri.org/ORM">
+    <orm:namespace name="BuildUp_teretana" default="true">
+      <orm:class name="Zaposlenik" uniqueId="3f972671-b44c-4904-9a75-e891bbd70aca">
+        <orm:table name="Zaposlenik" />
+        <orm:identity>
+          <orm:single-field field-name="_korisnickoIme" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_korisnickoIme" property="KorisnickoIme" behavior="readwrite" uniqueId="a7e28072-1393-4700-8949-140cfa1c217b" type="System.String">
+          <orm:column name="KorisnickoIme" sql-type="varchar" nullable="false" length="20" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_lozinka" property="Lozinka" behavior="readwrite" uniqueId="e4278f98-077a-40dd-9446-1c4f63f6b34c" type="System.String">
+          <orm:column name="Lozinka" sql-type="varchar" nullable="true" length="20" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_ime" property="Ime" behavior="readwrite" uniqueId="754870df-d96b-41d6-bb64-53b0ec8acf18" type="System.String">
+          <orm:column name="Ime" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_prezime" property="Prezime" behavior="readwrite" uniqueId="c35095d2-0480-457f-8b36-68debfcedb03" type="System.String">
+          <orm:column name="Prezime" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_kontakt" property="Kontakt" behavior="readwrite" uniqueId="95101951-66b1-4b04-997b-2bbcfa213436" type="System.String">
+          <orm:column name="Kontakt" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="VrijemeNaSpravi" uniqueId="7d50f061-2dc2-49c6-a00a-9e96210d2367">
+        <orm:table name="VrijemeNaSpravi" />
+        <orm:identity>
+          <orm:multiple-field>
+            <orm:single-field field-name="_brojIskaznice" />
+            <orm:single-field field-name="_iD_sprave" />
+          </orm:multiple-field>
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_brojIskaznice" property="BrojIskaznice" behavior="readwrite" uniqueId="2dbac9e3-ff91-4769-ba44-f62295ddda39" type="System.String">
+          <orm:column name="BrojIskaznice" sql-type="varchar" nullable="false" length="10" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_iD_sprave" property="ID_sprave" behavior="readwrite" uniqueId="6c19cfc7-2be7-4e9f-9c7e-67c20141b9a7" type="System.Int32">
+          <orm:column name="ID_sprave" sql-type="int4" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_vrijeme" property="Vrijeme" behavior="readwrite" uniqueId="aa52f171-6e2f-4503-b3c9-6099961e44ca" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="Vrijeme" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_clan" property="Clan" behavior="readwrite" uniqueId="d55455d9-dcce-4ee2-921c-68bcc82d75df" type="BuildUp_teretana.Clan">
+          <orm:reference uniqueId="6bbffc99-b68e-4495-99a4-63b280842f2b">
+            <orm:sharedfield name="_brojIskaznice" target-class="BuildUp_teretana.Clan" target-field="_brojIskaznice" />
+            <orm:constraint name="VrijemeNaSpravi_BrojIskaznice_fkey" destination-table="Clan" />
+          </orm:reference>
+        </orm:field>
+        <orm:field name="_sprava" property="Sprava" behavior="readwrite" uniqueId="4fe2d2d0-b3b6-41cc-ace4-3c2e0b652a2c" type="BuildUp_teretana.Sprava">
+          <orm:reference uniqueId="9e6b58bd-a0fe-40c0-8aa5-1d874d4b2a93">
+            <orm:sharedfield name="_iD_sprave" target-class="BuildUp_teretana.Sprava" target-field="_iD_sprave" />
+            <orm:constraint name="VrijemeNaSpravi_ID_sprave_fkey" destination-table="Sprava" />
+          </orm:reference>
+        </orm:field>
+      </orm:class>
+      <orm:class name="Sprava" uniqueId="557651b0-ce9d-4589-9436-2e8e9e579914">
+        <orm:table name="Sprava" />
+        <orm:identity>
+          <orm:key-generator name="autoinc" />
+          <orm:single-field field-name="_iD_sprave" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_iD_sprave" property="ID_sprave" behavior="readwrite" uniqueId="fde8f844-b3f1-402e-86ed-eaea199e6aab" type="System.Int32">
+          <orm:column name="ID_sprave" sql-type="int4" nullable="false" length="0" scale="0" primary-key="true" has-default-value="true" backend-calculated="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_naziv" property="Naziv" behavior="readwrite" uniqueId="62b83579-f024-4315-ae05-3d3eb0162b0d" type="System.String">
+          <orm:column name="Naziv" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_prosjecna_potrosnja_kalorija" property="Prosjecna_potrosnja_kalorija" behavior="readwrite" uniqueId="f5588c51-990a-438b-b05d-b554e2d8836a" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="Prosjecna_potrosnja_kalorija" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_vrijemeNaSpravis" property="VrijemeNaSpravis" behavior="readwrite" uniqueId="52e73bbe-4e1e-462c-9172-42fbe09217f6" type="BuildUp_teretana.VrijemeNaSpravi">
+          <orm:collection element-class="BuildUp_teretana.VrijemeNaSpravi" inverse-field="_sprava" order-by="" uniqueId="9e6b58bd-a0fe-40c0-8aa5-1d874d4b2a93" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="Izvjesce" uniqueId="1dd4d899-d9af-4907-8a60-b9949e4f567e">
+        <orm:table name="Izvjesce" />
+        <orm:identity>
+          <orm:key-generator name="autoinc" />
+          <orm:single-field field-name="_iD_izvjesce" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_iD_izvjesce" property="ID_izvjesce" behavior="readwrite" uniqueId="09ffa47a-0cda-444c-8872-a9be43d7989c" type="System.Int32">
+          <orm:column name="ID_izvjesce" sql-type="int4" nullable="false" length="0" scale="0" primary-key="true" has-default-value="true" backend-calculated="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_brojIskaznice" property="BrojIskaznice" behavior="readwrite" uniqueId="96cb37c5-88ac-4753-bb2d-e0e974f17bdd" type="System.String">
+          <orm:column name="BrojIskaznice" sql-type="varchar" nullable="true" length="10" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_mjesec" property="Mjesec" behavior="readwrite" uniqueId="4a917e6b-c810-4034-ad79-895e0ebff9c0" type="System.String">
+          <orm:column name="Mjesec" sql-type="varchar" nullable="true" length="2" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_godina" property="Godina" behavior="readwrite" uniqueId="c4a4a311-c9bb-47a3-86c6-f7c6a1f4d7da" type="System.String">
+          <orm:column name="Godina" sql-type="varchar" nullable="true" length="4" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_tezina" property="Tezina" behavior="readwrite" uniqueId="5e119112-f15b-4649-b9af-cb70364b8910" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="Tezina" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_obujamPrsa" property="ObujamPrsa" behavior="readwrite" uniqueId="bd9d68cd-9f06-4a9b-bf53-0b13144ed0d6" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="ObujamPrsa" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_obujamStruka" property="ObujamStruka" behavior="readwrite" uniqueId="6e750c94-d0f6-4ca8-8aec-732eec62f2ec" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="ObujamStruka" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_obujamBokova" property="ObujamBokova" behavior="readwrite" uniqueId="7b99e58d-96e4-4d2f-ae4c-7afb06c82ea8" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="ObujamBokova" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_potrosnjaKalorija" property="PotrosnjaKalorija" behavior="readwrite" uniqueId="0edd6235-cd4e-463b-8bc0-0e4845f8d193" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="PotrosnjaKalorija" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_clan" property="Clan" behavior="readwrite" uniqueId="9447fb89-9aa2-4d1a-a116-f6b653a6cb32" type="BuildUp_teretana.Clan">
+          <orm:reference uniqueId="14597fec-72c4-4db7-8591-359ff3b40114">
+            <orm:sharedfield name="_brojIskaznice" target-class="BuildUp_teretana.Clan" target-field="_brojIskaznice" />
+            <orm:constraint name="Izvjesce_BrojIskaznice_fkey" destination-table="Clan" />
+          </orm:reference>
+        </orm:field>
+      </orm:class>
+      <orm:class name="Clanarina" uniqueId="a8c90344-ce0b-4a9e-bd9b-72d9ec784116">
+        <orm:table name="Clanarina" />
+        <orm:identity>
+          <orm:key-generator name="autoinc" />
+          <orm:single-field field-name="_iD_clanarina" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_iD_clanarina" property="ID_clanarina" behavior="readwrite" uniqueId="c6f7dcad-2b85-4ac0-9619-b1ce81aa27f2" type="System.Int32">
+          <orm:column name="ID_clanarina" sql-type="int4" nullable="false" length="0" scale="0" primary-key="true" has-default-value="true" backend-calculated="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_brojIskaznice" property="BrojIskaznice" behavior="readwrite" uniqueId="cfab0cf1-8108-4d40-8cd5-91bff0523b65" type="System.String">
+          <orm:column name="BrojIskaznice" sql-type="varchar" nullable="true" length="10" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_vrsta" property="Vrsta" behavior="readwrite" uniqueId="85ad1473-2512-4b02-8219-805e0a1d4aa1" type="System.Nullable`1[[System.Char, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="Vrsta" sql-type="varchar" nullable="true" length="1" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_broj_dolazaka" property="Broj_dolazaka" behavior="readwrite" uniqueId="61ff2216-3f2c-4f24-94c6-a2f8f67ba51f" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="Broj_dolazaka" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_clan" property="Clan" behavior="readwrite" uniqueId="b45c9272-08b6-4076-b40e-a3081a344f8e" type="BuildUp_teretana.Clan">
+          <orm:reference uniqueId="5d0ccf72-c31e-4fe1-8e1c-f0638de7126d">
+            <orm:sharedfield name="_brojIskaznice" target-class="BuildUp_teretana.Clan" target-field="_brojIskaznice" />
+            <orm:constraint name="Clanarina_BrojIskaznice_fkey" destination-table="Clan" />
+          </orm:reference>
+        </orm:field>
+      </orm:class>
+      <orm:class name="Clan" uniqueId="6ad5ca2e-3861-4746-a5d5-5b7993cffdf4">
+        <orm:table name="Clan" />
+        <orm:identity>
+          <orm:single-field field-name="_brojIskaznice" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_brojIskaznice" property="BrojIskaznice" behavior="readwrite" uniqueId="275a9b80-1b58-4697-8c94-f062b1a35e85" type="System.String">
+          <orm:column name="BrojIskaznice" sql-type="varchar" nullable="false" length="10" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_ime" property="Ime" behavior="readwrite" uniqueId="cabf6a21-2ff3-4747-88b9-bbf7a2442b05" type="System.String">
+          <orm:column name="Ime" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_prezime" property="Prezime" behavior="readwrite" uniqueId="34c8952d-4a22-48bf-96c7-40e25ccf8119" type="System.String">
+          <orm:column name="Prezime" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_adresa" property="Adresa" behavior="readwrite" uniqueId="1f92aaeb-8c5d-413e-850f-a5450d1b3b17" type="System.String">
+          <orm:column name="Adresa" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_kontakt" property="Kontakt" behavior="readwrite" uniqueId="b0484a8b-992e-4244-93ee-b7dd94bce4b3" type="System.String">
+          <orm:column name="Kontakt" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_spol" property="Spol" behavior="readwrite" uniqueId="5c549a18-2cef-4aed-9e04-92f2b25cdf0e" type="System.Nullable`1[[System.Char, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="Spol" sql-type="varchar" nullable="true" length="1" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_vrijemeNaSpravis" property="VrijemeNaSpravis" behavior="readwrite" uniqueId="de0726ba-a19b-40ed-9090-e7e272852992" type="BuildUp_teretana.VrijemeNaSpravi">
+          <orm:collection element-class="BuildUp_teretana.VrijemeNaSpravi" inverse-field="_clan" order-by="" uniqueId="6bbffc99-b68e-4495-99a4-63b280842f2b" />
+        </orm:field>
+        <orm:field name="_izvjesces" property="Izvjesces" behavior="readwrite" uniqueId="8e2a6491-b7eb-4341-b06f-19140de13134" type="BuildUp_teretana.Izvjesce">
+          <orm:collection element-class="BuildUp_teretana.Izvjesce" inverse-field="_clan" order-by="" uniqueId="14597fec-72c4-4db7-8591-359ff3b40114" />
+        </orm:field>
+        <orm:field name="_clanarinas" property="Clanarinas" behavior="readwrite" uniqueId="4ae7b613-3529-40ff-a722-6798e015823d" type="BuildUp_teretana.Clanarina">
+          <orm:collection element-class="BuildUp_teretana.Clanarina" inverse-field="_clan" order-by="" uniqueId="5d0ccf72-c31e-4fe1-8e1c-f0638de7126d" />
+        </orm:field>
+      </orm:class>
+    </orm:namespace>
+    <orm:schema schema="">
+      <orm:table name="Zaposlenik">
+        <orm:column name="KorisnickoIme" sql-type="varchar" nullable="false" length="20" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="Lozinka" sql-type="varchar" nullable="true" length="20" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="Ime" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="Prezime" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="Kontakt" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="UnicodeStringVariableLength" />
+      </orm:table>
+      <orm:table name="VrijemeNaSpravi">
+        <orm:column name="BrojIskaznice" sql-type="varchar" nullable="false" length="10" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="ID_sprave" sql-type="int4" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        <orm:column name="Vrijeme" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
+        <orm:constraint name="VrijemeNaSpravi_BrojIskaznice_fkey" destination-table="Clan">
+          <orm:column name="BrojIskaznice" sql-type="varchar" nullable="false" length="10" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        </orm:constraint>
+        <orm:constraint name="VrijemeNaSpravi_ID_sprave_fkey" destination-table="Sprava">
+          <orm:column name="ID_sprave" sql-type="int4" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:constraint>
+      </orm:table>
+      <orm:table name="Sprava">
+        <orm:column name="ID_sprave" sql-type="int4" nullable="false" length="0" scale="0" primary-key="true" has-default-value="true" backend-calculated="true" ado-type="Int32" />
+        <orm:column name="Naziv" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="Prosjecna_potrosnja_kalorija" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
+      </orm:table>
+      <orm:table name="Izvjesce">
+        <orm:column name="ID_izvjesce" sql-type="int4" nullable="false" length="0" scale="0" primary-key="true" has-default-value="true" backend-calculated="true" ado-type="Int32" />
+        <orm:column name="BrojIskaznice" sql-type="varchar" nullable="true" length="10" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="Mjesec" sql-type="varchar" nullable="true" length="2" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="Godina" sql-type="varchar" nullable="true" length="4" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="Tezina" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="ObujamPrsa" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="ObujamStruka" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="ObujamBokova" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="PotrosnjaKalorija" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
+        <orm:constraint name="Izvjesce_BrojIskaznice_fkey" destination-table="Clan">
+          <orm:column name="BrojIskaznice" sql-type="varchar" nullable="true" length="10" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:constraint>
+      </orm:table>
+      <orm:table name="Clanarina">
+        <orm:column name="ID_clanarina" sql-type="int4" nullable="false" length="0" scale="0" primary-key="true" has-default-value="true" backend-calculated="true" ado-type="Int32" />
+        <orm:column name="BrojIskaznice" sql-type="varchar" nullable="true" length="10" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="Vrsta" sql-type="varchar" nullable="true" length="1" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="Broj_dolazaka" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
+        <orm:constraint name="Clanarina_BrojIskaznice_fkey" destination-table="Clan">
+          <orm:column name="BrojIskaznice" sql-type="varchar" nullable="true" length="10" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:constraint>
+      </orm:table>
+      <orm:table name="Clan">
+        <orm:column name="BrojIskaznice" sql-type="varchar" nullable="false" length="10" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="Ime" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="Prezime" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="Adresa" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="Kontakt" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="Spol" sql-type="varchar" nullable="true" length="1" scale="0" ado-type="UnicodeStringVariableLength" />
+      </orm:table>
+    </orm:schema>
+    <orm:relational-naming-settings>
+      <orm:remove-camel-case>False</orm:remove-camel-case>
+      <orm:source-strategy>Property</orm:source-strategy>
+    </orm:relational-naming-settings>
+  </orm:orm>
+  <ModelSettings xmlns="">
+    <AppConfigConnectionPropertyName>Connection</AppConfigConnectionPropertyName>
+    <AppConfigConnectionString>Server=127.0.0.1;Port=5432;Database=BuildUP;User Id=postgres;Password=postgres;</AppConfigConnectionString>
+    <NamingSettings>
+      <ClassRules>
+        <CaseMode>PascalCase</CaseMode>
+        <PluralizationMode>Singularize</PluralizationMode>
+      </ClassRules>
+      <FieldRules>
+        <AddPrefix>_</AddPrefix>
+        <CaseMode>CamelCase</CaseMode>
+      </FieldRules>
+      <PropertyRules>
+        <CaseMode>PascalCase</CaseMode>
+      </PropertyRules>
+    </NamingSettings>
+    <CodeGenerationSettings>
+      <MappingDefinitionType>Xml</MappingDefinitionType>
+    </CodeGenerationSettings>
+    <SchemaUpdateSettings />
+    <BackendConfigurationSettings>
+      <BackendConfiguration>
+        <Backend>PostgreSql</Backend>
+        <ProviderName>Npgsql</ProviderName>
+      </BackendConfiguration>
+    </BackendConfigurationSettings>
+  </ModelSettings>
+  <Types>
+    <DomainClass Id="3f972671-b44c-4904-9a75-e891bbd70aca" name="Zaposlenik" namespace="BuildUp_teretana" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="a7e28072-1393-4700-8949-140cfa1c217b" name="KorisnickoIme" label="KorisnickoIme : String" kind="Persistent" identity="true" fieldName="_korisnickoIme" />
+      <Property Id="754870df-d96b-41d6-bb64-53b0ec8acf18" name="Ime" label="Ime : String" kind="Persistent" fieldName="_ime" />
+      <Property Id="95101951-66b1-4b04-997b-2bbcfa213436" name="Kontakt" label="Kontakt : String" kind="Persistent" fieldName="_kontakt" />
+      <Property Id="e4278f98-077a-40dd-9446-1c4f63f6b34c" name="Lozinka" label="Lozinka : String" kind="Persistent" fieldName="_lozinka" />
+      <Property Id="c35095d2-0480-457f-8b36-68debfcedb03" name="Prezime" label="Prezime : String" kind="Persistent" fieldName="_prezime" />
+    </DomainClass>
+    <DomainClass Id="7d50f061-2dc2-49c6-a00a-9e96210d2367" name="VrijemeNaSpravi" namespace="BuildUp_teretana" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="2dbac9e3-ff91-4769-ba44-f62295ddda39" name="BrojIskaznice" label="BrojIskaznice : String" kind="Persistent" identity="true" fieldName="_brojIskaznice" />
+      <Property Id="6c19cfc7-2be7-4e9f-9c7e-67c20141b9a7" name="ID_sprave" type="Int32" label="ID_sprave : Int32" kind="Persistent" identity="true" fieldName="_iD_sprave" />
+      <Property Id="aa52f171-6e2f-4503-b3c9-6099961e44ca" name="Vrijeme" type="Int32" label="Vrijeme : Int32" nullable="true" kind="Persistent" fieldName="_vrijeme" />
+      <AssociationTargets>
+        <Association Id="6bbffc99-b68e-4495-99a4-63b280842f2b" SourceMultiplicity="One" name="VrijemeNaSpraviHasClan">
+          <DomainClassMoniker name="/BuildUp/Clan" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="27db6cb3-9e14-4640-96b6-fedf005ba99e">
+              <NavigationalPropertyMoniker name="/BuildUp/Clan/VrijemeNaSpravis" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="e228e71d-4736-4a4b-a908-31b4dce44453">
+              <NavigationalPropertyMoniker name="/BuildUp/VrijemeNaSpravi/Clan" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+        <Association Id="9e6b58bd-a0fe-40c0-8aa5-1d874d4b2a93" SourceMultiplicity="One" name="VrijemeNaSpraviHasSprava">
+          <DomainClassMoniker name="/BuildUp/Sprava" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="756a59ae-6bc4-428a-874a-576cfe979e8b">
+              <NavigationalPropertyMoniker name="/BuildUp/Sprava/VrijemeNaSpravis" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="22f6c0c5-bb7e-4de6-8b26-0b6d2c43e3f5">
+              <NavigationalPropertyMoniker name="/BuildUp/VrijemeNaSpravi/Sprava" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+      </AssociationTargets>
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="2e674812-7b97-4b1c-80b5-467791ef7f59">
+          <NavigationalProperty Id="d55455d9-dcce-4ee2-921c-68bcc82d75df" name="Clan" type="Clan" label="Clan : Clan" nullable="true" kind="Persistent" fieldName="_clan" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="25338728-e58d-4893-9d14-ac4bc9c5c192">
+          <NavigationalProperty Id="4fe2d2d0-b3b6-41cc-ace4-3c2e0b652a2c" name="Sprava" type="Sprava" label="Sprava : Sprava" nullable="true" kind="Persistent" fieldName="_sprava" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="557651b0-ce9d-4589-9436-2e8e9e579914" name="Sprava" namespace="BuildUp_teretana" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="fde8f844-b3f1-402e-86ed-eaea199e6aab" name="ID_sprave" type="Int32" label="ID_sprave : Int32" kind="Persistent" identity="true" fieldName="_iD_sprave" />
+      <Property Id="62b83579-f024-4315-ae05-3d3eb0162b0d" name="Naziv" label="Naziv : String" kind="Persistent" fieldName="_naziv" />
+      <Property Id="f5588c51-990a-438b-b05d-b554e2d8836a" name="Prosjecna_potrosnja_kalorija" type="Int32" label="Prosjecna_potrosnja_kalorija : Int32" nullable="true" kind="Persistent" fieldName="_prosjecna_potrosnja_kalorija" />
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="e67edd3b-3d3c-4cca-abcb-2cd7975fbc24">
+          <NavigationalProperty Id="52e73bbe-4e1e-462c-9172-42fbe09217f6" name="VrijemeNaSpravis" type="IList&lt;VrijemeNaSpravi&gt;" label="VrijemeNaSpravis : IList&lt;VrijemeNaSpravi&gt;" nullable="true" kind="Persistent" fieldName="_vrijemeNaSpravis" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="1dd4d899-d9af-4907-8a60-b9949e4f567e" name="Izvjesce" namespace="BuildUp_teretana" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="09ffa47a-0cda-444c-8872-a9be43d7989c" name="ID_izvjesce" type="Int32" label="ID_izvjesce : Int32" kind="Persistent" identity="true" fieldName="_iD_izvjesce" />
+      <Property Id="96cb37c5-88ac-4753-bb2d-e0e974f17bdd" name="BrojIskaznice" label="BrojIskaznice : String" kind="Persistent" fieldName="_brojIskaznice" />
+      <Property Id="c4a4a311-c9bb-47a3-86c6-f7c6a1f4d7da" name="Godina" label="Godina : String" kind="Persistent" fieldName="_godina" />
+      <Property Id="4a917e6b-c810-4034-ad79-895e0ebff9c0" name="Mjesec" label="Mjesec : String" kind="Persistent" fieldName="_mjesec" />
+      <Property Id="7b99e58d-96e4-4d2f-ae4c-7afb06c82ea8" name="ObujamBokova" type="Int32" label="ObujamBokova : Int32" nullable="true" kind="Persistent" fieldName="_obujamBokova" />
+      <Property Id="bd9d68cd-9f06-4a9b-bf53-0b13144ed0d6" name="ObujamPrsa" type="Int32" label="ObujamPrsa : Int32" nullable="true" kind="Persistent" fieldName="_obujamPrsa" />
+      <Property Id="6e750c94-d0f6-4ca8-8aec-732eec62f2ec" name="ObujamStruka" type="Int32" label="ObujamStruka : Int32" nullable="true" kind="Persistent" fieldName="_obujamStruka" />
+      <Property Id="0edd6235-cd4e-463b-8bc0-0e4845f8d193" name="PotrosnjaKalorija" type="Int32" label="PotrosnjaKalorija : Int32" nullable="true" kind="Persistent" fieldName="_potrosnjaKalorija" />
+      <Property Id="5e119112-f15b-4649-b9af-cb70364b8910" name="Tezina" type="Int32" label="Tezina : Int32" nullable="true" kind="Persistent" fieldName="_tezina" />
+      <AssociationTargets>
+        <Association Id="14597fec-72c4-4db7-8591-359ff3b40114" SourceMultiplicity="ZeroOne" name="IzvjesceHasClan">
+          <DomainClassMoniker name="/BuildUp/Clan" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="9007ed26-67a8-4deb-a71f-edf522f21631">
+              <NavigationalPropertyMoniker name="/BuildUp/Clan/Izvjesces" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="7a3fd088-af69-49c1-8502-fe0efbef7e0b">
+              <NavigationalPropertyMoniker name="/BuildUp/Izvjesce/Clan" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+      </AssociationTargets>
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="3bc6d3cb-6b9c-4d1c-a3a5-2f6d6cc67764">
+          <NavigationalProperty Id="9447fb89-9aa2-4d1a-a116-f6b653a6cb32" name="Clan" type="Clan" label="Clan : Clan" nullable="true" kind="Persistent" fieldName="_clan" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="a8c90344-ce0b-4a9e-bd9b-72d9ec784116" name="Clanarina" namespace="BuildUp_teretana" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="c6f7dcad-2b85-4ac0-9619-b1ce81aa27f2" name="ID_clanarina" type="Int32" label="ID_clanarina : Int32" kind="Persistent" identity="true" fieldName="_iD_clanarina" />
+      <Property Id="61ff2216-3f2c-4f24-94c6-a2f8f67ba51f" name="Broj_dolazaka" type="Int32" label="Broj_dolazaka : Int32" nullable="true" kind="Persistent" fieldName="_broj_dolazaka" />
+      <Property Id="cfab0cf1-8108-4d40-8cd5-91bff0523b65" name="BrojIskaznice" label="BrojIskaznice : String" kind="Persistent" fieldName="_brojIskaznice" />
+      <Property Id="85ad1473-2512-4b02-8219-805e0a1d4aa1" name="Vrsta" type="Char" label="Vrsta : Char" nullable="true" kind="Persistent" fieldName="_vrsta" />
+      <AssociationTargets>
+        <Association Id="5d0ccf72-c31e-4fe1-8e1c-f0638de7126d" SourceMultiplicity="ZeroOne" name="ClanarinaHasClan">
+          <DomainClassMoniker name="/BuildUp/Clan" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="7936522e-9a62-43d2-9358-856c98588d11">
+              <NavigationalPropertyMoniker name="/BuildUp/Clan/Clanarinas" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="3d7fb024-98a0-4fd6-a2eb-db31ff47bf91">
+              <NavigationalPropertyMoniker name="/BuildUp/Clanarina/Clan" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+      </AssociationTargets>
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="65a6d34b-6a0d-4316-b08f-3f26e67108ff">
+          <NavigationalProperty Id="b45c9272-08b6-4076-b40e-a3081a344f8e" name="Clan" type="Clan" label="Clan : Clan" nullable="true" kind="Persistent" fieldName="_clan" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="6ad5ca2e-3861-4746-a5d5-5b7993cffdf4" name="Clan" namespace="BuildUp_teretana" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="275a9b80-1b58-4697-8c94-f062b1a35e85" name="BrojIskaznice" label="BrojIskaznice : String" kind="Persistent" identity="true" fieldName="_brojIskaznice" />
+      <Property Id="1f92aaeb-8c5d-413e-850f-a5450d1b3b17" name="Adresa" label="Adresa : String" kind="Persistent" fieldName="_adresa" />
+      <Property Id="cabf6a21-2ff3-4747-88b9-bbf7a2442b05" name="Ime" label="Ime : String" kind="Persistent" fieldName="_ime" />
+      <Property Id="b0484a8b-992e-4244-93ee-b7dd94bce4b3" name="Kontakt" label="Kontakt : String" kind="Persistent" fieldName="_kontakt" />
+      <Property Id="34c8952d-4a22-48bf-96c7-40e25ccf8119" name="Prezime" label="Prezime : String" kind="Persistent" fieldName="_prezime" />
+      <Property Id="5c549a18-2cef-4aed-9e04-92f2b25cdf0e" name="Spol" type="Char" label="Spol : Char" nullable="true" kind="Persistent" fieldName="_spol" />
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="e7db656f-c142-4235-bb60-ced66e3b8997">
+          <NavigationalProperty Id="de0726ba-a19b-40ed-9090-e7e272852992" name="VrijemeNaSpravis" type="IList&lt;VrijemeNaSpravi&gt;" label="VrijemeNaSpravis : IList&lt;VrijemeNaSpravi&gt;" nullable="true" kind="Persistent" fieldName="_vrijemeNaSpravis" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="546f62a4-7a39-4af3-9d0e-e3e3829e73e7">
+          <NavigationalProperty Id="8e2a6491-b7eb-4341-b06f-19140de13134" name="Izvjesces" type="IList&lt;Izvjesce&gt;" label="Izvjesces : IList&lt;Izvjesce&gt;" nullable="true" kind="Persistent" fieldName="_izvjesces" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="0f1c0a2d-914d-431b-a044-2c61f3414c9a">
+          <NavigationalProperty Id="4ae7b613-3529-40ff-a722-6798e015823d" name="Clanarinas" type="IList&lt;Clanarina&gt;" label="Clanarinas : IList&lt;Clanarina&gt;" nullable="true" kind="Persistent" fieldName="_clanarinas" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+  </Types>
+  <domainContext>
+    <domainModelHasDomainContext Id="292bbdbf-d1f0-4453-850e-02e290793ab4">
+      <domainContainer name="BuildUp" namespace="BuildUp_teretana" showPropertiesCompartment="true">
+        <entitySetProperty name="Zaposleniks" namespace="BuildUp_teretana" type="Zaposlenik" label="Zaposleniks : IQueryable&lt;BuildUp_teretana.Zaposlenik&gt;" />
+        <entitySetProperty name="VrijemeNaSpravis" namespace="BuildUp_teretana" type="VrijemeNaSpravi" label="VrijemeNaSpravis : IQueryable&lt;BuildUp_teretana.VrijemeNaSpravi&gt;" />
+        <entitySetProperty name="Spravas" namespace="BuildUp_teretana" type="Sprava" label="Spravas : IQueryable&lt;BuildUp_teretana.Sprava&gt;" />
+        <entitySetProperty name="Izvjesces" namespace="BuildUp_teretana" type="Izvjesce" label="Izvjesces : IQueryable&lt;BuildUp_teretana.Izvjesce&gt;" />
+        <entitySetProperty name="Clanarinas" namespace="BuildUp_teretana" type="Clanarina" label="Clanarinas : IQueryable&lt;BuildUp_teretana.Clanarina&gt;" />
+        <entitySetProperty name="Clans" namespace="BuildUp_teretana" type="Clan" label="Clans : IQueryable&lt;BuildUp_teretana.Clan&gt;" />
+      </domainContainer>
+    </domainModelHasDomainContext>
+  </domainContext>
+</DomainModel>

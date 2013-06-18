@@ -15,27 +15,49 @@ namespace BuildUp_teretana
         public FrmLogin()
         {
             InitializeComponent();
-        }
-
-        private void txtLozinka_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
-        private void btnLogin_MouseClick(object sender, MouseEventArgs e)
-        {
-
+            this.CenterToParent();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            frmGlavnaForma GlavnaForma = new frmGlavnaForma();
-            GlavnaForma.ShowDialog();
+            if (txtLozinka.Text == "")
+            {
+                MessageBox.Show("Niste upisali lozinku!");
+            }
+            else if (txtKorisnickoIme.Text == "")
+            {
+                MessageBox.Show("Niste upisali username!");
+            }
+            else
+            {
+                bool pronadjen = false; 
+                using (BuildUp dbContext = new BuildUp())
+                {
+                    var lowNums =
+                        from zaposlenici in dbContext.Zaposleniks
+                        where zaposlenici.Lozinka == txtLozinka.Text && zaposlenici.KorisnickoIme == txtKorisnickoIme.Text
+                        select zaposlenici;       
+
+                    foreach (var zaposlenik in lowNums) 
+                    {
+                        pronadjen = true; 
+                    }
+                }
+                if (pronadjen == true)
+                {
+                    frmGlavnaForma glavna_forma = new frmGlavnaForma();
+                    this.Hide();
+                    txtKorisnickoIme.Text = "";
+                    txtLozinka.Text = "";
+                    glavna_forma.ShowDialog();
+                    this.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Krivi podaci za login!");
+                }
+            }
         }
     }
 }
+
