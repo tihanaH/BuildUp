@@ -145,6 +145,7 @@
       <orm:class name="Clan" uniqueId="6ad5ca2e-3861-4746-a5d5-5b7993cffdf4">
         <orm:table name="Clan" />
         <orm:identity>
+          <orm:key-generator name="autoinc" />
           <orm:single-field field-name="_brojIskaznice" />
         </orm:identity>
         <orm:concurrency strategy="changed" />
@@ -167,7 +168,7 @@
           <orm:column name="Spol" sql-type="varchar" nullable="true" length="1" scale="0" ado-type="UnicodeStringVariableLength" />
         </orm:field>
         <orm:field name="_email" property="Email" behavior="readwrite" uniqueId="4a326ca1-3838-48bc-a024-4190954da97f" type="System.String">
-          <orm:column nullable="true" length="30" name="Email" scale="0" sql-type="varchar" ado-type="UnicodeStringVariableLength" />
+          <orm:column name="Email" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="UnicodeStringVariableLength" />
         </orm:field>
         <orm:field name="_vrijemeNaSpravis" property="VrijemeNaSpravis" behavior="readwrite" uniqueId="de0726ba-a19b-40ed-9090-e7e272852992" type="BuildUp_teretana.VrijemeNaSpravi">
           <orm:collection element-class="BuildUp_teretana.VrijemeNaSpravi" inverse-field="_clan" order-by="" uniqueId="6bbffc99-b68e-4495-99a4-63b280842f2b" />
@@ -234,7 +235,7 @@
         <orm:column name="Adresa" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="UnicodeStringVariableLength" />
         <orm:column name="Kontakt" sql-type="varchar" nullable="true" length="0" scale="0" ado-type="UnicodeStringVariableLength" />
         <orm:column name="Spol" sql-type="varchar" nullable="true" length="1" scale="0" ado-type="UnicodeStringVariableLength" />
-        <orm:column nullable="true" length="30" name="Email" scale="0" sql-type="varchar" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="Email" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="UnicodeStringVariableLength" />
       </orm:table>
     </orm:schema>
     <orm:relational-naming-settings>

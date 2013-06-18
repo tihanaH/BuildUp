@@ -15,11 +15,77 @@ namespace BuildUp_teretana
         public FrmDodajČlana()
         {
             InitializeComponent();
+            this.CenterToParent();
         }
 
         private void DodajČlana_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnOkDodajClan_Click(object sender, EventArgs e)
+        {
+            if (cmbSpol.Text == "")
+            {
+                MessageBox.Show("Morate odabrati spol");
+            }
+            else if (txtIme.Text == "")
+            {
+                MessageBox.Show("Morate upisati ime korisnika!");
+            }
+            else if (txtPrezime.Text == "")
+            {
+                MessageBox.Show("Morate upisati prezime korisnika!");
+            }
+            else if (txtAdresa.Text == "")
+            {
+                MessageBox.Show("Morate upisati adresu korisnika!");
+            }
+            else if (txtEmail.Text == "")
+            {
+                MessageBox.Show("Morate upisati Email korisnika!");
+            }
+            else if (txtTelefon.Text == "")
+            {
+                MessageBox.Show("Morate upisati telefon korisnika!");
+            }
+            else
+            {
+                Clan clan = new Clan();
+                clan.Adresa = txtAdresa.Text;
+                clan.Email = txtEmail.Text;
+                clan.Ime = txtIme.Text;
+                clan.Prezime = txtPrezime.Text;
+                clan.Spol = cmbSpol.Text[0];
+                clan.Kontakt = txtTelefon.Text;
+
+                Izvjesce izvjesce = new Izvjesce();
+                izvjesce.Clan = clan;
+                izvjesce.Godina = DateTime.Now.Year.ToString();
+                izvjesce.Mjesec = DateTime.Now.Month.ToString();
+
+                if (txtBokovi.Text == "") izvjesce.ObujamBokova = 0;
+                else izvjesce.ObujamBokova = int.Parse(txtBokovi.Text);
+
+                if (txtPrsa.Text == "") izvjesce.ObujamPrsa = 0;
+                else izvjesce.ObujamPrsa = int.Parse(txtPrsa.Text);
+
+                if (txtStruk.Text == "") izvjesce.ObujamStruka = 0;
+                else izvjesce.ObujamStruka = int.Parse(txtStruk.Text);
+
+                izvjesce.PotrosnjaKalorija = 0;
+                if (txtTezina.Text == "") izvjesce.Tezina = 0;
+                else izvjesce.Tezina = int.Parse(txtTezina.Text);
+
+                using (BuildUp dbcontext = new BuildUp())
+                {
+                    dbcontext.Add(clan);
+                    dbcontext.Add(izvjesce);
+                    dbcontext.SaveChanges();
+                }
+                MessageBox.Show("Uspješno dodan član!");
+                this.Close();
+            }
         }
     }
 }

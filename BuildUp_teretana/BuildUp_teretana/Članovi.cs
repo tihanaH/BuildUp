@@ -21,6 +21,7 @@ namespace BuildUp_teretana
             dataGridView1.Columns[6].Visible = false;
             dataGridView1.Columns[7].Visible = false;
             dataGridView1.Columns[8].Visible = false;
+            dataGridView1.Columns[9].Visible = false;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
         }
@@ -36,6 +37,7 @@ namespace BuildUp_teretana
                         Adresa = clanovi.Adresa,
                         BrojIskaznice = clanovi.BrojIskaznice,
                         Ime = clanovi.Ime,
+                        Email = clanovi.Email,
                         Kontakt = clanovi.Kontakt,
                         Prezime = clanovi.Prezime,
                         Spol = clanovi.Spol
@@ -63,6 +65,14 @@ namespace BuildUp_teretana
                 List<Clan> svi_clanovi = dohvati_clanove();
                 dataGridView1.DataSource = svi_clanovi;
             }
+        }
+
+        private void dodajToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmDodajČlana dodajclana = new FrmDodajČlana();
+            dodajclana.ShowDialog();
+            List<Clan> svi_clanovi = dohvati_clanove();
+            dataGridView1.DataSource = svi_clanovi;
         }
     }
 }

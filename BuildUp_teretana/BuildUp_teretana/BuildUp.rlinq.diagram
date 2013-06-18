@@ -51,7 +51,7 @@
           <elementListCompartment Id="b2eef10e-1824-4b13-8010-464eb251a85e" absoluteBounds="3.265, 3.6248893229166663, 1.4700000000000002, 0.8262939453125" name="NavigationCompartment" titleTextColor="Black" itemTextColor="Black" />
         </nestedChildShapes>
       </classShape>
-      <associationConnector edgePoints="[(1.5 : 4.75); (1.5 : 3.33967610677083); (2.5 : 3.33967610677083); (2.5 : 3.36051016080729); (3.25 : 3.36051016080729)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <associationConnector edgePoints="[(1.5 : 4.75); (1.5 : 3.33967610677083); (2.5 : 3.33967610677083); (2.5 : 3.36051016080729); (3.25 : 3.36051016080729)]" fixedFrom="NotFixed" fixedTo="NotFixed">
         <AssociationMoniker Id="6bbffc99-b68e-4495-99a4-63b280842f2b" />
         <relativeChildShapes />
         <nodes>
@@ -59,7 +59,7 @@
           <classShapeMoniker Id="8ace398d-d472-448e-a82f-1a3dff7f30ce" />
         </nodes>
       </associationConnector>
-      <associationConnector edgePoints="[(2.25 : 5.94868733723958); (4 : 5.94868733723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <associationConnector edgePoints="[(2.25 : 5.94868733723958); (4 : 5.94868733723958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
         <AssociationMoniker Id="9e6b58bd-a0fe-40c0-8aa5-1d874d4b2a93" />
         <relativeChildShapes />
         <nodes>
@@ -67,7 +67,7 @@
           <classShapeMoniker Id="7f61d52b-fe99-4469-8f38-167e095724bf" />
         </nodes>
       </associationConnector>
-      <associationConnector edgePoints="[(6.375 : 4.33809163411458); (4.75 : 4.33809163411458)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <associationConnector edgePoints="[(6.375 : 4.33809163411458); (4.75 : 4.33809163411458)]" fixedFrom="NotFixed" fixedTo="NotFixed">
         <AssociationMoniker Id="14597fec-72c4-4db7-8591-359ff3b40114" />
         <relativeChildShapes />
         <nodes>
@@ -75,7 +75,7 @@
           <classShapeMoniker Id="8ace398d-d472-448e-a82f-1a3dff7f30ce" />
         </nodes>
       </associationConnector>
-      <associationConnector edgePoints="[(2.25 : 2.16983805338542); (3.25 : 2.16983805338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <associationConnector edgePoints="[(2.25 : 2.16983805338542); (3.25 : 2.16983805338542)]" fixedFrom="NotFixed" fixedTo="NotFixed">
         <AssociationMoniker Id="5d0ccf72-c31e-4fe1-8e1c-f0638de7126d" />
         <relativeChildShapes />
         <nodes>
