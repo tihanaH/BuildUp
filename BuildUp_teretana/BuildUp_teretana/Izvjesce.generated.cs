@@ -37,8 +37,8 @@ namespace BuildUp_teretana
 			}
 		}
 		
-		private string _brojIskaznice;
-		public virtual string BrojIskaznice
+		private int? _brojIskaznice;
+		public virtual int? BrojIskaznice
 		{
 			get
 			{

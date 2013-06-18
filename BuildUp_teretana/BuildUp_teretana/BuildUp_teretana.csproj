@@ -102,13 +102,11 @@
     <Compile Include="IzvješćeONapretku.Designer.cs">
       <DependentUpon>IzvješćeONapretku.cs</DependentUpon>
     </Compile>
-    <Compile Include="..\..\..\..\..\Downloads\LogInForma.cs">
+    <Compile Include="LogInForma.cs">
       <SubType>Form</SubType>
-      <Link>LogInForma.cs</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\Downloads\LogInForma.Designer.cs">
+    <Compile Include="LogInForma.Designer.cs">
       <DependentUpon>LogInForma.cs</DependentUpon>
-      <Link>LogInForma.Designer.cs</Link>
     </Compile>
     <Compile Include="MjestoVježbanja.cs">
       <SubType>Form</SubType>
@@ -160,9 +158,8 @@
     <EmbeddedResource Include="IzvješćeONapretku.resx">
       <DependentUpon>IzvješćeONapretku.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\..\..\..\..\Downloads\LogInForma.resx">
+    <EmbeddedResource Include="LogInForma.resx">
       <DependentUpon>LogInForma.cs</DependentUpon>
-      <Link>LogInForma.resx</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="MjestoVježbanja.resx">
       <DependentUpon>MjestoVježbanja.cs</DependentUpon>

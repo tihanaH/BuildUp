@@ -24,8 +24,8 @@ namespace BuildUp_teretana
 {
 	public partial class Clan
 	{
-		private string _brojIskaznice;
-		public virtual string BrojIskaznice
+		private int _brojIskaznice;
+		public virtual int BrojIskaznice
 		{
 			get
 			{
@@ -99,6 +99,19 @@ namespace BuildUp_teretana
 			set
 			{
 				this._spol = value;
+			}
+		}
+		
+		private string _email;
+		public virtual string Email
+		{
+			get
+			{
+				return this._email;
+			}
+			set
+			{
+				this._email = value;
 			}
 		}
 		

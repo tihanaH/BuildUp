@@ -42,7 +42,7 @@
             // 
             this.btnLogin.ForeColor = System.Drawing.SystemColors.MenuText;
             this.btnLogin.Location = new System.Drawing.Point(119, 315);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(145, 42);
             this.btnLogin.TabIndex = 0;
@@ -63,7 +63,7 @@
             // txtKorisnickoIme
             // 
             this.txtKorisnickoIme.Location = new System.Drawing.Point(145, 217);
-            this.txtKorisnickoIme.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtKorisnickoIme.Margin = new System.Windows.Forms.Padding(4);
             this.txtKorisnickoIme.Name = "txtKorisnickoIme";
             this.txtKorisnickoIme.Size = new System.Drawing.Size(180, 22);
             this.txtKorisnickoIme.TabIndex = 2;
@@ -81,7 +81,7 @@
             // txtLozinka
             // 
             this.txtLozinka.Location = new System.Drawing.Point(145, 257);
-            this.txtLozinka.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLozinka.Margin = new System.Windows.Forms.Padding(4);
             this.txtLozinka.Name = "txtLozinka";
             this.txtLozinka.PasswordChar = '*';
             this.txtLozinka.Size = new System.Drawing.Size(180, 22);
@@ -91,7 +91,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(16, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(367, 169);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -109,7 +109,7 @@
             this.Controls.Add(this.txtKorisnickoIme);
             this.Controls.Add(this.lblKorisnickoIme);
             this.Controls.Add(this.btnLogin);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmLogin";
             this.Text = "BuildUp Log In";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

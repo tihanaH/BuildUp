@@ -33,8 +33,8 @@
           </orm:multiple-field>
         </orm:identity>
         <orm:concurrency strategy="changed" />
-        <orm:field name="_brojIskaznice" property="BrojIskaznice" behavior="readwrite" uniqueId="2dbac9e3-ff91-4769-ba44-f62295ddda39" type="System.String">
-          <orm:column name="BrojIskaznice" sql-type="varchar" nullable="false" length="10" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        <orm:field name="_brojIskaznice" property="BrojIskaznice" behavior="readwrite" uniqueId="2dbac9e3-ff91-4769-ba44-f62295ddda39" type="System.Int32">
+          <orm:column name="BrojIskaznice" sql-type="int4" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
         </orm:field>
         <orm:field name="_iD_sprave" property="ID_sprave" behavior="readwrite" uniqueId="6c19cfc7-2be7-4e9f-9c7e-67c20141b9a7" type="System.Int32">
           <orm:column name="ID_sprave" sql-type="int4" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
@@ -85,8 +85,8 @@
         <orm:field name="_iD_izvjesce" property="ID_izvjesce" behavior="readwrite" uniqueId="09ffa47a-0cda-444c-8872-a9be43d7989c" type="System.Int32">
           <orm:column name="ID_izvjesce" sql-type="int4" nullable="false" length="0" scale="0" primary-key="true" has-default-value="true" backend-calculated="true" ado-type="Int32" />
         </orm:field>
-        <orm:field name="_brojIskaznice" property="BrojIskaznice" behavior="readwrite" uniqueId="96cb37c5-88ac-4753-bb2d-e0e974f17bdd" type="System.String">
-          <orm:column name="BrojIskaznice" sql-type="varchar" nullable="true" length="10" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:field name="_brojIskaznice" property="BrojIskaznice" behavior="readwrite" uniqueId="96cb37c5-88ac-4753-bb2d-e0e974f17bdd" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="BrojIskaznice" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
         </orm:field>
         <orm:field name="_mjesec" property="Mjesec" behavior="readwrite" uniqueId="4a917e6b-c810-4034-ad79-895e0ebff9c0" type="System.String">
           <orm:column name="Mjesec" sql-type="varchar" nullable="true" length="2" scale="0" ado-type="UnicodeStringVariableLength" />
@@ -126,8 +126,8 @@
         <orm:field name="_iD_clanarina" property="ID_clanarina" behavior="readwrite" uniqueId="c6f7dcad-2b85-4ac0-9619-b1ce81aa27f2" type="System.Int32">
           <orm:column name="ID_clanarina" sql-type="int4" nullable="false" length="0" scale="0" primary-key="true" has-default-value="true" backend-calculated="true" ado-type="Int32" />
         </orm:field>
-        <orm:field name="_brojIskaznice" property="BrojIskaznice" behavior="readwrite" uniqueId="cfab0cf1-8108-4d40-8cd5-91bff0523b65" type="System.String">
-          <orm:column name="BrojIskaznice" sql-type="varchar" nullable="true" length="10" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:field name="_brojIskaznice" property="BrojIskaznice" behavior="readwrite" uniqueId="cfab0cf1-8108-4d40-8cd5-91bff0523b65" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="BrojIskaznice" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
         </orm:field>
         <orm:field name="_vrsta" property="Vrsta" behavior="readwrite" uniqueId="85ad1473-2512-4b02-8219-805e0a1d4aa1" type="System.Nullable`1[[System.Char, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
           <orm:column name="Vrsta" sql-type="varchar" nullable="true" length="1" scale="0" ado-type="UnicodeStringVariableLength" />
@@ -148,8 +148,8 @@
           <orm:single-field field-name="_brojIskaznice" />
         </orm:identity>
         <orm:concurrency strategy="changed" />
-        <orm:field name="_brojIskaznice" property="BrojIskaznice" behavior="readwrite" uniqueId="275a9b80-1b58-4697-8c94-f062b1a35e85" type="System.String">
-          <orm:column name="BrojIskaznice" sql-type="varchar" nullable="false" length="10" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        <orm:field name="_brojIskaznice" property="BrojIskaznice" behavior="readwrite" uniqueId="275a9b80-1b58-4697-8c94-f062b1a35e85" type="System.Int32">
+          <orm:column name="BrojIskaznice" sql-type="int4" nullable="false" length="0" scale="0" primary-key="true" has-default-value="true" backend-calculated="true" ado-type="Int32" />
         </orm:field>
         <orm:field name="_ime" property="Ime" behavior="readwrite" uniqueId="cabf6a21-2ff3-4747-88b9-bbf7a2442b05" type="System.String">
           <orm:column name="Ime" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="UnicodeStringVariableLength" />
@@ -161,10 +161,13 @@
           <orm:column name="Adresa" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="UnicodeStringVariableLength" />
         </orm:field>
         <orm:field name="_kontakt" property="Kontakt" behavior="readwrite" uniqueId="b0484a8b-992e-4244-93ee-b7dd94bce4b3" type="System.String">
-          <orm:column name="Kontakt" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="UnicodeStringVariableLength" />
+          <orm:column name="Kontakt" sql-type="varchar" nullable="true" length="0" scale="0" ado-type="UnicodeStringVariableLength" />
         </orm:field>
         <orm:field name="_spol" property="Spol" behavior="readwrite" uniqueId="5c549a18-2cef-4aed-9e04-92f2b25cdf0e" type="System.Nullable`1[[System.Char, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
           <orm:column name="Spol" sql-type="varchar" nullable="true" length="1" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_email" property="Email" behavior="readwrite" uniqueId="4a326ca1-3838-48bc-a024-4190954da97f" type="System.String">
+          <orm:column nullable="true" length="30" name="Email" scale="0" sql-type="varchar" ado-type="UnicodeStringVariableLength" />
         </orm:field>
         <orm:field name="_vrijemeNaSpravis" property="VrijemeNaSpravis" behavior="readwrite" uniqueId="de0726ba-a19b-40ed-9090-e7e272852992" type="BuildUp_teretana.VrijemeNaSpravi">
           <orm:collection element-class="BuildUp_teretana.VrijemeNaSpravi" inverse-field="_clan" order-by="" uniqueId="6bbffc99-b68e-4495-99a4-63b280842f2b" />
@@ -186,11 +189,11 @@
         <orm:column name="Kontakt" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="UnicodeStringVariableLength" />
       </orm:table>
       <orm:table name="VrijemeNaSpravi">
-        <orm:column name="BrojIskaznice" sql-type="varchar" nullable="false" length="10" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="BrojIskaznice" sql-type="int4" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
         <orm:column name="ID_sprave" sql-type="int4" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
         <orm:column name="Vrijeme" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
         <orm:constraint name="VrijemeNaSpravi_BrojIskaznice_fkey" destination-table="Clan">
-          <orm:column name="BrojIskaznice" sql-type="varchar" nullable="false" length="10" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+          <orm:column name="BrojIskaznice" sql-type="int4" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
         </orm:constraint>
         <orm:constraint name="VrijemeNaSpravi_ID_sprave_fkey" destination-table="Sprava">
           <orm:column name="ID_sprave" sql-type="int4" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
@@ -203,7 +206,7 @@
       </orm:table>
       <orm:table name="Izvjesce">
         <orm:column name="ID_izvjesce" sql-type="int4" nullable="false" length="0" scale="0" primary-key="true" has-default-value="true" backend-calculated="true" ado-type="Int32" />
-        <orm:column name="BrojIskaznice" sql-type="varchar" nullable="true" length="10" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="BrojIskaznice" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
         <orm:column name="Mjesec" sql-type="varchar" nullable="true" length="2" scale="0" ado-type="UnicodeStringVariableLength" />
         <orm:column name="Godina" sql-type="varchar" nullable="true" length="4" scale="0" ado-type="UnicodeStringVariableLength" />
         <orm:column name="Tezina" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
@@ -212,25 +215,26 @@
         <orm:column name="ObujamBokova" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
         <orm:column name="PotrosnjaKalorija" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
         <orm:constraint name="Izvjesce_BrojIskaznice_fkey" destination-table="Clan">
-          <orm:column name="BrojIskaznice" sql-type="varchar" nullable="true" length="10" scale="0" ado-type="UnicodeStringVariableLength" />
+          <orm:column name="BrojIskaznice" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
         </orm:constraint>
       </orm:table>
       <orm:table name="Clanarina">
         <orm:column name="ID_clanarina" sql-type="int4" nullable="false" length="0" scale="0" primary-key="true" has-default-value="true" backend-calculated="true" ado-type="Int32" />
-        <orm:column name="BrojIskaznice" sql-type="varchar" nullable="true" length="10" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="BrojIskaznice" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
         <orm:column name="Vrsta" sql-type="varchar" nullable="true" length="1" scale="0" ado-type="UnicodeStringVariableLength" />
         <orm:column name="Broj_dolazaka" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
         <orm:constraint name="Clanarina_BrojIskaznice_fkey" destination-table="Clan">
-          <orm:column name="BrojIskaznice" sql-type="varchar" nullable="true" length="10" scale="0" ado-type="UnicodeStringVariableLength" />
+          <orm:column name="BrojIskaznice" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
         </orm:constraint>
       </orm:table>
       <orm:table name="Clan">
-        <orm:column name="BrojIskaznice" sql-type="varchar" nullable="false" length="10" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="BrojIskaznice" sql-type="int4" nullable="false" length="0" scale="0" primary-key="true" has-default-value="true" backend-calculated="true" ado-type="Int32" />
         <orm:column name="Ime" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="UnicodeStringVariableLength" />
         <orm:column name="Prezime" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="UnicodeStringVariableLength" />
         <orm:column name="Adresa" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="UnicodeStringVariableLength" />
-        <orm:column name="Kontakt" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="Kontakt" sql-type="varchar" nullable="true" length="0" scale="0" ado-type="UnicodeStringVariableLength" />
         <orm:column name="Spol" sql-type="varchar" nullable="true" length="1" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:column nullable="true" length="30" name="Email" scale="0" sql-type="varchar" ado-type="UnicodeStringVariableLength" />
       </orm:table>
     </orm:schema>
     <orm:relational-naming-settings>
@@ -240,7 +244,7 @@
   </orm:orm>
   <ModelSettings xmlns="">
     <AppConfigConnectionPropertyName>Connection</AppConfigConnectionPropertyName>
-    <AppConfigConnectionString>Server=127.0.0.1;Port=5432;Database=BuildUP;User Id=postgres;Password=postgres;</AppConfigConnectionString>
+    <AppConfigConnectionString>server=127.0.0.1;port=5432;database=BuildUP;user id=postgres;password=postgres</AppConfigConnectionString>
     <NamingSettings>
       <ClassRules>
         <CaseMode>PascalCase</CaseMode>
@@ -274,7 +278,7 @@
       <Property Id="c35095d2-0480-457f-8b36-68debfcedb03" name="Prezime" label="Prezime : String" kind="Persistent" fieldName="_prezime" />
     </DomainClass>
     <DomainClass Id="7d50f061-2dc2-49c6-a00a-9e96210d2367" name="VrijemeNaSpravi" namespace="BuildUp_teretana" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
-      <Property Id="2dbac9e3-ff91-4769-ba44-f62295ddda39" name="BrojIskaznice" label="BrojIskaznice : String" kind="Persistent" identity="true" fieldName="_brojIskaznice" />
+      <Property Id="2dbac9e3-ff91-4769-ba44-f62295ddda39" name="BrojIskaznice" type="Int32" label="BrojIskaznice : Int32" kind="Persistent" identity="true" fieldName="_brojIskaznice" />
       <Property Id="6c19cfc7-2be7-4e9f-9c7e-67c20141b9a7" name="ID_sprave" type="Int32" label="ID_sprave : Int32" kind="Persistent" identity="true" fieldName="_iD_sprave" />
       <Property Id="aa52f171-6e2f-4503-b3c9-6099961e44ca" name="Vrijeme" type="Int32" label="Vrijeme : Int32" nullable="true" kind="Persistent" fieldName="_vrijeme" />
       <AssociationTargets>
@@ -326,7 +330,7 @@
     </DomainClass>
     <DomainClass Id="1dd4d899-d9af-4907-8a60-b9949e4f567e" name="Izvjesce" namespace="BuildUp_teretana" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
       <Property Id="09ffa47a-0cda-444c-8872-a9be43d7989c" name="ID_izvjesce" type="Int32" label="ID_izvjesce : Int32" kind="Persistent" identity="true" fieldName="_iD_izvjesce" />
-      <Property Id="96cb37c5-88ac-4753-bb2d-e0e974f17bdd" name="BrojIskaznice" label="BrojIskaznice : String" kind="Persistent" fieldName="_brojIskaznice" />
+      <Property Id="96cb37c5-88ac-4753-bb2d-e0e974f17bdd" name="BrojIskaznice" type="Int32" label="BrojIskaznice : Int32" kind="Persistent" fieldName="_brojIskaznice" />
       <Property Id="c4a4a311-c9bb-47a3-86c6-f7c6a1f4d7da" name="Godina" label="Godina : String" kind="Persistent" fieldName="_godina" />
       <Property Id="4a917e6b-c810-4034-ad79-895e0ebff9c0" name="Mjesec" label="Mjesec : String" kind="Persistent" fieldName="_mjesec" />
       <Property Id="7b99e58d-96e4-4d2f-ae4c-7afb06c82ea8" name="ObujamBokova" type="Int32" label="ObujamBokova : Int32" nullable="true" kind="Persistent" fieldName="_obujamBokova" />
@@ -358,7 +362,7 @@
     <DomainClass Id="a8c90344-ce0b-4a9e-bd9b-72d9ec784116" name="Clanarina" namespace="BuildUp_teretana" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
       <Property Id="c6f7dcad-2b85-4ac0-9619-b1ce81aa27f2" name="ID_clanarina" type="Int32" label="ID_clanarina : Int32" kind="Persistent" identity="true" fieldName="_iD_clanarina" />
       <Property Id="61ff2216-3f2c-4f24-94c6-a2f8f67ba51f" name="Broj_dolazaka" type="Int32" label="Broj_dolazaka : Int32" nullable="true" kind="Persistent" fieldName="_broj_dolazaka" />
-      <Property Id="cfab0cf1-8108-4d40-8cd5-91bff0523b65" name="BrojIskaznice" label="BrojIskaznice : String" kind="Persistent" fieldName="_brojIskaznice" />
+      <Property Id="cfab0cf1-8108-4d40-8cd5-91bff0523b65" name="BrojIskaznice" type="Int32" label="BrojIskaznice : Int32" kind="Persistent" fieldName="_brojIskaznice" />
       <Property Id="85ad1473-2512-4b02-8219-805e0a1d4aa1" name="Vrsta" type="Char" label="Vrsta : Char" nullable="true" kind="Persistent" fieldName="_vrsta" />
       <AssociationTargets>
         <Association Id="5d0ccf72-c31e-4fe1-8e1c-f0638de7126d" SourceMultiplicity="ZeroOne" name="ClanarinaHasClan">
@@ -382,12 +386,13 @@
       </navigationalProperties>
     </DomainClass>
     <DomainClass Id="6ad5ca2e-3861-4746-a5d5-5b7993cffdf4" name="Clan" namespace="BuildUp_teretana" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
-      <Property Id="275a9b80-1b58-4697-8c94-f062b1a35e85" name="BrojIskaznice" label="BrojIskaznice : String" kind="Persistent" identity="true" fieldName="_brojIskaznice" />
+      <Property Id="275a9b80-1b58-4697-8c94-f062b1a35e85" name="BrojIskaznice" type="Int32" label="BrojIskaznice : Int32" kind="Persistent" identity="true" fieldName="_brojIskaznice" />
       <Property Id="1f92aaeb-8c5d-413e-850f-a5450d1b3b17" name="Adresa" label="Adresa : String" kind="Persistent" fieldName="_adresa" />
       <Property Id="cabf6a21-2ff3-4747-88b9-bbf7a2442b05" name="Ime" label="Ime : String" kind="Persistent" fieldName="_ime" />
       <Property Id="b0484a8b-992e-4244-93ee-b7dd94bce4b3" name="Kontakt" label="Kontakt : String" kind="Persistent" fieldName="_kontakt" />
       <Property Id="34c8952d-4a22-48bf-96c7-40e25ccf8119" name="Prezime" label="Prezime : String" kind="Persistent" fieldName="_prezime" />
       <Property Id="5c549a18-2cef-4aed-9e04-92f2b25cdf0e" name="Spol" type="Char" label="Spol : Char" nullable="true" kind="Persistent" fieldName="_spol" />
+      <Property Id="4a326ca1-3838-48bc-a024-4190954da97f" name="Email" label="Email : String" kind="Persistent" fieldName="_email" />
       <navigationalProperties>
         <classHasNavigationalProperties Id="e7db656f-c142-4235-bb60-ced66e3b8997">
           <NavigationalProperty Id="de0726ba-a19b-40ed-9090-e7e272852992" name="VrijemeNaSpravis" type="IList&lt;VrijemeNaSpravi&gt;" label="VrijemeNaSpravis : IList&lt;VrijemeNaSpravi&gt;" nullable="true" kind="Persistent" fieldName="_vrijemeNaSpravis" isDependent="false" isManaged="false" />
