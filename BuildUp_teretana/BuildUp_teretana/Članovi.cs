@@ -15,35 +15,32 @@ namespace BuildUp_teretana
         public FrmČlanovi()
         {
             InitializeComponent();
+            this.CenterToParent();
+            List<Clan> clanovi=dohvati_clanove();
+            dataGridView1.DataSource = clanovi;
+            dataGridView1.Columns[6].Visible = false;
+            dataGridView1.Columns[7].Visible = false;
+            dataGridView1.Columns[8].Visible = false;
+            dataGridView1.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
         }
 
-        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
+        private List<Clan> dohvati_clanove()
         {
-
-        }
-
-        private void btnDodajClan_Click(object sender, EventArgs e)
-        {
-            FrmDodajČlana FormaDodajClana = new FrmDodajČlana();
-            FormaDodajClana.ShowDialog();
-        }
-
-        private void btnIzmjeniClan_Click(object sender, EventArgs e)
-        {
-            FrmIzmjeni FormaIzmjeni = new FrmIzmjeni();
-            FormaIzmjeni.ShowDialog();
-        }
-
-        private void btnEvidencija_Click(object sender, EventArgs e)
-        {
-            FrmEvidencija FormaEvidencija = new FrmEvidencija();
-            FormaEvidencija.ShowDialog();
-        }
-
-        private void btnDodajMjestoVjezbanjaClan_Click(object sender, EventArgs e)
-        {
-            FrmDodajČlanuMjestoVježbanja FormaDodajClanuMjestoVjezbanja = new FrmDodajČlanuMjestoVježbanja();
-            FormaDodajClanuMjestoVjezbanja.ShowDialog();
+        using (BuildUp dbContext = new BuildUp())
+            {
+                var q =
+                    from clanovi in dbContext.Clans
+                    select new Clan()
+                    {
+                        Adresa = clanovi.Adresa,
+                        BrojIskaznice = clanovi.BrojIskaznice,
+                        Ime = clanovi.Ime,
+                        Kontakt = clanovi.Kontakt,
+                        Prezime = clanovi.Prezime,
+                        Spol = clanovi.Spol
+                    };
+                return q.ToList();
+            }
         }
     }
 }

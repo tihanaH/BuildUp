@@ -17,22 +17,17 @@ namespace BuildUp_teretana
             InitializeComponent();
         }
 
-        private void btnClanovi_Click(object sender, EventArgs e)
+        private void btnLogout_Click(object sender, EventArgs e)
         {
-             FrmČlanovi FormaClanovi = new FrmČlanovi();
-             FormaClanovi.ShowDialog();
+            this.Close();
         }
 
-        private void btnMjestoVjezbanja_Click(object sender, EventArgs e)
+        private void btnClan_Click(object sender, EventArgs e)
         {
-            FrmDodajMjestoVjezbanja DodajMjestoVjezbanja = new FrmDodajMjestoVjezbanja();
-            DodajMjestoVjezbanja.ShowDialog();
-        }
-
-        private void btnClanarine_Click(object sender, EventArgs e)
-        {
-            FrmClanarine FormaClanarine = new FrmClanarine();
-            FormaClanarine.ShowDialog();
+            FrmČlanovi clanovi = new FrmČlanovi();
+            this.Hide();
+            clanovi.ShowDialog();
+            this.Show();
         }
     }
 }
