@@ -77,6 +77,22 @@ namespace BuildUp_teretana
                 if (txtTezina.Text == "") izvjesce.Tezina = 0;
                 else izvjesce.Tezina = int.Parse(txtTezina.Text);
 
+                if (txtList.Text == "") izvjesce.List = 0;
+                else izvjesce.List = int.Parse(txtList.Text);
+
+                if (txtBMI.Text == "") izvjesce.BMI = 0;
+                else izvjesce.List = int.Parse(txtBMI.Text);
+
+                if (txtMasnoTkivo.Text == "") izvjesce.MasnoTkvio = 0;
+                else izvjesce.MasnoTkvio = int.Parse(txtMasnoTkivo.Text);
+
+                if (txtBedro.Text == "") izvjesce.Bedro = 0;
+                else izvjesce.Bedro = int.Parse(txtBedro.Text);
+
+                if (txtBiceps.Text == "") izvjesce.Biceps = 0;
+                else izvjesce.Biceps = int.Parse(txtBiceps.Text);
+
+
                 using (BuildUp dbcontext = new BuildUp())
                 {
                     dbcontext.Add(clan);
@@ -86,6 +102,11 @@ namespace BuildUp_teretana
                 MessageBox.Show("Uspješno dodan član!");
                 this.Close();
             }
+        }
+
+        private void grpMjere_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

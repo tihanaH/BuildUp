@@ -141,6 +141,71 @@ namespace BuildUp_teretana
 			}
 		}
 		
+		private int? _masnoTkvio;
+		public virtual int? MasnoTkvio
+		{
+			get
+			{
+				return this._masnoTkvio;
+			}
+			set
+			{
+				this._masnoTkvio = value;
+			}
+		}
+		
+		private int? _list;
+		public virtual int? List
+		{
+			get
+			{
+				return this._list;
+			}
+			set
+			{
+				this._list = value;
+			}
+		}
+		
+		private int? _bMI;
+		public virtual int? BMI
+		{
+			get
+			{
+				return this._bMI;
+			}
+			set
+			{
+				this._bMI = value;
+			}
+		}
+		
+		private int? _biceps;
+		public virtual int? Biceps
+		{
+			get
+			{
+				return this._biceps;
+			}
+			set
+			{
+				this._biceps = value;
+			}
+		}
+		
+		private int? _bedro;
+		public virtual int? Bedro
+		{
+			get
+			{
+				return this._bedro;
+			}
+			set
+			{
+				this._bedro = value;
+			}
+		}
+		
 		private Clan _clan;
 		public virtual Clan Clan
 		{

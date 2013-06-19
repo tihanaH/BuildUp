@@ -74,5 +74,15 @@ namespace BuildUp_teretana
             List<Clan> svi_clanovi = dohvati_clanove();
             dataGridView1.DataSource = svi_clanovi;
         }
+
+        private void izmjeniToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int indeks_selektiranog_retka = dataGridView1.CurrentCell.RowIndex;
+            int BrojIskaznice = int.Parse(dataGridView1.Rows[indeks_selektiranog_retka].Cells[0].Value.ToString());
+            FrmIzmjeni izmijeniclana = new FrmIzmjeni(BrojIskaznice);
+            izmijeniclana.ShowDialog();
+            List<Clan> svi_clanovi = dohvati_clanove();
+            dataGridView1.DataSource = svi_clanovi;
+        }
     }
 }

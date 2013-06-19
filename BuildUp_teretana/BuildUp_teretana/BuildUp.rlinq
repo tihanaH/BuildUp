@@ -109,6 +109,21 @@
         <orm:field name="_potrosnjaKalorija" property="PotrosnjaKalorija" behavior="readwrite" uniqueId="0edd6235-cd4e-463b-8bc0-0e4845f8d193" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
           <orm:column name="PotrosnjaKalorija" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
         </orm:field>
+        <orm:field name="_masnoTkvio" property="MasnoTkvio" behavior="readwrite" uniqueId="114699fa-69b4-4743-a967-e0dc3e8fbd19" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column nullable="true" length="0" name="MasnoTkvio" scale="0" sql-type="int4" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_list" property="List" behavior="readwrite" uniqueId="498478cc-81d7-4b41-8f8c-2dda65bebae6" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column nullable="true" length="0" name="List" scale="0" sql-type="int4" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_bMI" property="BMI" behavior="readwrite" uniqueId="90f048cc-af70-4afb-8494-810ce6ceb66f" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column nullable="true" length="0" name="BMI" scale="0" sql-type="int4" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_biceps" property="Biceps" behavior="readwrite" uniqueId="9a349363-a8b0-4f6f-a703-f03c44ff7aa9" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column nullable="true" length="0" name="Biceps" scale="0" sql-type="int4" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_bedro" property="Bedro" behavior="readwrite" uniqueId="d132a5b3-9b3a-486b-8fb4-d3edf72733b7" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column nullable="true" length="0" name="Bedro" scale="0" sql-type="int4" ado-type="Int32" />
+        </orm:field>
         <orm:field name="_clan" property="Clan" behavior="readwrite" uniqueId="9447fb89-9aa2-4d1a-a116-f6b653a6cb32" type="BuildUp_teretana.Clan">
           <orm:reference uniqueId="14597fec-72c4-4db7-8591-359ff3b40114">
             <orm:sharedfield name="_brojIskaznice" target-class="BuildUp_teretana.Clan" target-field="_brojIskaznice" />
@@ -215,6 +230,11 @@
         <orm:column name="ObujamStruka" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
         <orm:column name="ObujamBokova" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
         <orm:column name="PotrosnjaKalorija" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
+        <orm:column nullable="true" length="0" name="MasnoTkvio" scale="0" sql-type="int4" ado-type="Int32" />
+        <orm:column nullable="true" length="0" name="List" scale="0" sql-type="int4" ado-type="Int32" />
+        <orm:column nullable="true" length="0" name="BMI" scale="0" sql-type="int4" ado-type="Int32" />
+        <orm:column nullable="true" length="0" name="Biceps" scale="0" sql-type="int4" ado-type="Int32" />
+        <orm:column nullable="true" length="0" name="Bedro" scale="0" sql-type="int4" ado-type="Int32" />
         <orm:constraint name="Izvjesce_BrojIskaznice_fkey" destination-table="Clan">
           <orm:column name="BrojIskaznice" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
         </orm:constraint>
@@ -339,6 +359,11 @@
       <Property Id="6e750c94-d0f6-4ca8-8aec-732eec62f2ec" name="ObujamStruka" type="Int32" label="ObujamStruka : Int32" nullable="true" kind="Persistent" fieldName="_obujamStruka" />
       <Property Id="0edd6235-cd4e-463b-8bc0-0e4845f8d193" name="PotrosnjaKalorija" type="Int32" label="PotrosnjaKalorija : Int32" nullable="true" kind="Persistent" fieldName="_potrosnjaKalorija" />
       <Property Id="5e119112-f15b-4649-b9af-cb70364b8910" name="Tezina" type="Int32" label="Tezina : Int32" nullable="true" kind="Persistent" fieldName="_tezina" />
+      <Property Id="114699fa-69b4-4743-a967-e0dc3e8fbd19" name="MasnoTkvio" type="Int32" label="MasnoTkvio : Int32" nullable="true" kind="Persistent" fieldName="_masnoTkvio" />
+      <Property Id="498478cc-81d7-4b41-8f8c-2dda65bebae6" name="List" type="Int32" label="List : Int32" nullable="true" kind="Persistent" fieldName="_list" />
+      <Property Id="90f048cc-af70-4afb-8494-810ce6ceb66f" name="BMI" type="Int32" label="BMI : Int32" nullable="true" kind="Persistent" fieldName="_bMI" />
+      <Property Id="9a349363-a8b0-4f6f-a703-f03c44ff7aa9" name="Biceps" type="Int32" label="Biceps : Int32" nullable="true" kind="Persistent" fieldName="_biceps" />
+      <Property Id="d132a5b3-9b3a-486b-8fb4-d3edf72733b7" name="Bedro" type="Int32" label="Bedro : Int32" nullable="true" kind="Persistent" fieldName="_bedro" />
       <AssociationTargets>
         <Association Id="14597fec-72c4-4db7-8591-359ff3b40114" SourceMultiplicity="ZeroOne" name="IzvjesceHasClan">
           <DomainClassMoniker name="/BuildUp/Clan" />

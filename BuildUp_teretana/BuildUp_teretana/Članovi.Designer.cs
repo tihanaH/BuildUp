@@ -124,6 +124,7 @@
             this.izmjeniToolStripMenuItem.Name = "izmjeniToolStripMenuItem";
             this.izmjeniToolStripMenuItem.Size = new System.Drawing.Size(205, 24);
             this.izmjeniToolStripMenuItem.Text = "Izmjeni";
+            this.izmjeniToolStripMenuItem.Click += new System.EventHandler(this.izmjeniToolStripMenuItem_Click);
             // 
             // dodajToolStripMenuItem
             // 
