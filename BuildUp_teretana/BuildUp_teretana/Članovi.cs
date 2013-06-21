@@ -106,8 +106,8 @@ namespace BuildUp_teretana
                     from clanovi in dbContext.Clans
                     join clanarina in dbContext.Clanarinas on clanovi.BrojIskaznice equals clanarina.BrojIskaznice
                     where (clanarina.Vrsta == 'G' && clanarina.Godina_uplate != DateTime.Now.Year.ToString())
-                    || (clanarina.Vrsta == 'M' && clanarina.Mjesec_uplate != DateTime.Now.Month.ToString() && clanarina.Broj_dolazaka == 0)
-         
+                    || (clanarina.Vrsta == 'M' &&( clanarina.Mjesec_uplate != DateTime.Now.Month.ToString() || clanarina.Broj_dolazaka == 0))
+      
                     select new Clan()
                     {
                         Adresa = clanovi.Adresa,

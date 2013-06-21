@@ -111,6 +111,7 @@ namespace BuildUp_teretana
                 {
                     clanarina.Broj_dolazaka = int.Parse(txtBrojDolazaka.Text);
                 }
+                
                 clanarina.Vrsta = cmbVrsta.Text[0];
                 clanarina.Godina_uplate = DateTime.Now.Year.ToString();
                 clanarina.Mjesec_uplate = DateTime.Now.Month.ToString();
