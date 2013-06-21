@@ -29,30 +29,19 @@
         private void InitializeComponent()
         {
             this.lblTrenutniBrojDolazaka = new System.Windows.Forms.Label();
-            this.lblMaxBrojDolazaka = new System.Windows.Forms.Label();
             this.btnDolazakOk = new System.Windows.Forms.Button();
-            this.txtTrenutniBrojDolazaka = new System.Windows.Forms.TextBox();
+            this.txtPreostaliBrojDolazaka = new System.Windows.Forms.TextBox();
             this.chkPotvrdiDolazak = new System.Windows.Forms.CheckBox();
-            this.txtMaxBrojDolazaka = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblTrenutniBrojDolazaka
             // 
             this.lblTrenutniBrojDolazaka.AutoSize = true;
-            this.lblTrenutniBrojDolazaka.Location = new System.Drawing.Point(20, 29);
+            this.lblTrenutniBrojDolazaka.Location = new System.Drawing.Point(84, 20);
             this.lblTrenutniBrojDolazaka.Name = "lblTrenutniBrojDolazaka";
-            this.lblTrenutniBrojDolazaka.Size = new System.Drawing.Size(112, 13);
+            this.lblTrenutniBrojDolazaka.Size = new System.Drawing.Size(113, 13);
             this.lblTrenutniBrojDolazaka.TabIndex = 0;
-            this.lblTrenutniBrojDolazaka.Text = "Trenutni broj dolazaka";
-            // 
-            // lblMaxBrojDolazaka
-            // 
-            this.lblMaxBrojDolazaka.AutoSize = true;
-            this.lblMaxBrojDolazaka.Location = new System.Drawing.Point(166, 29);
-            this.lblMaxBrojDolazaka.Name = "lblMaxBrojDolazaka";
-            this.lblMaxBrojDolazaka.Size = new System.Drawing.Size(93, 13);
-            this.lblMaxBrojDolazaka.TabIndex = 3;
-            this.lblMaxBrojDolazaka.Text = "Max broj dolazaka";
+            this.lblTrenutniBrojDolazaka.Text = "Preostali broj dolazaka";
             // 
             // btnDolazakOk
             // 
@@ -62,13 +51,15 @@
             this.btnDolazakOk.TabIndex = 4;
             this.btnDolazakOk.Text = "OK";
             this.btnDolazakOk.UseVisualStyleBackColor = true;
+            this.btnDolazakOk.Click += new System.EventHandler(this.btnDolazakOk_Click);
             // 
-            // txtTrenutniBrojDolazaka
+            // txtPreostaliBrojDolazaka
             // 
-            this.txtTrenutniBrojDolazaka.Location = new System.Drawing.Point(44, 45);
-            this.txtTrenutniBrojDolazaka.Name = "txtTrenutniBrojDolazaka";
-            this.txtTrenutniBrojDolazaka.Size = new System.Drawing.Size(69, 20);
-            this.txtTrenutniBrojDolazaka.TabIndex = 5;
+            this.txtPreostaliBrojDolazaka.Location = new System.Drawing.Point(87, 36);
+            this.txtPreostaliBrojDolazaka.Name = "txtPreostaliBrojDolazaka";
+            this.txtPreostaliBrojDolazaka.ReadOnly = true;
+            this.txtPreostaliBrojDolazaka.Size = new System.Drawing.Size(99, 20);
+            this.txtPreostaliBrojDolazaka.TabIndex = 5;
             // 
             // chkPotvrdiDolazak
             // 
@@ -80,23 +71,14 @@
             this.chkPotvrdiDolazak.Text = "Potvrdi dolazak";
             this.chkPotvrdiDolazak.UseVisualStyleBackColor = true;
             // 
-            // txtMaxBrojDolazaka
-            // 
-            this.txtMaxBrojDolazaka.Location = new System.Drawing.Point(169, 45);
-            this.txtMaxBrojDolazaka.Name = "txtMaxBrojDolazaka";
-            this.txtMaxBrojDolazaka.Size = new System.Drawing.Size(69, 20);
-            this.txtMaxBrojDolazaka.TabIndex = 7;
-            // 
             // FrmEvidencija
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 209);
-            this.Controls.Add(this.txtMaxBrojDolazaka);
             this.Controls.Add(this.chkPotvrdiDolazak);
-            this.Controls.Add(this.txtTrenutniBrojDolazaka);
+            this.Controls.Add(this.txtPreostaliBrojDolazaka);
             this.Controls.Add(this.btnDolazakOk);
-            this.Controls.Add(this.lblMaxBrojDolazaka);
             this.Controls.Add(this.lblTrenutniBrojDolazaka);
             this.Name = "FrmEvidencija";
             this.Text = "Evidencija";
@@ -109,10 +91,8 @@
         #endregion
 
         private System.Windows.Forms.Label lblTrenutniBrojDolazaka;
-        private System.Windows.Forms.Label lblMaxBrojDolazaka;
         private System.Windows.Forms.Button btnDolazakOk;
-        private System.Windows.Forms.TextBox txtTrenutniBrojDolazaka;
+        private System.Windows.Forms.TextBox txtPreostaliBrojDolazaka;
         private System.Windows.Forms.CheckBox chkPotvrdiDolazak;
-        private System.Windows.Forms.TextBox txtMaxBrojDolazaka;
     }
 }

@@ -74,149 +74,133 @@
             // lblIme
             // 
             this.lblIme.AutoSize = true;
-            this.lblIme.Location = new System.Drawing.Point(27, 85);
-            this.lblIme.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIme.Location = new System.Drawing.Point(20, 69);
             this.lblIme.Name = "lblIme";
-            this.lblIme.Size = new System.Drawing.Size(30, 17);
+            this.lblIme.Size = new System.Drawing.Size(24, 13);
             this.lblIme.TabIndex = 0;
             this.lblIme.Text = "Ime";
             // 
             // lblBokovi
             // 
             this.lblBokovi.AutoSize = true;
-            this.lblBokovi.Location = new System.Drawing.Point(221, 130);
-            this.lblBokovi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBokovi.Location = new System.Drawing.Point(166, 106);
             this.lblBokovi.Name = "lblBokovi";
-            this.lblBokovi.Size = new System.Drawing.Size(50, 17);
+            this.lblBokovi.Size = new System.Drawing.Size(40, 13);
             this.lblBokovi.TabIndex = 3;
             this.lblBokovi.Text = "Bokovi";
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(27, 245);
-            this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEmail.Location = new System.Drawing.Point(20, 199);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(47, 17);
+            this.lblEmail.Size = new System.Drawing.Size(35, 13);
             this.lblEmail.TabIndex = 7;
             this.lblEmail.Text = "E-mail";
             // 
             // lblAdresa
             // 
             this.lblAdresa.AutoSize = true;
-            this.lblAdresa.Location = new System.Drawing.Point(27, 160);
-            this.lblAdresa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAdresa.Location = new System.Drawing.Point(20, 130);
             this.lblAdresa.Name = "lblAdresa";
-            this.lblAdresa.Size = new System.Drawing.Size(53, 17);
+            this.lblAdresa.Size = new System.Drawing.Size(40, 13);
             this.lblAdresa.TabIndex = 8;
             this.lblAdresa.Text = "Adresa";
             // 
             // lblStruk
             // 
             this.lblStruk.AutoSize = true;
-            this.lblStruk.Location = new System.Drawing.Point(131, 70);
-            this.lblStruk.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblStruk.Location = new System.Drawing.Point(98, 57);
             this.lblStruk.Name = "lblStruk";
-            this.lblStruk.Size = new System.Drawing.Size(41, 17);
+            this.lblStruk.Size = new System.Drawing.Size(32, 13);
             this.lblStruk.TabIndex = 9;
             this.lblStruk.Text = "Struk";
             // 
             // lblPrsa
             // 
             this.lblPrsa.AutoSize = true;
-            this.lblPrsa.Location = new System.Drawing.Point(17, 130);
-            this.lblPrsa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPrsa.Location = new System.Drawing.Point(13, 106);
             this.lblPrsa.Name = "lblPrsa";
-            this.lblPrsa.Size = new System.Drawing.Size(37, 17);
+            this.lblPrsa.Size = new System.Drawing.Size(28, 13);
             this.lblPrsa.TabIndex = 11;
             this.lblPrsa.Text = "Prsa";
             // 
             // lblTezina
             // 
             this.lblTezina.AutoSize = true;
-            this.lblTezina.Location = new System.Drawing.Point(17, 70);
-            this.lblTezina.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTezina.Location = new System.Drawing.Point(13, 57);
             this.lblTezina.Name = "lblTezina";
-            this.lblTezina.Size = new System.Drawing.Size(51, 17);
+            this.lblTezina.Size = new System.Drawing.Size(39, 13);
             this.lblTezina.TabIndex = 13;
             this.lblTezina.Text = "Težina";
             // 
             // lblSpol
             // 
             this.lblSpol.AutoSize = true;
-            this.lblSpol.Location = new System.Drawing.Point(21, 34);
-            this.lblSpol.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSpol.Location = new System.Drawing.Point(16, 28);
             this.lblSpol.Name = "lblSpol";
-            this.lblSpol.Size = new System.Drawing.Size(36, 17);
+            this.lblSpol.Size = new System.Drawing.Size(28, 13);
             this.lblSpol.TabIndex = 14;
             this.lblSpol.Text = "Spol";
             // 
             // lblTelefon
             // 
             this.lblTelefon.AutoSize = true;
-            this.lblTelefon.Location = new System.Drawing.Point(27, 201);
-            this.lblTelefon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTelefon.Location = new System.Drawing.Point(20, 163);
             this.lblTelefon.Name = "lblTelefon";
-            this.lblTelefon.Size = new System.Drawing.Size(56, 17);
+            this.lblTelefon.Size = new System.Drawing.Size(43, 13);
             this.lblTelefon.TabIndex = 15;
             this.lblTelefon.Text = "Telefon";
             // 
             // lblPrezime
             // 
             this.lblPrezime.AutoSize = true;
-            this.lblPrezime.Location = new System.Drawing.Point(27, 121);
-            this.lblPrezime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPrezime.Location = new System.Drawing.Point(20, 98);
             this.lblPrezime.Name = "lblPrezime";
-            this.lblPrezime.Size = new System.Drawing.Size(59, 17);
+            this.lblPrezime.Size = new System.Drawing.Size(44, 13);
             this.lblPrezime.TabIndex = 16;
             this.lblPrezime.Text = "Prezime";
             // 
             // txtIme
             // 
-            this.txtIme.Location = new System.Drawing.Point(125, 80);
-            this.txtIme.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIme.Location = new System.Drawing.Point(94, 65);
             this.txtIme.Name = "txtIme";
-            this.txtIme.Size = new System.Drawing.Size(199, 22);
+            this.txtIme.Size = new System.Drawing.Size(150, 20);
             this.txtIme.TabIndex = 2;
             // 
             // txtTezina
             // 
-            this.txtTezina.Location = new System.Drawing.Point(21, 93);
-            this.txtTezina.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTezina.Location = new System.Drawing.Point(16, 76);
             this.txtTezina.Name = "txtTezina";
-            this.txtTezina.Size = new System.Drawing.Size(63, 22);
+            this.txtTezina.Size = new System.Drawing.Size(48, 20);
             this.txtTezina.TabIndex = 7;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(125, 245);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmail.Location = new System.Drawing.Point(94, 199);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(199, 22);
+            this.txtEmail.Size = new System.Drawing.Size(150, 20);
             this.txtEmail.TabIndex = 6;
             // 
             // txtTelefon
             // 
-            this.txtTelefon.Location = new System.Drawing.Point(125, 202);
-            this.txtTelefon.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTelefon.Location = new System.Drawing.Point(94, 164);
             this.txtTelefon.Name = "txtTelefon";
-            this.txtTelefon.Size = new System.Drawing.Size(199, 22);
+            this.txtTelefon.Size = new System.Drawing.Size(150, 20);
             this.txtTelefon.TabIndex = 5;
             // 
             // txtAdresa
             // 
-            this.txtAdresa.Location = new System.Drawing.Point(125, 161);
-            this.txtAdresa.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAdresa.Location = new System.Drawing.Point(94, 131);
             this.txtAdresa.Name = "txtAdresa";
-            this.txtAdresa.Size = new System.Drawing.Size(199, 22);
+            this.txtAdresa.Size = new System.Drawing.Size(150, 20);
             this.txtAdresa.TabIndex = 4;
             // 
             // txtPrezime
             // 
-            this.txtPrezime.Location = new System.Drawing.Point(125, 121);
-            this.txtPrezime.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPrezime.Location = new System.Drawing.Point(94, 98);
             this.txtPrezime.Name = "txtPrezime";
-            this.txtPrezime.Size = new System.Drawing.Size(199, 22);
+            this.txtPrezime.Size = new System.Drawing.Size(150, 20);
             this.txtPrezime.TabIndex = 3;
             // 
             // grpOpciPodaci
@@ -233,11 +217,9 @@
             this.grpOpciPodaci.Controls.Add(this.lblAdresa);
             this.grpOpciPodaci.Controls.Add(this.lblEmail);
             this.grpOpciPodaci.Controls.Add(this.lblIme);
-            this.grpOpciPodaci.Location = new System.Drawing.Point(16, 15);
-            this.grpOpciPodaci.Margin = new System.Windows.Forms.Padding(4);
+            this.grpOpciPodaci.Location = new System.Drawing.Point(12, 12);
             this.grpOpciPodaci.Name = "grpOpciPodaci";
-            this.grpOpciPodaci.Padding = new System.Windows.Forms.Padding(4);
-            this.grpOpciPodaci.Size = new System.Drawing.Size(365, 280);
+            this.grpOpciPodaci.Size = new System.Drawing.Size(274, 228);
             this.grpOpciPodaci.TabIndex = 24;
             this.grpOpciPodaci.TabStop = false;
             this.grpOpciPodaci.Text = "Opći podaci";
@@ -249,9 +231,10 @@
             this.cmbSpol.Items.AddRange(new object[] {
             "M",
             "Ž"});
-            this.cmbSpol.Location = new System.Drawing.Point(125, 34);
+            this.cmbSpol.Location = new System.Drawing.Point(94, 28);
+            this.cmbSpol.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbSpol.Name = "cmbSpol";
-            this.cmbSpol.Size = new System.Drawing.Size(53, 24);
+            this.cmbSpol.Size = new System.Drawing.Size(41, 21);
             this.cmbSpol.TabIndex = 1;
             // 
             // grpMjere
@@ -274,11 +257,9 @@
             this.grpMjere.Controls.Add(this.lblBokovi);
             this.grpMjere.Controls.Add(this.lblMasnoTkivoIzmjeni);
             this.grpMjere.Controls.Add(this.txtMasnoTkivo);
-            this.grpMjere.Location = new System.Drawing.Point(408, 15);
-            this.grpMjere.Margin = new System.Windows.Forms.Padding(4);
+            this.grpMjere.Location = new System.Drawing.Point(306, 12);
             this.grpMjere.Name = "grpMjere";
-            this.grpMjere.Padding = new System.Windows.Forms.Padding(4);
-            this.grpMjere.Size = new System.Drawing.Size(303, 280);
+            this.grpMjere.Size = new System.Drawing.Size(227, 228);
             this.grpMjere.TabIndex = 25;
             this.grpMjere.TabStop = false;
             this.grpMjere.Text = "Mjere";
@@ -287,123 +268,109 @@
             // lblBMIIzmjeni
             // 
             this.lblBMIIzmjeni.AutoSize = true;
-            this.lblBMIIzmjeni.Location = new System.Drawing.Point(232, 197);
-            this.lblBMIIzmjeni.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBMIIzmjeni.Location = new System.Drawing.Point(174, 160);
             this.lblBMIIzmjeni.Name = "lblBMIIzmjeni";
-            this.lblBMIIzmjeni.Size = new System.Drawing.Size(31, 17);
+            this.lblBMIIzmjeni.Size = new System.Drawing.Size(26, 13);
             this.lblBMIIzmjeni.TabIndex = 30;
             this.lblBMIIzmjeni.Text = "BMI";
             // 
             // txtStruk
             // 
-            this.txtStruk.Location = new System.Drawing.Point(122, 93);
-            this.txtStruk.Margin = new System.Windows.Forms.Padding(4);
+            this.txtStruk.Location = new System.Drawing.Point(92, 76);
             this.txtStruk.Name = "txtStruk";
-            this.txtStruk.Size = new System.Drawing.Size(63, 22);
+            this.txtStruk.Size = new System.Drawing.Size(48, 20);
             this.txtStruk.TabIndex = 8;
             // 
             // txtBokovi
             // 
-            this.txtBokovi.Location = new System.Drawing.Point(215, 149);
-            this.txtBokovi.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBokovi.Location = new System.Drawing.Point(161, 121);
             this.txtBokovi.Name = "txtBokovi";
-            this.txtBokovi.Size = new System.Drawing.Size(63, 22);
+            this.txtBokovi.Size = new System.Drawing.Size(48, 20);
             this.txtBokovi.TabIndex = 12;
             // 
             // txtBMI
             // 
-            this.txtBMI.Location = new System.Drawing.Point(215, 218);
-            this.txtBMI.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBMI.Location = new System.Drawing.Point(161, 177);
             this.txtBMI.Name = "txtBMI";
-            this.txtBMI.Size = new System.Drawing.Size(63, 22);
+            this.txtBMI.Size = new System.Drawing.Size(48, 20);
             this.txtBMI.TabIndex = 15;
             // 
             // txtPrsa
             // 
-            this.txtPrsa.Location = new System.Drawing.Point(21, 149);
-            this.txtPrsa.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPrsa.Location = new System.Drawing.Point(16, 121);
             this.txtPrsa.Name = "txtPrsa";
-            this.txtPrsa.Size = new System.Drawing.Size(63, 22);
+            this.txtPrsa.Size = new System.Drawing.Size(48, 20);
             this.txtPrsa.TabIndex = 10;
             // 
             // txtBedro
             // 
-            this.txtBedro.Location = new System.Drawing.Point(21, 218);
-            this.txtBedro.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBedro.Location = new System.Drawing.Point(16, 177);
             this.txtBedro.Name = "txtBedro";
-            this.txtBedro.Size = new System.Drawing.Size(63, 22);
+            this.txtBedro.Size = new System.Drawing.Size(48, 20);
             this.txtBedro.TabIndex = 13;
             // 
             // txtList
             // 
-            this.txtList.Location = new System.Drawing.Point(122, 218);
-            this.txtList.Margin = new System.Windows.Forms.Padding(4);
+            this.txtList.Location = new System.Drawing.Point(92, 177);
             this.txtList.Name = "txtList";
-            this.txtList.Size = new System.Drawing.Size(63, 22);
+            this.txtList.Size = new System.Drawing.Size(48, 20);
             this.txtList.TabIndex = 14;
             // 
             // lblListIzmjeni
             // 
             this.lblListIzmjeni.AutoSize = true;
-            this.lblListIzmjeni.Location = new System.Drawing.Point(137, 198);
-            this.lblListIzmjeni.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblListIzmjeni.Location = new System.Drawing.Point(103, 161);
             this.lblListIzmjeni.Name = "lblListIzmjeni";
-            this.lblListIzmjeni.Size = new System.Drawing.Size(30, 17);
+            this.lblListIzmjeni.Size = new System.Drawing.Size(23, 13);
             this.lblListIzmjeni.TabIndex = 29;
             this.lblListIzmjeni.Text = "List";
             // 
             // lblBedroIzmjeni
             // 
             this.lblBedroIzmjeni.AutoSize = true;
-            this.lblBedroIzmjeni.Location = new System.Drawing.Point(31, 197);
-            this.lblBedroIzmjeni.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBedroIzmjeni.Location = new System.Drawing.Point(23, 160);
             this.lblBedroIzmjeni.Name = "lblBedroIzmjeni";
-            this.lblBedroIzmjeni.Size = new System.Drawing.Size(46, 17);
+            this.lblBedroIzmjeni.Size = new System.Drawing.Size(35, 13);
             this.lblBedroIzmjeni.TabIndex = 27;
             this.lblBedroIzmjeni.Text = "Bedro";
             // 
             // txtBiceps
             // 
-            this.txtBiceps.Location = new System.Drawing.Point(122, 149);
-            this.txtBiceps.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBiceps.Location = new System.Drawing.Point(92, 121);
             this.txtBiceps.Name = "txtBiceps";
-            this.txtBiceps.Size = new System.Drawing.Size(63, 22);
+            this.txtBiceps.Size = new System.Drawing.Size(48, 20);
             this.txtBiceps.TabIndex = 11;
             // 
             // lblBicepsIzmjeni
             // 
             this.lblBicepsIzmjeni.AutoSize = true;
-            this.lblBicepsIzmjeni.Location = new System.Drawing.Point(128, 129);
-            this.lblBicepsIzmjeni.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBicepsIzmjeni.Location = new System.Drawing.Point(96, 105);
             this.lblBicepsIzmjeni.Name = "lblBicepsIzmjeni";
-            this.lblBicepsIzmjeni.Size = new System.Drawing.Size(50, 17);
+            this.lblBicepsIzmjeni.Size = new System.Drawing.Size(39, 13);
             this.lblBicepsIzmjeni.TabIndex = 28;
             this.lblBicepsIzmjeni.Text = "Biceps";
             // 
             // lblMasnoTkivoIzmjeni
             // 
             this.lblMasnoTkivoIzmjeni.AutoSize = true;
-            this.lblMasnoTkivoIzmjeni.Location = new System.Drawing.Point(208, 70);
-            this.lblMasnoTkivoIzmjeni.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMasnoTkivoIzmjeni.Location = new System.Drawing.Point(156, 57);
             this.lblMasnoTkivoIzmjeni.Name = "lblMasnoTkivoIzmjeni";
-            this.lblMasnoTkivoIzmjeni.Size = new System.Drawing.Size(83, 17);
+            this.lblMasnoTkivoIzmjeni.Size = new System.Drawing.Size(65, 13);
             this.lblMasnoTkivoIzmjeni.TabIndex = 31;
             this.lblMasnoTkivoIzmjeni.Text = "Masno tkivo";
             // 
             // txtMasnoTkivo
             // 
-            this.txtMasnoTkivo.Location = new System.Drawing.Point(215, 93);
-            this.txtMasnoTkivo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMasnoTkivo.Location = new System.Drawing.Point(161, 76);
             this.txtMasnoTkivo.Name = "txtMasnoTkivo";
-            this.txtMasnoTkivo.Size = new System.Drawing.Size(63, 22);
+            this.txtMasnoTkivo.Size = new System.Drawing.Size(48, 20);
             this.txtMasnoTkivo.TabIndex = 9;
             // 
             // btnOkDodajClan
             // 
-            this.btnOkDodajClan.Location = new System.Drawing.Point(536, 470);
-            this.btnOkDodajClan.Margin = new System.Windows.Forms.Padding(4);
+            this.btnOkDodajClan.Location = new System.Drawing.Point(351, 364);
             this.btnOkDodajClan.Name = "btnOkDodajClan";
-            this.btnOkDodajClan.Size = new System.Drawing.Size(175, 60);
+            this.btnOkDodajClan.Size = new System.Drawing.Size(155, 49);
             this.btnOkDodajClan.TabIndex = 18;
             this.btnOkDodajClan.Text = "OK";
             this.btnOkDodajClan.UseVisualStyleBackColor = true;
@@ -415,9 +382,11 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtBrojDolazaka);
             this.groupBox1.Controls.Add(this.cmbVrsta);
-            this.groupBox1.Location = new System.Drawing.Point(16, 302);
+            this.groupBox1.Location = new System.Drawing.Point(12, 245);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(365, 228);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(274, 185);
             this.groupBox1.TabIndex = 28;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Članarina";
@@ -425,9 +394,10 @@
             // lblDolasci
             // 
             this.lblDolasci.AutoSize = true;
-            this.lblDolasci.Location = new System.Drawing.Point(27, 108);
+            this.lblDolasci.Location = new System.Drawing.Point(20, 88);
+            this.lblDolasci.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDolasci.Name = "lblDolasci";
-            this.lblDolasci.Size = new System.Drawing.Size(94, 17);
+            this.lblDolasci.Size = new System.Drawing.Size(71, 13);
             this.lblDolasci.TabIndex = 3;
             this.lblDolasci.Text = "Broj dolazaka";
             this.lblDolasci.Visible = false;
@@ -435,17 +405,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 50);
+            this.label1.Location = new System.Drawing.Point(20, 41);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 17);
+            this.label1.Size = new System.Drawing.Size(68, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Tip članarine";
             // 
             // txtBrojDolazaka
             // 
-            this.txtBrojDolazaka.Location = new System.Drawing.Point(125, 105);
+            this.txtBrojDolazaka.Location = new System.Drawing.Point(94, 85);
+            this.txtBrojDolazaka.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBrojDolazaka.Name = "txtBrojDolazaka";
-            this.txtBrojDolazaka.Size = new System.Drawing.Size(100, 22);
+            this.txtBrojDolazaka.Size = new System.Drawing.Size(76, 20);
             this.txtBrojDolazaka.TabIndex = 17;
             this.txtBrojDolazaka.Visible = false;
             // 
@@ -456,22 +428,22 @@
             this.cmbVrsta.Items.AddRange(new object[] {
             "M",
             "G"});
-            this.cmbVrsta.Location = new System.Drawing.Point(125, 47);
+            this.cmbVrsta.Location = new System.Drawing.Point(94, 38);
+            this.cmbVrsta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbVrsta.Name = "cmbVrsta";
-            this.cmbVrsta.Size = new System.Drawing.Size(56, 24);
+            this.cmbVrsta.Size = new System.Drawing.Size(43, 21);
             this.cmbVrsta.TabIndex = 16;
             this.cmbVrsta.SelectedIndexChanged += new System.EventHandler(this.cmbVrsta_SelectedIndexChanged);
             // 
             // FrmDodajČlana
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(736, 543);
+            this.ClientSize = new System.Drawing.Size(552, 441);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnOkDodajClan);
             this.Controls.Add(this.grpMjere);
             this.Controls.Add(this.grpOpciPodaci);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmDodajČlana";
             this.Text = "Dodaj člana";
             this.Load += new System.EventHandler(this.DodajČlana_Load);

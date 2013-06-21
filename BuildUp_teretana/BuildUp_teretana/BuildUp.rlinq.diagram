@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EntityDiagrams>
-  <entityDiagramsDiagram dslVersion="2.0.0.0" absoluteBounds="0, 0, 11, 8.625" name="BuildUp" isDefault="true">
+  <entityDiagramsDiagram dslVersion="2.0.0.0" absoluteBounds="0, 0, 11, 8.625" name="BuildUp" fillColor="62, 62, 65" isDefault="true">
     <DomainModelMoniker name="/BuildUp" />
     <nestedChildShapes>
       <classShape Id="a6d982d5-9471-4af9-9578-50af75ef2937" absoluteBounds="5.625, 1.125, 1.5, 2.3396761067708329" fillColor="225, 249, 128, 67" outlineColor="213, 71, 0" textColor="White">
@@ -51,7 +51,7 @@
           <elementListCompartment Id="b2eef10e-1824-4b13-8010-464eb251a85e" absoluteBounds="3.265, 3.6248893229166663, 1.4700000000000002, 0.8262939453125" name="NavigationCompartment" titleTextColor="Black" itemTextColor="Black" />
         </nestedChildShapes>
       </classShape>
-      <associationConnector edgePoints="[(1.5 : 4.75); (1.5 : 3.72427897135417); (2.5 : 3.72427897135417); (2.5 : 3.39176266080729); (3.25 : 3.39176266080729)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <associationConnector edgePoints="[(1.5 : 4.75); (1.5 : 3.72427897135417); (2.5 : 3.72427897135417); (2.5 : 3.39176266080729); (3.25 : 3.39176266080729)]" fixedFrom="NotFixed" fixedTo="NotFixed">
         <AssociationMoniker Id="6bbffc99-b68e-4495-99a4-63b280842f2b" />
         <relativeChildShapes />
         <nodes>
@@ -75,7 +75,7 @@
           <classShapeMoniker Id="8ace398d-d472-448e-a82f-1a3dff7f30ce" />
         </nodes>
       </associationConnector>
-      <associationConnector edgePoints="[(2.25 : 2.25838133040365); (3.25 : 2.25838133040365)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <associationConnector edgePoints="[(2.25 : 2.25838133040365); (3.25 : 2.25838133040365)]" fixedFrom="NotFixed" fixedTo="NotFixed">
         <AssociationMoniker Id="5d0ccf72-c31e-4fe1-8e1c-f0638de7126d" />
         <relativeChildShapes />
         <nodes>

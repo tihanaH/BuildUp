@@ -151,10 +151,10 @@
           <orm:column name="Broj_dolazaka" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
         </orm:field>
         <orm:field name="_mjesec_uplate" property="Mjesec_uplate" behavior="readwrite" uniqueId="3647d45c-51f6-481d-bd57-d53085dad43e" type="System.String">
-          <orm:column nullable="true" length="2" name="mjesec_uplate" scale="0" sql-type="varchar" ado-type="UnicodeStringVariableLength" />
+          <orm:column name="mjesec_uplate" sql-type="varchar" nullable="true" length="2" scale="0" ado-type="UnicodeStringVariableLength" />
         </orm:field>
         <orm:field name="_godina_uplate" property="Godina_uplate" behavior="readwrite" uniqueId="9337e927-82a2-463f-9341-2525265d2160" type="System.String">
-          <orm:column nullable="true" length="4" name="godina_uplate" scale="0" sql-type="varchar" ado-type="UnicodeStringVariableLength" />
+          <orm:column name="godina_uplate" sql-type="varchar" nullable="true" length="4" scale="0" ado-type="UnicodeStringVariableLength" />
         </orm:field>
         <orm:field name="_clan" property="Clan" behavior="readwrite" uniqueId="b45c9272-08b6-4076-b40e-a3081a344f8e" type="BuildUp_teretana.Clan">
           <orm:reference uniqueId="5d0ccf72-c31e-4fe1-8e1c-f0638de7126d">
@@ -250,8 +250,8 @@
         <orm:column name="BrojIskaznice" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
         <orm:column name="Vrsta" sql-type="varchar" nullable="true" length="1" scale="0" ado-type="UnicodeStringVariableLength" />
         <orm:column name="Broj_dolazaka" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
-        <orm:column nullable="true" length="2" name="mjesec_uplate" scale="0" sql-type="varchar" ado-type="UnicodeStringVariableLength" />
-        <orm:column nullable="true" length="4" name="godina_uplate" scale="0" sql-type="varchar" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="mjesec_uplate" sql-type="varchar" nullable="true" length="2" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="godina_uplate" sql-type="varchar" nullable="true" length="4" scale="0" ado-type="UnicodeStringVariableLength" />
         <orm:constraint name="Clanarina_BrojIskaznice_fkey" destination-table="Clan">
           <orm:column name="BrojIskaznice" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
         </orm:constraint>

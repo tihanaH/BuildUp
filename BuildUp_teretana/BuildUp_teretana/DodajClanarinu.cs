@@ -56,11 +56,11 @@ namespace BuildUp_teretana
             }
             else 
             {
-                using (BuildUp dbconext = new BuildUp()) 
+                using (BuildUp dbcontext = new BuildUp()) 
                 {
                     
 
-                    Clanarina nova_clanarina=dbconext.Clanarinas.FirstOrDefault(clanarina=>clanarina.BrojIskaznice==int.Parse(brojiskaznice));
+                    Clanarina nova_clanarina=dbcontext.Clanarinas.FirstOrDefault(clanarina=>clanarina.BrojIskaznice==int.Parse(brojiskaznice));
 
                     nova_clanarina.Mjesec_uplate = DateTime.Now.Month.ToString();
                     nova_clanarina.Godina_uplate = DateTime.Now.Year.ToString();
@@ -69,7 +69,7 @@ namespace BuildUp_teretana
 
                     else nova_clanarina.Broj_dolazaka = int.Parse(txtBrojDolazaka.Text);
                   
-                    dbconext.SaveChanges();
+                    dbcontext.SaveChanges();
                     MessageBox.Show("Uspješno ažurirana članarina!");
                 }
                 this.Close();

@@ -125,6 +125,12 @@
     <Compile Include="Sprava.generated.cs">
       <DependentUpon>BuildUp.rlinq</DependentUpon>
     </Compile>
+    <Compile Include="Sprave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sprave.Designer.cs">
+      <DependentUpon>Sprave.cs</DependentUpon>
+    </Compile>
     <Compile Include="VrijemeNaSpravi.generated.cs">
       <DependentUpon>BuildUp.rlinq</DependentUpon>
     </Compile>
@@ -182,6 +188,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Sprave.resx">
+      <DependentUpon>Sprave.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Članarine.resx">
       <DependentUpon>Članarine.cs</DependentUpon>
     </EmbeddedResource>

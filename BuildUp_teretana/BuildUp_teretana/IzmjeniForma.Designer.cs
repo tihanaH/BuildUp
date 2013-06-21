@@ -45,10 +45,9 @@
             // 
             // btnSpremiPromjene
             // 
-            this.btnSpremiPromjene.Location = new System.Drawing.Point(317, 367);
-            this.btnSpremiPromjene.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSpremiPromjene.Location = new System.Drawing.Point(78, 246);
             this.btnSpremiPromjene.Name = "btnSpremiPromjene";
-            this.btnSpremiPromjene.Size = new System.Drawing.Size(175, 60);
+            this.btnSpremiPromjene.Size = new System.Drawing.Size(131, 49);
             this.btnSpremiPromjene.TabIndex = 31;
             this.btnSpremiPromjene.Text = "Spremi promjene";
             this.btnSpremiPromjene.UseVisualStyleBackColor = true;
@@ -66,113 +65,100 @@
             this.grpOpciPodaciIzmjeni.Controls.Add(this.lblAdresaIzmjeni);
             this.grpOpciPodaciIzmjeni.Controls.Add(this.lblEmailIzmjeni);
             this.grpOpciPodaciIzmjeni.Controls.Add(this.lblImeIzmjeni);
-            this.grpOpciPodaciIzmjeni.Location = new System.Drawing.Point(187, 26);
-            this.grpOpciPodaciIzmjeni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpOpciPodaciIzmjeni.Location = new System.Drawing.Point(12, 12);
             this.grpOpciPodaciIzmjeni.Name = "grpOpciPodaciIzmjeni";
-            this.grpOpciPodaciIzmjeni.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.grpOpciPodaciIzmjeni.Size = new System.Drawing.Size(365, 256);
+            this.grpOpciPodaciIzmjeni.Size = new System.Drawing.Size(274, 208);
             this.grpOpciPodaciIzmjeni.TabIndex = 28;
             this.grpOpciPodaciIzmjeni.TabStop = false;
             this.grpOpciPodaciIzmjeni.Text = "Opći podaci";
             // 
             // txtPrezimeIzmjeni
             // 
-            this.txtPrezimeIzmjeni.Location = new System.Drawing.Point(125, 80);
-            this.txtPrezimeIzmjeni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPrezimeIzmjeni.Location = new System.Drawing.Point(94, 65);
             this.txtPrezimeIzmjeni.Name = "txtPrezimeIzmjeni";
-            this.txtPrezimeIzmjeni.Size = new System.Drawing.Size(199, 22);
+            this.txtPrezimeIzmjeni.Size = new System.Drawing.Size(150, 20);
             this.txtPrezimeIzmjeni.TabIndex = 23;
             // 
             // txtAdresaIzmjeni
             // 
-            this.txtAdresaIzmjeni.Location = new System.Drawing.Point(125, 121);
-            this.txtAdresaIzmjeni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAdresaIzmjeni.Location = new System.Drawing.Point(94, 98);
             this.txtAdresaIzmjeni.Name = "txtAdresaIzmjeni";
-            this.txtAdresaIzmjeni.Size = new System.Drawing.Size(199, 22);
+            this.txtAdresaIzmjeni.Size = new System.Drawing.Size(150, 20);
             this.txtAdresaIzmjeni.TabIndex = 22;
             // 
             // txtTelefonIzmjeni
             // 
-            this.txtTelefonIzmjeni.Location = new System.Drawing.Point(125, 161);
-            this.txtTelefonIzmjeni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTelefonIzmjeni.Location = new System.Drawing.Point(94, 131);
             this.txtTelefonIzmjeni.Name = "txtTelefonIzmjeni";
-            this.txtTelefonIzmjeni.Size = new System.Drawing.Size(199, 22);
+            this.txtTelefonIzmjeni.Size = new System.Drawing.Size(150, 20);
             this.txtTelefonIzmjeni.TabIndex = 21;
             // 
             // txtEmailIzmjeni
             // 
-            this.txtEmailIzmjeni.Location = new System.Drawing.Point(125, 202);
-            this.txtEmailIzmjeni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmailIzmjeni.Location = new System.Drawing.Point(94, 164);
             this.txtEmailIzmjeni.Name = "txtEmailIzmjeni";
-            this.txtEmailIzmjeni.Size = new System.Drawing.Size(199, 22);
+            this.txtEmailIzmjeni.Size = new System.Drawing.Size(150, 20);
             this.txtEmailIzmjeni.TabIndex = 20;
             // 
             // txtImeIzmjeni
             // 
-            this.txtImeIzmjeni.Location = new System.Drawing.Point(125, 39);
-            this.txtImeIzmjeni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtImeIzmjeni.Location = new System.Drawing.Point(94, 32);
             this.txtImeIzmjeni.Name = "txtImeIzmjeni";
-            this.txtImeIzmjeni.Size = new System.Drawing.Size(199, 22);
+            this.txtImeIzmjeni.Size = new System.Drawing.Size(150, 20);
             this.txtImeIzmjeni.TabIndex = 17;
             // 
             // lblPrezimeIzmjeni
             // 
             this.lblPrezimeIzmjeni.AutoSize = true;
-            this.lblPrezimeIzmjeni.Location = new System.Drawing.Point(21, 84);
-            this.lblPrezimeIzmjeni.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPrezimeIzmjeni.Location = new System.Drawing.Point(16, 68);
             this.lblPrezimeIzmjeni.Name = "lblPrezimeIzmjeni";
-            this.lblPrezimeIzmjeni.Size = new System.Drawing.Size(59, 17);
+            this.lblPrezimeIzmjeni.Size = new System.Drawing.Size(44, 13);
             this.lblPrezimeIzmjeni.TabIndex = 16;
             this.lblPrezimeIzmjeni.Text = "Prezime";
             // 
             // lblTelefonIzmjeni
             // 
             this.lblTelefonIzmjeni.AutoSize = true;
-            this.lblTelefonIzmjeni.Location = new System.Drawing.Point(21, 165);
-            this.lblTelefonIzmjeni.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTelefonIzmjeni.Location = new System.Drawing.Point(16, 134);
             this.lblTelefonIzmjeni.Name = "lblTelefonIzmjeni";
-            this.lblTelefonIzmjeni.Size = new System.Drawing.Size(56, 17);
+            this.lblTelefonIzmjeni.Size = new System.Drawing.Size(43, 13);
             this.lblTelefonIzmjeni.TabIndex = 15;
             this.lblTelefonIzmjeni.Text = "Telefon";
             // 
             // lblAdresaIzmjeni
             // 
             this.lblAdresaIzmjeni.AutoSize = true;
-            this.lblAdresaIzmjeni.Location = new System.Drawing.Point(21, 124);
-            this.lblAdresaIzmjeni.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAdresaIzmjeni.Location = new System.Drawing.Point(16, 101);
             this.lblAdresaIzmjeni.Name = "lblAdresaIzmjeni";
-            this.lblAdresaIzmjeni.Size = new System.Drawing.Size(53, 17);
+            this.lblAdresaIzmjeni.Size = new System.Drawing.Size(40, 13);
             this.lblAdresaIzmjeni.TabIndex = 8;
             this.lblAdresaIzmjeni.Text = "Adresa";
             // 
             // lblEmailIzmjeni
             // 
             this.lblEmailIzmjeni.AutoSize = true;
-            this.lblEmailIzmjeni.Location = new System.Drawing.Point(21, 206);
-            this.lblEmailIzmjeni.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEmailIzmjeni.Location = new System.Drawing.Point(16, 167);
             this.lblEmailIzmjeni.Name = "lblEmailIzmjeni";
-            this.lblEmailIzmjeni.Size = new System.Drawing.Size(47, 17);
+            this.lblEmailIzmjeni.Size = new System.Drawing.Size(35, 13);
             this.lblEmailIzmjeni.TabIndex = 7;
             this.lblEmailIzmjeni.Text = "E-mail";
             // 
             // lblImeIzmjeni
             // 
             this.lblImeIzmjeni.AutoSize = true;
-            this.lblImeIzmjeni.Location = new System.Drawing.Point(21, 43);
-            this.lblImeIzmjeni.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblImeIzmjeni.Location = new System.Drawing.Point(16, 35);
             this.lblImeIzmjeni.Name = "lblImeIzmjeni";
-            this.lblImeIzmjeni.Size = new System.Drawing.Size(30, 17);
+            this.lblImeIzmjeni.Size = new System.Drawing.Size(24, 13);
             this.lblImeIzmjeni.TabIndex = 0;
             this.lblImeIzmjeni.Text = "Ime";
             // 
             // FrmIzmjeni
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(732, 530);
+            this.ClientSize = new System.Drawing.Size(302, 319);
             this.Controls.Add(this.btnSpremiPromjene);
             this.Controls.Add(this.grpOpciPodaciIzmjeni);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmIzmjeni";
             this.Text = "Izmjeni";
             this.Load += new System.EventHandler(this.FrmIzmjeni_Load);

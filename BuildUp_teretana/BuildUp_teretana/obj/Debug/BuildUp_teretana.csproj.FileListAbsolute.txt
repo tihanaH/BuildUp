@@ -74,3 +74,7 @@ C:\Users\Anamarija\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\ob
 C:\Users\Anamarija\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.FrmČlanovi.resources
 C:\Users\Anamarija\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.csproj.GenerateResource.Cache
 C:\Users\Anamarija\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.DodajClanarinu.resources
+F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.DodajClanarinu.resources
+F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\bin\Debug\Telerik.OpenAccess.35.Extensions.dll
+F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\bin\Debug\Telerik.OpenAccess.35.Extensions.xml
+F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.Sprave.resources

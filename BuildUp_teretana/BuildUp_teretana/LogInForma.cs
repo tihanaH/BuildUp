@@ -31,10 +31,10 @@ namespace BuildUp_teretana
             else
             {
                 bool pronadjen = false; 
-                using (BuildUp dbContext = new BuildUp())
+                using (BuildUp dbcontext = new BuildUp())
                 {
                     var lowNums =
-                        from zaposlenici in dbContext.Zaposleniks
+                        from zaposlenici in dbcontext.Zaposleniks
                         where zaposlenici.Lozinka == txtLozinka.Text && zaposlenici.KorisnickoIme == txtKorisnickoIme.Text
                         select zaposlenici;       
 

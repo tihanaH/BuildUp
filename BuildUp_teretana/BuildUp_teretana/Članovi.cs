@@ -35,11 +35,11 @@ namespace BuildUp_teretana
 
         private List<Clan> dohvati_clanove()
         {
-        using (BuildUp dbContext = new BuildUp())
+        using (BuildUp dbcontext = new BuildUp())
             {
                 var q =
-                    from clanovi in dbContext.Clans
-                    join clanarina in dbContext.Clanarinas on clanovi.BrojIskaznice equals clanarina.BrojIskaznice
+                    from clanovi in dbcontext.Clans
+                    join clanarina in dbcontext.Clanarinas on clanovi.BrojIskaznice equals clanarina.BrojIskaznice
                     where (clanarina.Vrsta=='G'&&clanarina.Godina_uplate==DateTime.Now.Year.ToString())
                     ||(clanarina.Vrsta=='M'&&clanarina.Mjesec_uplate==DateTime.Now.Month.ToString()&&clanarina.Broj_dolazaka>0)
 
@@ -187,6 +187,32 @@ namespace BuildUp_teretana
 
                 }
             }
+        }
+
+        private void evidencijaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dolazakToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int indeks_selektiranog_retka = dataGridView1.CurrentCell.RowIndex;
+                FrmEvidencija evidencijadolaska = new FrmEvidencija(dataGridView1.Rows[indeks_selektiranog_retka].Cells[0].Value.ToString());
+                evidencijadolaska.ShowDialog();
+                PrikaziSveAktivneClanove();
+            }
+            catch
+            {
+                MessageBox.Show("Niste odabrali korisnika!");
+            }
+        }
+
+        private void spraveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Sprave forma_sprava = new Sprave();
+            forma_sprava.ShowDialog();
         } 
     }
 }
