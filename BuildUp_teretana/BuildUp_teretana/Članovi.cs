@@ -16,7 +16,12 @@ namespace BuildUp_teretana
         {
             InitializeComponent();
             this.CenterToParent();
-            List<Clan> clanovi=dohvati_clanove();
+            PrikaziSveAktivneClanove();
+        }
+
+        private void PrikaziSveAktivneClanove()
+        {
+            List<Clan> clanovi = dohvati_clanove();
             dataGridView1.DataSource = clanovi;
             dataGridView1.Columns[6].Visible = false;
             dataGridView1.Columns[7].Visible = false;
@@ -24,6 +29,8 @@ namespace BuildUp_teretana
             dataGridView1.Columns[9].Visible = false;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridView1.DefaultCellStyle.BackColor = Color.White;
+
         }
 
         private List<Clan> dohvati_clanove()
@@ -32,6 +39,11 @@ namespace BuildUp_teretana
             {
                 var q =
                     from clanovi in dbContext.Clans
+                    join clanarina in dbContext.Clanarinas on clanovi.BrojIskaznice equals clanarina.BrojIskaznice
+                    where (clanarina.Vrsta=='G'&&clanarina.Godina_uplate==DateTime.Now.Year.ToString())
+                    ||(clanarina.Vrsta=='M'&&clanarina.Mjesec_uplate==DateTime.Now.Month.ToString()&&clanarina.Broj_dolazaka>0)
+
+
                     select new Clan()
                     {
                         Adresa = clanovi.Adresa,
@@ -57,6 +69,7 @@ namespace BuildUp_teretana
                     select clanovi;
 
                 foreach (var clan in clan_za_brisanje)
+     
                 {
                     dbContext.Delete(clan);
                 }
@@ -84,5 +97,96 @@ namespace BuildUp_teretana
             List<Clan> svi_clanovi = dohvati_clanove();
             dataGridView1.DataSource = svi_clanovi;
         }
+
+        private List<Clan> dohvati_neaktivne_clanove()
+        {
+            using (BuildUp dbContext = new BuildUp())
+            {
+                var q =
+                    from clanovi in dbContext.Clans
+                    join clanarina in dbContext.Clanarinas on clanovi.BrojIskaznice equals clanarina.BrojIskaznice
+                    where (clanarina.Vrsta == 'G' && clanarina.Godina_uplate != DateTime.Now.Year.ToString())
+                    || (clanarina.Vrsta == 'M' && clanarina.Mjesec_uplate != DateTime.Now.Month.ToString() && clanarina.Broj_dolazaka == 0)
+         
+                    select new Clan()
+                    {
+                        Adresa = clanovi.Adresa,
+                        BrojIskaznice = clanovi.BrojIskaznice,
+                        Ime = clanovi.Ime,
+                        Email = clanovi.Email,
+                        Kontakt = clanovi.Kontakt,
+                        Prezime = clanovi.Prezime,
+                        Spol = clanovi.Spol
+                    };
+                return q.ToList();
+            }
+        
+        }
+        private void promijeniToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PrikaziPopisNeaktivnihClanova();
+
+        }
+
+        private void PrikaziPopisNeaktivnihClanova()
+        {
+
+            List<Clan> clanovi = dohvati_neaktivne_clanove();
+            btnAktivirajClanarinu.Visible = true;
+            btnBack.Visible = true;
+            dataGridView1.DataSource = clanovi;
+            dataGridView1.Columns[6].Visible = false;
+            dataGridView1.Columns[7].Visible = false;
+            dataGridView1.Columns[8].Visible = false;
+            dataGridView1.Columns[9].Visible = false;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridView1.DefaultCellStyle.BackColor = Color.MistyRose;
+            dataGridView1.DefaultCellStyle.BackColor = Color.MistyRose;
+        }
+
+        private void btnAktivirajClanarinu_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int indeks_selektiranog_retka = dataGridView1.CurrentCell.RowIndex;
+                DodajClanarinu dodajclanarinu = new DodajClanarinu(dataGridView1.Rows[indeks_selektiranog_retka].Cells[0].Value.ToString());
+                dodajclanarinu.ShowDialog();
+                PrikaziPopisNeaktivnihClanova();
+            }
+            catch
+            {
+                MessageBox.Show("Nije uspješno selektiran član!");
+            }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            btnBack.Visible = false;
+            btnAktivirajClanarinu.Visible = false;
+            PrikaziSveAktivneClanove();
+
+        }
+
+        private void btnTraziClan_Click(object sender, EventArgs e)
+        {
+            btnBack.Visible = true;
+            dataGridView1.CurrentCell = null;
+            
+            for (int i = 0;i<dataGridView1.Rows.Count;i++)
+            {
+                dataGridView1.Rows[i].Visible = true;
+                if (string.Compare(dataGridView1.Rows[i].Cells[1].Value.ToString() + " " + dataGridView1.Rows[i].Cells[2].Value.ToString(), txtTraziClan.Text) == 0)
+                {
+                    
+                }
+                else 
+                {
+                    dataGridView1.Rows[i].Visible = false;
+
+
+                }
+            }
+        } 
     }
 }

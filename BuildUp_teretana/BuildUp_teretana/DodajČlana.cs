@@ -49,6 +49,13 @@ namespace BuildUp_teretana
             {
                 MessageBox.Show("Morate upisati telefon korisnika!");
             }
+            else if (cmbVrsta.Text == "") 
+            {
+                MessageBox.Show("Niste odabrali vrstu članarine!");
+            }
+            else if (cmbVrsta.Text == "M" && txtBrojDolazaka.Text == "") {
+                MessageBox.Show("Niste upisali mjesečni broj dolazaka za članarinu!");
+            }
             else
             {
                 Clan clan = new Clan();
@@ -92,11 +99,27 @@ namespace BuildUp_teretana
                 if (txtBiceps.Text == "") izvjesce.Biceps = 0;
                 else izvjesce.Biceps = int.Parse(txtBiceps.Text);
 
+                Clanarina clanarina = new Clanarina();
+                clanarina.Clan = clan;
+
+                if (cmbVrsta.Text == "G")
+                {
+                    clanarina.Broj_dolazaka = 9999;
+                }
+
+                else
+                {
+                    clanarina.Broj_dolazaka = int.Parse(txtBrojDolazaka.Text);
+                }
+                clanarina.Vrsta = cmbVrsta.Text[0];
+                clanarina.Godina_uplate = DateTime.Now.Year.ToString();
+                clanarina.Mjesec_uplate = DateTime.Now.Month.ToString();
 
                 using (BuildUp dbcontext = new BuildUp())
                 {
                     dbcontext.Add(clan);
                     dbcontext.Add(izvjesce);
+                    dbcontext.Add(clanarina);
                     dbcontext.SaveChanges();
                 }
                 MessageBox.Show("Uspješno dodan član!");
@@ -107,6 +130,22 @@ namespace BuildUp_teretana
         private void grpMjere_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void cmbVrsta_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbVrsta.Text == "M")
+            {
+                lblDolasci.Visible = true;
+                txtBrojDolazaka.Visible = true;
+            }
+
+            else
+            {
+                lblDolasci.Visible = false;
+                txtBrojDolazaka.Visible = false;
+
+            }
         }
     }
 }

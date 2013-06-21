@@ -76,6 +76,32 @@ namespace BuildUp_teretana
 			}
 		}
 		
+		private string _mjesec_uplate;
+		public virtual string Mjesec_uplate
+		{
+			get
+			{
+				return this._mjesec_uplate;
+			}
+			set
+			{
+				this._mjesec_uplate = value;
+			}
+		}
+		
+		private string _godina_uplate;
+		public virtual string Godina_uplate
+		{
+			get
+			{
+				return this._godina_uplate;
+			}
+			set
+			{
+				this._godina_uplate = value;
+			}
+		}
+		
 		private Clan _clan;
 		public virtual Clan Clan
 		{

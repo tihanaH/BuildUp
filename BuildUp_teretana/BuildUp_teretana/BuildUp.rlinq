@@ -110,19 +110,19 @@
           <orm:column name="PotrosnjaKalorija" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
         </orm:field>
         <orm:field name="_masnoTkvio" property="MasnoTkvio" behavior="readwrite" uniqueId="114699fa-69b4-4743-a967-e0dc3e8fbd19" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
-          <orm:column nullable="true" length="0" name="MasnoTkvio" scale="0" sql-type="int4" ado-type="Int32" />
+          <orm:column name="MasnoTkvio" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
         </orm:field>
         <orm:field name="_list" property="List" behavior="readwrite" uniqueId="498478cc-81d7-4b41-8f8c-2dda65bebae6" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
-          <orm:column nullable="true" length="0" name="List" scale="0" sql-type="int4" ado-type="Int32" />
+          <orm:column name="List" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
         </orm:field>
         <orm:field name="_bMI" property="BMI" behavior="readwrite" uniqueId="90f048cc-af70-4afb-8494-810ce6ceb66f" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
-          <orm:column nullable="true" length="0" name="BMI" scale="0" sql-type="int4" ado-type="Int32" />
+          <orm:column name="BMI" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
         </orm:field>
         <orm:field name="_biceps" property="Biceps" behavior="readwrite" uniqueId="9a349363-a8b0-4f6f-a703-f03c44ff7aa9" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
-          <orm:column nullable="true" length="0" name="Biceps" scale="0" sql-type="int4" ado-type="Int32" />
+          <orm:column name="Biceps" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
         </orm:field>
         <orm:field name="_bedro" property="Bedro" behavior="readwrite" uniqueId="d132a5b3-9b3a-486b-8fb4-d3edf72733b7" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
-          <orm:column nullable="true" length="0" name="Bedro" scale="0" sql-type="int4" ado-type="Int32" />
+          <orm:column name="Bedro" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
         </orm:field>
         <orm:field name="_clan" property="Clan" behavior="readwrite" uniqueId="9447fb89-9aa2-4d1a-a116-f6b653a6cb32" type="BuildUp_teretana.Clan">
           <orm:reference uniqueId="14597fec-72c4-4db7-8591-359ff3b40114">
@@ -149,6 +149,12 @@
         </orm:field>
         <orm:field name="_broj_dolazaka" property="Broj_dolazaka" behavior="readwrite" uniqueId="61ff2216-3f2c-4f24-94c6-a2f8f67ba51f" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
           <orm:column name="Broj_dolazaka" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_mjesec_uplate" property="Mjesec_uplate" behavior="readwrite" uniqueId="3647d45c-51f6-481d-bd57-d53085dad43e" type="System.String">
+          <orm:column nullable="true" length="2" name="mjesec_uplate" scale="0" sql-type="varchar" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_godina_uplate" property="Godina_uplate" behavior="readwrite" uniqueId="9337e927-82a2-463f-9341-2525265d2160" type="System.String">
+          <orm:column nullable="true" length="4" name="godina_uplate" scale="0" sql-type="varchar" ado-type="UnicodeStringVariableLength" />
         </orm:field>
         <orm:field name="_clan" property="Clan" behavior="readwrite" uniqueId="b45c9272-08b6-4076-b40e-a3081a344f8e" type="BuildUp_teretana.Clan">
           <orm:reference uniqueId="5d0ccf72-c31e-4fe1-8e1c-f0638de7126d">
@@ -230,11 +236,11 @@
         <orm:column name="ObujamStruka" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
         <orm:column name="ObujamBokova" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
         <orm:column name="PotrosnjaKalorija" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
-        <orm:column nullable="true" length="0" name="MasnoTkvio" scale="0" sql-type="int4" ado-type="Int32" />
-        <orm:column nullable="true" length="0" name="List" scale="0" sql-type="int4" ado-type="Int32" />
-        <orm:column nullable="true" length="0" name="BMI" scale="0" sql-type="int4" ado-type="Int32" />
-        <orm:column nullable="true" length="0" name="Biceps" scale="0" sql-type="int4" ado-type="Int32" />
-        <orm:column nullable="true" length="0" name="Bedro" scale="0" sql-type="int4" ado-type="Int32" />
+        <orm:column name="MasnoTkvio" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="List" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="BMI" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="Biceps" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="Bedro" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
         <orm:constraint name="Izvjesce_BrojIskaznice_fkey" destination-table="Clan">
           <orm:column name="BrojIskaznice" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
         </orm:constraint>
@@ -244,6 +250,8 @@
         <orm:column name="BrojIskaznice" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
         <orm:column name="Vrsta" sql-type="varchar" nullable="true" length="1" scale="0" ado-type="UnicodeStringVariableLength" />
         <orm:column name="Broj_dolazaka" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
+        <orm:column nullable="true" length="2" name="mjesec_uplate" scale="0" sql-type="varchar" ado-type="UnicodeStringVariableLength" />
+        <orm:column nullable="true" length="4" name="godina_uplate" scale="0" sql-type="varchar" ado-type="UnicodeStringVariableLength" />
         <orm:constraint name="Clanarina_BrojIskaznice_fkey" destination-table="Clan">
           <orm:column name="BrojIskaznice" sql-type="int4" nullable="true" length="0" scale="0" ado-type="Int32" />
         </orm:constraint>
@@ -390,6 +398,8 @@
       <Property Id="61ff2216-3f2c-4f24-94c6-a2f8f67ba51f" name="Broj_dolazaka" type="Int32" label="Broj_dolazaka : Int32" nullable="true" kind="Persistent" fieldName="_broj_dolazaka" />
       <Property Id="cfab0cf1-8108-4d40-8cd5-91bff0523b65" name="BrojIskaznice" type="Int32" label="BrojIskaznice : Int32" kind="Persistent" fieldName="_brojIskaznice" />
       <Property Id="85ad1473-2512-4b02-8219-805e0a1d4aa1" name="Vrsta" type="Char" label="Vrsta : Char" nullable="true" kind="Persistent" fieldName="_vrsta" />
+      <Property Id="3647d45c-51f6-481d-bd57-d53085dad43e" name="Mjesec_uplate" label="Mjesec_uplate : String" kind="Persistent" fieldName="_mjesec_uplate" />
+      <Property Id="9337e927-82a2-463f-9341-2525265d2160" name="Godina_uplate" label="Godina_uplate : String" kind="Persistent" fieldName="_godina_uplate" />
       <AssociationTargets>
         <Association Id="5d0ccf72-c31e-4fe1-8e1c-f0638de7126d" SourceMultiplicity="ZeroOne" name="ClanarinaHasClan">
           <DomainClassMoniker name="/BuildUp/Clan" />

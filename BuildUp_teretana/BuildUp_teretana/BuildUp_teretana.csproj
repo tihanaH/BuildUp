@@ -57,6 +57,12 @@
     <Compile Include="Clanarina.generated.cs">
       <DependentUpon>BuildUp.rlinq</DependentUpon>
     </Compile>
+    <Compile Include="DodajClanarinu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajClanarinu.Designer.cs">
+      <DependentUpon>DodajClanarinu.cs</DependentUpon>
+    </Compile>
     <Compile Include="DodajMjestoVježbanja.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,9 @@
     <Compile Include="Članovi.Designer.cs">
       <DependentUpon>Članovi.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DodajClanarinu.resx">
+      <DependentUpon>DodajClanarinu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DodajMjestoVježbanja.resx">
       <DependentUpon>DodajMjestoVježbanja.cs</DependentUpon>
     </EmbeddedResource>
