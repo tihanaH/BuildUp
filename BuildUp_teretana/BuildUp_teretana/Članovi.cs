@@ -213,6 +213,49 @@ namespace BuildUp_teretana
         {
             Sprave forma_sprava = new Sprave();
             forma_sprava.ShowDialog();
+        }
+
+        private void programVježbanjaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int indeks_selektiranog_retka = dataGridView1.CurrentCell.RowIndex;
+                int broj_iskaznice_selektiranog = int.Parse(dataGridView1.Rows[indeks_selektiranog_retka].Cells[0].Value.ToString());
+                frmProgramVjezbanja program = new frmProgramVjezbanja(broj_iskaznice_selektiranog);
+                program.ShowDialog();
+            }
+            catch {
+                MessageBox.Show("Nema članova ili nije uspješno izvršena naredba!");
+            }
+        }
+
+        private void odlazakToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int indeks_selektiranog_retka = dataGridView1.CurrentCell.RowIndex;
+                int broj_iskaznice_selektiranog = int.Parse(dataGridView1.Rows[indeks_selektiranog_retka].Cells[0].Value.ToString());
+                frmProgramVjezbanja program_vjezbanja = new frmProgramVjezbanja(broj_iskaznice_selektiranog, true);
+                program_vjezbanja.ShowDialog();
+            }
+            catch {
+                MessageBox.Show("Nema članova ili nije uspješno izvršena naredba!");
+            }
+        }
+
+        private void izmijeniMjereToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int indeks_selektiranog_retka = dataGridView1.CurrentCell.RowIndex;
+                int broj_iskaznice_selektiranog = int.Parse(dataGridView1.Rows[indeks_selektiranog_retka].Cells[0].Value.ToString());
+                IzmijeniMjere izmijeni = new IzmijeniMjere(broj_iskaznice_selektiranog);
+                izmijeni.ShowDialog();
+            }
+            catch {
+                MessageBox.Show("Nije uspješno selektiran član ili nije uspješno izvršena naredba!");
+            }
+
         } 
     }
 }

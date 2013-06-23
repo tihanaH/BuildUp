@@ -15,11 +15,25 @@ namespace BuildUp_teretana
     {
         List<Sprava> sve_sprave;
         Sprava sprava_za_mijenjanje;
+        private int broj_iskaznice;
         public Sprave()
         {
             InitializeComponent();
+            this.CenterToParent();
             sve_sprave = dohvati_sve_sprave();
             podesi_dataGrid();
+        }
+
+        public Sprave(int broj_iskaznice) {
+            InitializeComponent();
+            this.CenterToParent();
+            btnDodajSpravu.Visible = false;
+            btnDodajUProgram.Visible = true;
+            btnPromijeniSpravu.Visible = false;
+            btnObrisiSpravu.Visible = false;
+            sve_sprave = dohvati_sve_sprave();
+            podesi_dataGrid();
+            this.broj_iskaznice = broj_iskaznice;
         }
 
         private void podesi_dataGrid()
@@ -160,6 +174,28 @@ namespace BuildUp_teretana
             else if (dialogresult == DialogResult.No)
             { 
 
+            }
+        }
+
+        private void btnDodajUProgram_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                VrijemeNaSpravi nova_sprava_u_programu = new VrijemeNaSpravi();
+
+                int indeks_selektiranog_retka = dataGridView1.CurrentCell.RowIndex;
+                nova_sprava_u_programu.ID_sprave = int.Parse(dataGridView1.Rows[indeks_selektiranog_retka].Cells[0].Value.ToString());
+                nova_sprava_u_programu.BrojIskaznice = broj_iskaznice;
+                nova_sprava_u_programu.Vrijeme = 0;
+                using (BuildUp dbcontext = new BuildUp()) {
+                    dbcontext.Add(nova_sprava_u_programu);
+                    dbcontext.SaveChanges();
+                }
+                MessageBox.Show("Uspješno dodana sprava u program!");
+                this.Close();
+            }
+            catch {
+                MessageBox.Show("Nije uspješno dodana sprava u program!");
             }
         }
     }
