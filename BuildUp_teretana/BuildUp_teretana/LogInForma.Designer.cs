@@ -103,7 +103,10 @@
             this.Controls.Add(this.txtKorisnickoIme);
             this.Controls.Add(this.lblKorisnickoIme);
             this.Controls.Add(this.btnLogin);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FrmLogin";
+            this.ShowIcon = false;
             this.Text = "BuildUp Log In";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

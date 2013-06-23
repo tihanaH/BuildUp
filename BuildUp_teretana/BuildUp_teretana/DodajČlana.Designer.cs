@@ -232,7 +232,7 @@
             "M",
             "Ž"});
             this.cmbSpol.Location = new System.Drawing.Point(94, 28);
-            this.cmbSpol.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbSpol.Margin = new System.Windows.Forms.Padding(2);
             this.cmbSpol.Name = "cmbSpol";
             this.cmbSpol.Size = new System.Drawing.Size(41, 21);
             this.cmbSpol.TabIndex = 1;
@@ -383,9 +383,9 @@
             this.groupBox1.Controls.Add(this.txtBrojDolazaka);
             this.groupBox1.Controls.Add(this.cmbVrsta);
             this.groupBox1.Location = new System.Drawing.Point(12, 245);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(274, 185);
             this.groupBox1.TabIndex = 28;
             this.groupBox1.TabStop = false;
@@ -415,7 +415,7 @@
             // txtBrojDolazaka
             // 
             this.txtBrojDolazaka.Location = new System.Drawing.Point(94, 85);
-            this.txtBrojDolazaka.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBrojDolazaka.Margin = new System.Windows.Forms.Padding(2);
             this.txtBrojDolazaka.Name = "txtBrojDolazaka";
             this.txtBrojDolazaka.Size = new System.Drawing.Size(76, 20);
             this.txtBrojDolazaka.TabIndex = 17;
@@ -429,7 +429,7 @@
             "M",
             "G"});
             this.cmbVrsta.Location = new System.Drawing.Point(94, 38);
-            this.cmbVrsta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbVrsta.Margin = new System.Windows.Forms.Padding(2);
             this.cmbVrsta.Name = "cmbVrsta";
             this.cmbVrsta.Size = new System.Drawing.Size(43, 21);
             this.cmbVrsta.TabIndex = 16;
@@ -444,7 +444,9 @@
             this.Controls.Add(this.btnOkDodajClan);
             this.Controls.Add(this.grpMjere);
             this.Controls.Add(this.grpOpciPodaci);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FrmDodajČlana";
+            this.ShowIcon = false;
             this.Text = "Dodaj člana";
             this.Load += new System.EventHandler(this.DodajČlana_Load);
             this.grpOpciPodaci.ResumeLayout(false);

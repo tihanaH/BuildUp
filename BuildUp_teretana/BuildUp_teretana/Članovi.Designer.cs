@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnTraziClan = new System.Windows.Forms.Button();
             this.txtTraziClan = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -45,10 +45,10 @@
             this.odlazakToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.programVježbanjaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.spraveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.izmijeniMjereToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAktivirajClanarinu = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.lblPretraga = new System.Windows.Forms.Label();
-            this.izmijeniMjereToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -75,23 +75,23 @@
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(11, 108);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(727, 338);
             this.dataGridView1.TabIndex = 2;
@@ -195,6 +195,13 @@
             this.spraveToolStripMenuItem.Text = "Sprave";
             this.spraveToolStripMenuItem.Click += new System.EventHandler(this.spraveToolStripMenuItem_Click);
             // 
+            // izmijeniMjereToolStripMenuItem
+            // 
+            this.izmijeniMjereToolStripMenuItem.Name = "izmijeniMjereToolStripMenuItem";
+            this.izmijeniMjereToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.izmijeniMjereToolStripMenuItem.Text = "Izmijeni mjere";
+            this.izmijeniMjereToolStripMenuItem.Click += new System.EventHandler(this.izmijeniMjereToolStripMenuItem_Click);
+            // 
             // btnAktivirajClanarinu
             // 
             this.btnAktivirajClanarinu.Location = new System.Drawing.Point(11, 32);
@@ -227,13 +234,6 @@
             this.lblPretraga.TabIndex = 6;
             this.lblPretraga.Text = "Upišite ime i prezime člana";
             // 
-            // izmijeniMjereToolStripMenuItem
-            // 
-            this.izmijeniMjereToolStripMenuItem.Name = "izmijeniMjereToolStripMenuItem";
-            this.izmijeniMjereToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.izmijeniMjereToolStripMenuItem.Text = "Izmijeni mjere";
-            this.izmijeniMjereToolStripMenuItem.Click += new System.EventHandler(this.izmijeniMjereToolStripMenuItem_Click);
-            // 
             // FrmČlanovi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -246,9 +246,13 @@
             this.Controls.Add(this.txtTraziClan);
             this.Controls.Add(this.btnTraziClan);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "FrmČlanovi";
+            this.ShowIcon = false;
             this.Text = "BuildUp Članovi";
+            this.Load += new System.EventHandler(this.FrmČlanovi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

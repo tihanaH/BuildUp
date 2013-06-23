@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.btnPotvrdi = new System.Windows.Forms.GroupBox();
-            this.cmbTip = new System.Windows.Forms.ComboBox();
-            this.txtBrojDolazaka = new System.Windows.Forms.TextBox();
-            this.lblTip = new System.Windows.Forms.Label();
-            this.lblBrojDolazaka = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.lblBrojDolazaka = new System.Windows.Forms.Label();
+            this.lblTip = new System.Windows.Forms.Label();
+            this.txtBrojDolazaka = new System.Windows.Forms.TextBox();
+            this.cmbTip = new System.Windows.Forms.ComboBox();
             this.btnPotvrdi.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,12 +44,55 @@
             this.btnPotvrdi.Controls.Add(this.lblTip);
             this.btnPotvrdi.Controls.Add(this.txtBrojDolazaka);
             this.btnPotvrdi.Controls.Add(this.cmbTip);
-            this.btnPotvrdi.Location = new System.Drawing.Point(12, 12);
+            this.btnPotvrdi.Location = new System.Drawing.Point(9, 10);
+            this.btnPotvrdi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPotvrdi.Name = "btnPotvrdi";
-            this.btnPotvrdi.Size = new System.Drawing.Size(378, 340);
+            this.btnPotvrdi.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPotvrdi.Size = new System.Drawing.Size(284, 276);
             this.btnPotvrdi.TabIndex = 0;
             this.btnPotvrdi.TabStop = false;
             this.btnPotvrdi.Text = "Dodavanje nove članarine";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(99, 185);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(76, 41);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Potvrdi";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // lblBrojDolazaka
+            // 
+            this.lblBrojDolazaka.AutoSize = true;
+            this.lblBrojDolazaka.Location = new System.Drawing.Point(22, 103);
+            this.lblBrojDolazaka.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBrojDolazaka.Name = "lblBrojDolazaka";
+            this.lblBrojDolazaka.Size = new System.Drawing.Size(71, 13);
+            this.lblBrojDolazaka.TabIndex = 3;
+            this.lblBrojDolazaka.Text = "Broj dolazaka";
+            this.lblBrojDolazaka.Visible = false;
+            // 
+            // lblTip
+            // 
+            this.lblTip.AutoSize = true;
+            this.lblTip.Location = new System.Drawing.Point(22, 46);
+            this.lblTip.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTip.Name = "lblTip";
+            this.lblTip.Size = new System.Drawing.Size(68, 13);
+            this.lblTip.TabIndex = 2;
+            this.lblTip.Text = "Tip članarine";
+            // 
+            // txtBrojDolazaka
+            // 
+            this.txtBrojDolazaka.Location = new System.Drawing.Point(99, 101);
+            this.txtBrojDolazaka.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBrojDolazaka.Name = "txtBrojDolazaka";
+            this.txtBrojDolazaka.Size = new System.Drawing.Size(42, 20);
+            this.txtBrojDolazaka.TabIndex = 1;
+            this.txtBrojDolazaka.Visible = false;
             // 
             // cmbTip
             // 
@@ -58,56 +101,24 @@
             this.cmbTip.Items.AddRange(new object[] {
             "M",
             "G"});
-            this.cmbTip.Location = new System.Drawing.Point(132, 53);
+            this.cmbTip.Location = new System.Drawing.Point(99, 43);
+            this.cmbTip.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbTip.Name = "cmbTip";
-            this.cmbTip.Size = new System.Drawing.Size(54, 24);
+            this.cmbTip.Size = new System.Drawing.Size(42, 21);
             this.cmbTip.TabIndex = 0;
             this.cmbTip.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // txtBrojDolazaka
-            // 
-            this.txtBrojDolazaka.Location = new System.Drawing.Point(132, 124);
-            this.txtBrojDolazaka.Name = "txtBrojDolazaka";
-            this.txtBrojDolazaka.Size = new System.Drawing.Size(54, 22);
-            this.txtBrojDolazaka.TabIndex = 1;
-            this.txtBrojDolazaka.Visible = false;
-            // 
-            // lblTip
-            // 
-            this.lblTip.AutoSize = true;
-            this.lblTip.Location = new System.Drawing.Point(29, 56);
-            this.lblTip.Name = "lblTip";
-            this.lblTip.Size = new System.Drawing.Size(90, 17);
-            this.lblTip.TabIndex = 2;
-            this.lblTip.Text = "Tip članarine";
-            // 
-            // lblBrojDolazaka
-            // 
-            this.lblBrojDolazaka.AutoSize = true;
-            this.lblBrojDolazaka.Location = new System.Drawing.Point(29, 127);
-            this.lblBrojDolazaka.Name = "lblBrojDolazaka";
-            this.lblBrojDolazaka.Size = new System.Drawing.Size(94, 17);
-            this.lblBrojDolazaka.TabIndex = 3;
-            this.lblBrojDolazaka.Text = "Broj dolazaka";
-            this.lblBrojDolazaka.Visible = false;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(132, 228);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 50);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Potvrdi";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // DodajClanarinu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(402, 364);
+            this.ClientSize = new System.Drawing.Size(302, 296);
             this.Controls.Add(this.btnPotvrdi);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
             this.Name = "DodajClanarinu";
+            this.ShowIcon = false;
             this.Text = "DodajClanarinu";
             this.Load += new System.EventHandler(this.DodajClanarinu_Load);
             this.btnPotvrdi.ResumeLayout(false);

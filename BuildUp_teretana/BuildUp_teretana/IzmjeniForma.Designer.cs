@@ -159,7 +159,10 @@
             this.ClientSize = new System.Drawing.Size(302, 319);
             this.Controls.Add(this.btnSpremiPromjene);
             this.Controls.Add(this.grpOpciPodaciIzmjeni);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FrmIzmjeni";
+            this.ShowIcon = false;
             this.Text = "Izmjeni";
             this.Load += new System.EventHandler(this.FrmIzmjeni_Load);
             this.grpOpciPodaciIzmjeni.ResumeLayout(false);

@@ -239,7 +239,10 @@
             this.ClientSize = new System.Drawing.Size(405, 323);
             this.Controls.Add(this.btnPotvrdi);
             this.Controls.Add(this.grpMjere);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "IzmijeniMjere";
+            this.ShowIcon = false;
             this.Text = "IzmijeniMjere";
             this.grpMjere.ResumeLayout(false);
             this.grpMjere.PerformLayout();

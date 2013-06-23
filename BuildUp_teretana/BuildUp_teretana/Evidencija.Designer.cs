@@ -80,7 +80,10 @@
             this.Controls.Add(this.txtPreostaliBrojDolazaka);
             this.Controls.Add(this.btnDolazakOk);
             this.Controls.Add(this.lblTrenutniBrojDolazaka);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FrmEvidencija";
+            this.ShowIcon = false;
             this.Text = "Evidencija";
             this.Load += new System.EventHandler(this.FrmEvidencija_Load);
             this.ResumeLayout(false);

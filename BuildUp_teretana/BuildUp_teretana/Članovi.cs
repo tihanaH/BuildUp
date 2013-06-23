@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net.Mail;
+using System.Net;
 
 namespace BuildUp_teretana
 {
@@ -255,6 +257,11 @@ namespace BuildUp_teretana
             catch {
                 MessageBox.Show("Nije uspješno selektiran član ili nije uspješno izvršena naredba!");
             }
+
+        }
+
+        private void FrmČlanovi_Load(object sender, EventArgs e)
+        {
 
         } 
     }

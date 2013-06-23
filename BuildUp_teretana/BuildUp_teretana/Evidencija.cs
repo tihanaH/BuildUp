@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net.Mail;
+using System.Net;
 
 namespace BuildUp_teretana
 {
@@ -24,7 +26,7 @@ namespace BuildUp_teretana
                 clanarina = dbcontext.Clanarinas.FirstOrDefault(preuzeta_clanarina => preuzeta_clanarina.BrojIskaznice == int.Parse(brojiskaznice));
                 if (clanarina.Vrsta == 'G') txtPreostaliBrojDolazaka.Text = "Godišnja članarina";
                 else txtPreostaliBrojDolazaka.Text = clanarina.Broj_dolazaka.ToString();
-            } 
+            }
         }
 
         private void FrmEvidencija_Load(object sender, EventArgs e)
@@ -42,7 +44,45 @@ namespace BuildUp_teretana
                     dbcontext.AttachCopy(clanarina);
                     dbcontext.SaveChanges();
                 }
-                this.Close();
+                 if (string.Compare(txtPreostaliBrojDolazaka.Text, "2") == 0)
+                 {
+                 try
+                 {
+                     var fromAddress = new MailAddress("buildupteretana@gmail.com", "BuildUp teretana");
+                     Clan clan;
+                     using (BuildUp dbcontext=new BuildUp())
+                     {
+                         clan = dbcontext.Clans.FirstOrDefault(jedan_clan=> jedan_clan.BrojIskaznice == int.Parse(brojiskaznice));
+                     }
+                     var toAddress = new MailAddress(clan.Email, clan.Prezime+" "+clan.Ime);
+                     const string fromPassword = "piprojekt";
+                     const string subject= "Još samo jedan dolazak!";
+                     const string body= "Imate dostupan još samo jedan dolazak u teretanu ovog mjeseca!";
+
+                     var smtp = new SmtpClient
+                     {
+                         Host= "smtp.gmail.com",
+                         Port=587,
+                         EnableSsl = true,
+                         DeliveryMethod = SmtpDeliveryMethod.Network,
+                         UseDefaultCredentials = false,
+                         Credentials = new NetworkCredential("buildupteretana@gmail.com", fromPassword)
+                     };
+                     using (var message = new MailMessage(fromAddress, toAddress)
+                     {
+                         Subject = subject,
+                         Body=body
+                     })
+                     {
+                         smtp.Send(message);
+                     }
+                 }
+                 catch
+                 {
+
+                 }
+            }
+              this.Close();
             }
             else
             {
