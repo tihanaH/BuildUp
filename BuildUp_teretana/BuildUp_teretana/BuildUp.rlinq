@@ -201,6 +201,26 @@
           <orm:collection element-class="BuildUp_teretana.Clanarina" inverse-field="_clan" order-by="" uniqueId="5d0ccf72-c31e-4fe1-8e1c-f0638de7126d" />
         </orm:field>
       </orm:class>
+      <orm:class name="Obavljeni_izvještaji" uniqueId="3fb93af1-6b28-4662-bc21-c8117e1a1fbe">
+        <orm:table name="Obavljeni_izvještaji" />
+        <orm:identity>
+          <orm:key-generator name="autoinc" />
+          <orm:single-field field-name="_iD_obavljeni" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_iD_obavljeni" property="ID_obavljeni" behavior="readwrite" uniqueId="cfec8488-1d87-44f5-b880-06ec4aea6ef9" type="System.Int32">
+          <orm:column name="ID_obavljeni" sql-type="int4" nullable="false" length="0" scale="0" primary-key="true" has-default-value="true" backend-calculated="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_mjesec" property="Mjesec" behavior="readwrite" uniqueId="570a99d9-3557-4b0e-8be5-e37b081e0835" type="System.String">
+          <orm:column name="Mjesec" sql-type="varchar" nullable="true" length="2" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_godina" property="Godina" behavior="readwrite" uniqueId="eddb7974-e947-479a-a5f6-f281560ac2a2" type="System.String">
+          <orm:column name="Godina" sql-type="varchar" nullable="true" length="4" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_poslano" property="Poslano" behavior="readwrite" uniqueId="42c36dab-b273-4a39-ac1e-5bea41fbd459" type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="Poslano" sql-type="bool" nullable="true" length="0" scale="0" ado-type="Bit" />
+        </orm:field>
+      </orm:class>
     </orm:namespace>
     <orm:schema schema="">
       <orm:table name="Zaposlenik">
@@ -264,6 +284,12 @@
         <orm:column name="Kontakt" sql-type="varchar" nullable="true" length="0" scale="0" ado-type="UnicodeStringVariableLength" />
         <orm:column name="Spol" sql-type="varchar" nullable="true" length="1" scale="0" ado-type="UnicodeStringVariableLength" />
         <orm:column name="Email" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="UnicodeStringVariableLength" />
+      </orm:table>
+      <orm:table name="Obavljeni_izvještaji">
+        <orm:column name="ID_obavljeni" sql-type="int4" nullable="false" length="0" scale="0" primary-key="true" has-default-value="true" backend-calculated="true" ado-type="Int32" />
+        <orm:column name="Mjesec" sql-type="varchar" nullable="true" length="2" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="Godina" sql-type="varchar" nullable="true" length="4" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="Poslano" sql-type="bool" nullable="true" length="0" scale="0" ado-type="Bit" />
       </orm:table>
     </orm:schema>
     <orm:relational-naming-settings>
@@ -441,6 +467,12 @@
         </classHasNavigationalProperties>
       </navigationalProperties>
     </DomainClass>
+    <DomainClass Id="3fb93af1-6b28-4662-bc21-c8117e1a1fbe" name="Obavljeni_izvještaji" namespace="BuildUp_teretana" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="cfec8488-1d87-44f5-b880-06ec4aea6ef9" name="ID_obavljeni" type="Int32" label="ID_obavljeni : Int32" kind="Persistent" identity="true" fieldName="_iD_obavljeni" />
+      <Property Id="eddb7974-e947-479a-a5f6-f281560ac2a2" name="Godina" label="Godina : String" kind="Persistent" fieldName="_godina" />
+      <Property Id="570a99d9-3557-4b0e-8be5-e37b081e0835" name="Mjesec" label="Mjesec : String" kind="Persistent" fieldName="_mjesec" />
+      <Property Id="42c36dab-b273-4a39-ac1e-5bea41fbd459" name="Poslano" type="Boolean" label="Poslano : Boolean" nullable="true" kind="Persistent" fieldName="_poslano" />
+    </DomainClass>
   </Types>
   <domainContext>
     <domainModelHasDomainContext Id="292bbdbf-d1f0-4453-850e-02e290793ab4">
@@ -451,6 +483,7 @@
         <entitySetProperty name="Izvjesces" namespace="BuildUp_teretana" type="Izvjesce" label="Izvjesces : IQueryable&lt;BuildUp_teretana.Izvjesce&gt;" />
         <entitySetProperty name="Clanarinas" namespace="BuildUp_teretana" type="Clanarina" label="Clanarinas : IQueryable&lt;BuildUp_teretana.Clanarina&gt;" />
         <entitySetProperty name="Clans" namespace="BuildUp_teretana" type="Clan" label="Clans : IQueryable&lt;BuildUp_teretana.Clan&gt;" />
+        <entitySetProperty name="Obavljeni_izvještajis" namespace="BuildUp_teretana" type="Obavljeni_izvještaji" label="Obavljeni_izvještajis : IQueryable&lt;BuildUp_teretana.Obavljeni_izvještaji&gt;" />
       </domainContainer>
     </domainModelHasDomainContext>
   </domainContext>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EntityDiagrams>
-  <entityDiagramsDiagram dslVersion="2.0.0.0" absoluteBounds="0, 0, 11, 8.625" name="BuildUp" fillColor="62, 62, 65" isDefault="true">
+  <entityDiagramsDiagram dslVersion="2.0.0.0" absoluteBounds="0, 0, 11, 9.875" name="BuildUp" fillColor="62, 62, 65" isDefault="true">
     <DomainModelMoniker name="/BuildUp" />
     <nestedChildShapes>
       <classShape Id="a6d982d5-9471-4af9-9578-50af75ef2937" absoluteBounds="5.625, 1.125, 1.5, 2.3396761067708329" fillColor="225, 249, 128, 67" outlineColor="213, 71, 0" textColor="White">
@@ -83,6 +83,14 @@
           <classShapeMoniker Id="8ace398d-d472-448e-a82f-1a3dff7f30ce" />
         </nodes>
       </associationConnector>
+      <classShape Id="6e35bfc9-8b8f-4d77-9cfe-56ac1a0d4abf" absoluteBounds="0.5, 7.5, 1.5, 2.1473746744791669" fillColor="225, 249, 128, 67" outlineColor="213, 71, 0" textColor="White">
+        <DomainClassMoniker name="/BuildUp/Obavljeni_izvještaji" />
+        <nestedChildShapes>
+          <elementListCompartment Id="ffcac244-ee21-4983-8b62-c8d869485b93" absoluteBounds="0.515, 8.01, 1.4700000000000002, 1.0185953776041665" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+          <elementListCompartment Id="6889ea16-9599-408e-92df-acf6c3a5d133" absoluteBounds="0.515, 9.0385953776041674, 1.4700000000000002, 0.2493896484375" name="ImplementationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+          <elementListCompartment Id="76c9be45-97c1-4f3f-8850-e7773595e344" absoluteBounds="0.515, 9.2979850260416672, 1.4700000000000002, 0.2493896484375" name="NavigationCompartment" titleTextColor="Black" itemTextColor="Black" />
+        </nestedChildShapes>
+      </classShape>
     </nestedChildShapes>
   </entityDiagramsDiagram>
 </EntityDiagrams>

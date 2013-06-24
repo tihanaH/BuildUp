@@ -20,9 +20,7 @@ namespace BuildUp_teretana
             this.CenterToParent();
             using (BuildUp dbcontext = new BuildUp())
             {
-
                 izmijenjeni_clan = dbcontext.Clans.FirstOrDefault(clan => clan.BrojIskaznice == BrojIskaznice);
-
             }
 
             txtImeIzmjeni.Text = izmijenjeni_clan.Ime;

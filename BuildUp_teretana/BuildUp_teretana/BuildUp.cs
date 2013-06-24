@@ -98,6 +98,14 @@ namespace BuildUp_teretana
 			}
 		}
 		
+		public IQueryable<Obavljeni_izvještaji> Obavljeni_izvještajis 
+		{
+			get
+			{
+				return this.GetAll<Obavljeni_izvještaji>();
+			}
+		}
+		
 		public static BackendConfiguration GetBackendConfiguration()
 		{
 			BackendConfiguration backend = new BackendConfiguration();
@@ -130,6 +138,10 @@ namespace BuildUp_teretana
 			get;
 		}
 		IQueryable<Clan> Clans
+		{
+			get;
+		}
+		IQueryable<Obavljeni_izvještaji> Obavljeni_izvještajis
 		{
 			get;
 		}

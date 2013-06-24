@@ -126,6 +126,9 @@
     <Compile Include="MjestoVježbanja.Designer.cs">
       <DependentUpon>MjestoVježbanja.cs</DependentUpon>
     </Compile>
+    <Compile Include="Obavljeni_izvještaji.generated.cs">
+      <DependentUpon>BuildUp.rlinq</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="ProgramVjezbanja.cs">
       <SubType>Form</SubType>
