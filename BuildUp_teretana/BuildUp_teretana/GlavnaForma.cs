@@ -244,10 +244,11 @@ namespace BuildUp_teretana
                         naziv = spr.Naziv,
                         ukupne_kalorije = spr.Prosjecna_potrosnja_kalorija * vr_spr.Vrijeme,
                     };
+                int sve_kalorije = 0;
                 foreach (var sve in sve_sprave_ovaj_mjesec)
                 {
                     body += sve.naziv + "=" + sve.ukupne_kalorije.ToString() + "\n";
-                    sve_kalorije += int.Parse(sve.ukupne_kal.ToString());
+                    sve_kalorije += int.Parse(sve.ukupne_kalorije.ToString());
                 }
                 body += "---------------------\n";
                 //tezina,prsa,struk,bokovi,kalorije,masnotkivo,bmi,list,bedro,biceps
