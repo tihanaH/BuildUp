@@ -36,7 +36,7 @@ namespace BuildUp_teretana
 
         }
 
-        private List<Clan> dohvati_clanove()
+        public List<Clan> dohvati_clanove()
         {
         using (BuildUp dbcontext = new BuildUp())
             {
@@ -279,6 +279,5 @@ namespace BuildUp_teretana
             List<Clan> svi_clanovi = dohvati_clanove();
             dataGridView1.DataSource = svi_clanovi;
         } 
-    }//riješeno, ako imaš još vremena onda ću probati srediti ovo dodavanja? možeš
+    }
 }
-//rekao mi je marko da dodam briši, izmijeni, dodaj pod evidenciju

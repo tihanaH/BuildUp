@@ -15,11 +15,27 @@ namespace BuildUp_teretana
     {
         private int brojiskaznice;
         bool tko_je_pozvao_formu = false;
+        private int brojIskaznice2 = 0;
+
+        public int BrojIskaznice 
+        
+        {
+            get
+            {
+                return brojIskaznice2;
+            }
+
+            set
+            {
+                brojIskaznice2 = value;
+            }
+            }
         public frmProgramVjezbanja(int broj_iskaznice_selektiranog)
         {
             InitializeComponent();
             this.CenterToParent();
             brojiskaznice = broj_iskaznice_selektiranog;
+            BrojIskaznice = broj_iskaznice_selektiranog;
             dohvati_sprave_korisnika();
             
         }

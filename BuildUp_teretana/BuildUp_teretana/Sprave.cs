@@ -13,7 +13,7 @@ namespace BuildUp_teretana
 
     public partial class Sprave : Form
     {
-        List<Sprava> sve_sprave;
+        public List<Sprava> sve_sprave;
         Sprava sprava_za_mijenjanje;
         private int broj_iskaznice;
         public Sprave()
@@ -47,7 +47,7 @@ namespace BuildUp_teretana
         }
 
 
-        private List<Sprava> dohvati_sve_sprave()
+        public List<Sprava> dohvati_sve_sprave()
         {
             using (BuildUp dbcontext = new BuildUp())
             {
@@ -197,6 +197,11 @@ namespace BuildUp_teretana
             catch {
                 MessageBox.Show("Nije uspješno dodana sprava u program!");
             }
+        }
+
+        private void Sprave_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

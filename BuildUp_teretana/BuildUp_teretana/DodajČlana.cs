@@ -58,21 +58,15 @@ namespace BuildUp_teretana
             }
             else
             {
-                //Adresa" , "Email" , "Ime" , "Kontakt" , "Prezime" , "Spol"
+                
                 Clan clan = new Clan();
-
-
                 clan.Adresa = txtAdresa.Text;
                 clan.Email = txtEmail.Text;
                 clan.Ime = txtIme.Text;
                 clan.Kontakt = txtTelefon.Text;
                 clan.Prezime = txtPrezime.Text;
                 clan.Spol = cmbSpol.Text[0];
-                //ja ne vjerujem, nesto ne valja s ovim dodavanjem budem sad pogledao pa ti javim ...ok, e ja sam sinoć probala upisat i sve je dobro  bilo, ma znam ali sad sam dodao funkciju unutar baze i onda isprabaavam ali me prijenos vrijednosti nešto zeza bezeveze
-                //nesto me zeza samo malo
-
-                //super---- krivo je na pocetku generirao klasu...aha, sad radi. Trebao bi još ona testiranja napraviti..ok
-
+                
                 Izvjesce izvjesce = new Izvjesce();
                 izvjesce.Clan = clan;
                 izvjesce.Godina = DateTime.Now.Year.ToString();

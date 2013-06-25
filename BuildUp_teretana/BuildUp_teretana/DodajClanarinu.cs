@@ -12,13 +12,23 @@ namespace BuildUp_teretana
 {
     public partial class DodajClanarinu : Form
     {
-        private string brojiskaznice;
+        private string brojiskaznice="";
 
+        public string BrojIskaznice {
+            get
+            {
+                return brojiskaznice;
+            }
+            set 
+            {
+                brojiskaznice = value;
+            }
+        }
         public DodajClanarinu(string brojiskaznice)
         {
             InitializeComponent();
             this.CenterToParent();
-            this.brojiskaznice = brojiskaznice;
+            BrojIskaznice = brojiskaznice;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

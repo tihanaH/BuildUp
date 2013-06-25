@@ -1,0 +1,10 @@
+C:\Users\Anamarija\Documents\GitHub\BuildUp\BuildUp_teretana\JedinicnoTestiranje\bin\Debug\JedinicnoTestiranje.dll.config
+C:\Users\Anamarija\Documents\GitHub\BuildUp\BuildUp_teretana\JedinicnoTestiranje\bin\Debug\JedinicnoTestiranje.dll
+C:\Users\Anamarija\Documents\GitHub\BuildUp\BuildUp_teretana\JedinicnoTestiranje\bin\Debug\JedinicnoTestiranje.pdb
+C:\Users\Anamarija\Documents\GitHub\BuildUp\BuildUp_teretana\JedinicnoTestiranje\bin\Debug\BuildUp_teretana.exe
+C:\Users\Anamarija\Documents\GitHub\BuildUp\BuildUp_teretana\JedinicnoTestiranje\bin\Debug\Telerik.OpenAccess.35.Extensions.dll
+C:\Users\Anamarija\Documents\GitHub\BuildUp\BuildUp_teretana\JedinicnoTestiranje\bin\Debug\BuildUp_teretana.pdb
+C:\Users\Anamarija\Documents\GitHub\BuildUp\BuildUp_teretana\JedinicnoTestiranje\bin\Debug\Telerik.OpenAccess.35.Extensions.xml
+C:\Users\Anamarija\Documents\GitHub\BuildUp\BuildUp_teretana\JedinicnoTestiranje\obj\Debug\JedinicnoTestiranje.csprojResolveAssemblyReference.cache
+C:\Users\Anamarija\Documents\GitHub\BuildUp\BuildUp_teretana\JedinicnoTestiranje\obj\Debug\JedinicnoTestiranje.dll
+C:\Users\Anamarija\Documents\GitHub\BuildUp\BuildUp_teretana\JedinicnoTestiranje\obj\Debug\JedinicnoTestiranje.pdb

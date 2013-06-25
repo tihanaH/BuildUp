@@ -16,6 +16,17 @@ namespace BuildUp_teretana
         private int broj_iskaznice;
         Izvjesce izvjesce;
 
+        public int BrojIskaznce 
+        {
+            get
+            {
+                return broj_iskaznice;
+            }
+            set
+            {
+                broj_iskaznice = value;
+            }
+        }
         public IzmijeniMjere(int broj_iskaznice)
         {
             InitializeComponent();
@@ -101,6 +112,11 @@ namespace BuildUp_teretana
                     MessageBox.Show("Nisu uspješno spremljene promjene!");
                 }
             }
+        }
+
+        private void IzmijeniMjere_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
