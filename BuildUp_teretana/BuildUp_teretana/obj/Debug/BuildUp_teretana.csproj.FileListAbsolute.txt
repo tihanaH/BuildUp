@@ -18,12 +18,9 @@ F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_
 F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\bin\Debug\BuildUp_teretana.exe
 F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\bin\Debug\BuildUp_teretana.pdb
 F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.csprojResolveAssemblyReference.cache
-F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.FrmDodajMjestoVjezbanja.resources
 F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.FrmDodajČlana.resources
-F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.FrmDodajČlanuMjestoVježbanja.resources
 F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.FrmEvidencija.resources
 F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.FrmIzmjeni.resources
-F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.FrmIzvješćeONapretku.resources
 F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.FrmLogin.resources
 F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.Properties.Resources.resources
 F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.FrmČlanovi.resources
@@ -32,8 +29,6 @@ C:\Users\Marko\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\bin\De
 C:\Users\Marko\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.exe
 C:\Users\Marko\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.pdb
 F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.frmGlavnaForma.resources
-F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.FrmMjestoVježbanja.resources
-F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.FrmClanarine.resources
 C:\Users\Marko\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\bin\Debug\BuildUp_teretana.exe
 C:\Users\Marko\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\bin\Debug\BuildUp_teretana.pdb
 C:\Users\Marko\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\bin\Debug\Telerik.OpenAccess.35.Extensions.dll
@@ -128,3 +123,7 @@ F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_
 C:\Users\Anamarija\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.IzmijeniMjere.resources
 C:\Users\Anamarija\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.frmProgramVjezbanja.resources
 C:\Users\Anamarija\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.Sprave.resources
+F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\bin\Debug\BuildUp_teretana.exe.manifest
+F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\bin\Debug\BuildUp_teretana.application
+F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.exe.manifest
+F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.application
