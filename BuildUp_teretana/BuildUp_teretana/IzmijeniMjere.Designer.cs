@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IzmijeniMjere));
             this.grpMjere = new System.Windows.Forms.GroupBox();
             this.lblBMIIzmjeni = new System.Windows.Forms.Label();
             this.txtStruk = new System.Windows.Forms.TextBox();
@@ -48,7 +49,9 @@
             this.lblMasnoTkivoIzmjeni = new System.Windows.Forms.Label();
             this.txtMasnoTkivo = new System.Windows.Forms.TextBox();
             this.btnPotvrdi = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.grpMjere.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // grpMjere
@@ -71,7 +74,7 @@
             this.grpMjere.Controls.Add(this.lblBokovi);
             this.grpMjere.Controls.Add(this.lblMasnoTkivoIzmjeni);
             this.grpMjere.Controls.Add(this.txtMasnoTkivo);
-            this.grpMjere.Location = new System.Drawing.Point(81, 30);
+            this.grpMjere.Location = new System.Drawing.Point(12, 13);
             this.grpMjere.Name = "grpMjere";
             this.grpMjere.Size = new System.Drawing.Size(227, 228);
             this.grpMjere.TabIndex = 26;
@@ -224,19 +227,30 @@
             // 
             // btnPotvrdi
             // 
-            this.btnPotvrdi.Location = new System.Drawing.Point(149, 264);
+            this.btnPotvrdi.Location = new System.Drawing.Point(66, 258);
             this.btnPotvrdi.Name = "btnPotvrdi";
-            this.btnPotvrdi.Size = new System.Drawing.Size(85, 33);
+            this.btnPotvrdi.Size = new System.Drawing.Size(111, 37);
             this.btnPotvrdi.TabIndex = 27;
             this.btnPotvrdi.Text = "Potvrdi";
             this.btnPotvrdi.UseVisualStyleBackColor = true;
             this.btnPotvrdi.Click += new System.EventHandler(this.btnPotvrdi_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(263, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(149, 282);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 28;
+            this.pictureBox1.TabStop = false;
+            // 
             // IzmijeniMjere
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(405, 323);
+            this.ClientSize = new System.Drawing.Size(424, 307);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnPotvrdi);
             this.Controls.Add(this.grpMjere);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -246,6 +260,7 @@
             this.Text = "IzmijeniMjere";
             this.grpMjere.ResumeLayout(false);
             this.grpMjere.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -272,5 +287,6 @@
         private System.Windows.Forms.Label lblMasnoTkivoIzmjeni;
         private System.Windows.Forms.TextBox txtMasnoTkivo;
         private System.Windows.Forms.Button btnPotvrdi;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -37,7 +37,7 @@
             // lblTrenutniBrojDolazaka
             // 
             this.lblTrenutniBrojDolazaka.AutoSize = true;
-            this.lblTrenutniBrojDolazaka.Location = new System.Drawing.Point(84, 20);
+            this.lblTrenutniBrojDolazaka.Location = new System.Drawing.Point(54, 25);
             this.lblTrenutniBrojDolazaka.Name = "lblTrenutniBrojDolazaka";
             this.lblTrenutniBrojDolazaka.Size = new System.Drawing.Size(113, 13);
             this.lblTrenutniBrojDolazaka.TabIndex = 0;
@@ -45,7 +45,7 @@
             // 
             // btnDolazakOk
             // 
-            this.btnDolazakOk.Location = new System.Drawing.Point(87, 129);
+            this.btnDolazakOk.Location = new System.Drawing.Point(57, 122);
             this.btnDolazakOk.Name = "btnDolazakOk";
             this.btnDolazakOk.Size = new System.Drawing.Size(99, 39);
             this.btnDolazakOk.TabIndex = 4;
@@ -55,7 +55,7 @@
             // 
             // txtPreostaliBrojDolazaka
             // 
-            this.txtPreostaliBrojDolazaka.Location = new System.Drawing.Point(87, 36);
+            this.txtPreostaliBrojDolazaka.Location = new System.Drawing.Point(57, 41);
             this.txtPreostaliBrojDolazaka.Name = "txtPreostaliBrojDolazaka";
             this.txtPreostaliBrojDolazaka.ReadOnly = true;
             this.txtPreostaliBrojDolazaka.Size = new System.Drawing.Size(99, 20);
@@ -64,7 +64,7 @@
             // chkPotvrdiDolazak
             // 
             this.chkPotvrdiDolazak.AutoSize = true;
-            this.chkPotvrdiDolazak.Location = new System.Drawing.Point(87, 86);
+            this.chkPotvrdiDolazak.Location = new System.Drawing.Point(57, 79);
             this.chkPotvrdiDolazak.Name = "chkPotvrdiDolazak";
             this.chkPotvrdiDolazak.Size = new System.Drawing.Size(99, 17);
             this.chkPotvrdiDolazak.TabIndex = 6;
@@ -75,7 +75,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 209);
+            this.ClientSize = new System.Drawing.Size(214, 190);
             this.Controls.Add(this.chkPotvrdiDolazak);
             this.Controls.Add(this.txtPreostaliBrojDolazaka);
             this.Controls.Add(this.btnDolazakOk);

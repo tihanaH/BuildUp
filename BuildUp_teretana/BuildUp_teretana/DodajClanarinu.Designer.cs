@@ -45,20 +45,20 @@
             this.btnPotvrdi.Controls.Add(this.txtBrojDolazaka);
             this.btnPotvrdi.Controls.Add(this.cmbTip);
             this.btnPotvrdi.Location = new System.Drawing.Point(9, 10);
-            this.btnPotvrdi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPotvrdi.Margin = new System.Windows.Forms.Padding(2);
             this.btnPotvrdi.Name = "btnPotvrdi";
-            this.btnPotvrdi.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnPotvrdi.Size = new System.Drawing.Size(284, 276);
+            this.btnPotvrdi.Padding = new System.Windows.Forms.Padding(2);
+            this.btnPotvrdi.Size = new System.Drawing.Size(200, 219);
             this.btnPotvrdi.TabIndex = 0;
             this.btnPotvrdi.TabStop = false;
             this.btnPotvrdi.Text = "Dodavanje nove članarine";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(99, 185);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(45, 148);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(76, 41);
+            this.button1.Size = new System.Drawing.Size(96, 41);
             this.button1.TabIndex = 4;
             this.button1.Text = "Potvrdi";
             this.button1.UseVisualStyleBackColor = true;
@@ -88,7 +88,7 @@
             // txtBrojDolazaka
             // 
             this.txtBrojDolazaka.Location = new System.Drawing.Point(99, 101);
-            this.txtBrojDolazaka.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBrojDolazaka.Margin = new System.Windows.Forms.Padding(2);
             this.txtBrojDolazaka.Name = "txtBrojDolazaka";
             this.txtBrojDolazaka.Size = new System.Drawing.Size(42, 20);
             this.txtBrojDolazaka.TabIndex = 1;
@@ -102,7 +102,7 @@
             "M",
             "G"});
             this.cmbTip.Location = new System.Drawing.Point(99, 43);
-            this.cmbTip.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbTip.Margin = new System.Windows.Forms.Padding(2);
             this.cmbTip.Name = "cmbTip";
             this.cmbTip.Size = new System.Drawing.Size(42, 21);
             this.cmbTip.TabIndex = 0;
@@ -112,10 +112,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(302, 296);
+            this.ClientSize = new System.Drawing.Size(214, 248);
             this.Controls.Add(this.btnPotvrdi);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "DodajClanarinu";
             this.ShowIcon = false;

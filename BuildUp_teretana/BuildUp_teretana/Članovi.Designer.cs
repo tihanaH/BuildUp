@@ -28,18 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnTraziClan = new System.Windows.Forms.Button();
             this.txtTraziClan = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.brišiČlanaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.brišiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.izmjeniToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dodajToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.promijeniToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pošaljiIzvještajToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.evidencijaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.dolazakToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.odlazakToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,6 +45,9 @@
             this.btnAktivirajClanarinu = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.lblPretraga = new System.Windows.Forms.Label();
+            this.brišiToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.izmijeniToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dodajToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -75,23 +74,23 @@
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(11, 133);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(727, 338);
             this.dataGridView1.TabIndex = 2;
@@ -110,11 +109,7 @@
             // brišiČlanaToolStripMenuItem
             // 
             this.brišiČlanaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.brišiToolStripMenuItem,
-            this.izmjeniToolStripMenuItem,
-            this.dodajToolStripMenuItem,
             this.promijeniToolStripMenuItem,
-            this.pošaljiIzvještajToolStripMenuItem1,
             this.evidencijaToolStripMenuItem1,
             this.programVježbanjaToolStripMenuItem,
             this.spraveToolStripMenuItem,
@@ -123,27 +118,6 @@
             this.brišiČlanaToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.brišiČlanaToolStripMenuItem.Text = "Član";
             // 
-            // brišiToolStripMenuItem
-            // 
-            this.brišiToolStripMenuItem.Name = "brišiToolStripMenuItem";
-            this.brišiToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.brišiToolStripMenuItem.Text = "Briši";
-            this.brišiToolStripMenuItem.Click += new System.EventHandler(this.brišiToolStripMenuItem_Click);
-            // 
-            // izmjeniToolStripMenuItem
-            // 
-            this.izmjeniToolStripMenuItem.Name = "izmjeniToolStripMenuItem";
-            this.izmjeniToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.izmjeniToolStripMenuItem.Text = "Izmjeni";
-            this.izmjeniToolStripMenuItem.Click += new System.EventHandler(this.izmjeniToolStripMenuItem_Click);
-            // 
-            // dodajToolStripMenuItem
-            // 
-            this.dodajToolStripMenuItem.Name = "dodajToolStripMenuItem";
-            this.dodajToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.dodajToolStripMenuItem.Text = "Dodaj";
-            this.dodajToolStripMenuItem.Click += new System.EventHandler(this.dodajToolStripMenuItem_Click);
-            // 
             // promijeniToolStripMenuItem
             // 
             this.promijeniToolStripMenuItem.Name = "promijeniToolStripMenuItem";
@@ -151,17 +125,14 @@
             this.promijeniToolStripMenuItem.Text = "Neaktivni članovi";
             this.promijeniToolStripMenuItem.Click += new System.EventHandler(this.promijeniToolStripMenuItem_Click);
             // 
-            // pošaljiIzvještajToolStripMenuItem1
-            // 
-            this.pošaljiIzvještajToolStripMenuItem1.Name = "pošaljiIzvještajToolStripMenuItem1";
-            this.pošaljiIzvještajToolStripMenuItem1.Size = new System.Drawing.Size(172, 22);
-            this.pošaljiIzvještajToolStripMenuItem1.Text = "Pošalji izvještaj";
-            // 
             // evidencijaToolStripMenuItem1
             // 
             this.evidencijaToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dolazakToolStripMenuItem1,
-            this.odlazakToolStripMenuItem1});
+            this.odlazakToolStripMenuItem1,
+            this.brišiToolStripMenuItem1,
+            this.izmijeniToolStripMenuItem,
+            this.dodajToolStripMenuItem1});
             this.evidencijaToolStripMenuItem1.Name = "evidencijaToolStripMenuItem1";
             this.evidencijaToolStripMenuItem1.Size = new System.Drawing.Size(172, 22);
             this.evidencijaToolStripMenuItem1.Text = "Evidencija";
@@ -170,14 +141,14 @@
             // dolazakToolStripMenuItem1
             // 
             this.dolazakToolStripMenuItem1.Name = "dolazakToolStripMenuItem1";
-            this.dolazakToolStripMenuItem1.Size = new System.Drawing.Size(116, 22);
+            this.dolazakToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.dolazakToolStripMenuItem1.Text = "Dolazak";
             this.dolazakToolStripMenuItem1.Click += new System.EventHandler(this.dolazakToolStripMenuItem1_Click);
             // 
             // odlazakToolStripMenuItem1
             // 
             this.odlazakToolStripMenuItem1.Name = "odlazakToolStripMenuItem1";
-            this.odlazakToolStripMenuItem1.Size = new System.Drawing.Size(116, 22);
+            this.odlazakToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.odlazakToolStripMenuItem1.Text = "Odlazak";
             this.odlazakToolStripMenuItem1.Click += new System.EventHandler(this.odlazakToolStripMenuItem1_Click);
             // 
@@ -234,6 +205,27 @@
             this.lblPretraga.TabIndex = 6;
             this.lblPretraga.Text = "Upišite ime i prezime člana";
             // 
+            // brišiToolStripMenuItem1
+            // 
+            this.brišiToolStripMenuItem1.Name = "brišiToolStripMenuItem1";
+            this.brišiToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.brišiToolStripMenuItem1.Text = "Briši";
+            this.brišiToolStripMenuItem1.Click += new System.EventHandler(this.brišiToolStripMenuItem1_Click);
+            // 
+            // izmijeniToolStripMenuItem
+            // 
+            this.izmijeniToolStripMenuItem.Name = "izmijeniToolStripMenuItem";
+            this.izmijeniToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.izmijeniToolStripMenuItem.Text = "Izmijeni";
+            this.izmijeniToolStripMenuItem.Click += new System.EventHandler(this.izmijeniToolStripMenuItem_Click);
+            // 
+            // dodajToolStripMenuItem1
+            // 
+            this.dodajToolStripMenuItem1.Name = "dodajToolStripMenuItem1";
+            this.dodajToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.dodajToolStripMenuItem1.Text = "Dodaj";
+            this.dodajToolStripMenuItem1.Click += new System.EventHandler(this.dodajToolStripMenuItem1_Click);
+            // 
             // FrmČlanovi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -268,11 +260,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem brišiČlanaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem brišiToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem izmjeniToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dodajToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem promijeniToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pošaljiIzvještajToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem evidencijaToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem dolazakToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem odlazakToolStripMenuItem1;
@@ -282,5 +270,8 @@
         private System.Windows.Forms.Label lblPretraga;
         private System.Windows.Forms.ToolStripMenuItem spraveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem izmijeniMjereToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem brišiToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem izmijeniToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dodajToolStripMenuItem1;
     }
 }

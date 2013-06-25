@@ -227,9 +227,9 @@
             // 
             // btnDodajUProgram
             // 
-            this.btnDodajUProgram.Location = new System.Drawing.Point(66, 128);
+            this.btnDodajUProgram.Location = new System.Drawing.Point(66, 118);
             this.btnDodajUProgram.Name = "btnDodajUProgram";
-            this.btnDodajUProgram.Size = new System.Drawing.Size(109, 23);
+            this.btnDodajUProgram.Size = new System.Drawing.Size(109, 25);
             this.btnDodajUProgram.TabIndex = 6;
             this.btnDodajUProgram.Text = "Potvrdi";
             this.btnDodajUProgram.UseVisualStyleBackColor = true;

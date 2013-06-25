@@ -44,7 +44,7 @@ namespace BuildUp_teretana
         private void btnSpremiPromjene_Click(object sender, EventArgs e)
         {
             if (txtTelefonIzmjeni.Text == "") {
-                MessageBox.Show("Niste upisali telefon!");
+                MessageBox.Show("Niste upisali broj telefona!");
             }
             else if (txtPrezimeIzmjeni.Text == "") {
                 MessageBox.Show("Niste upisali prezime!");

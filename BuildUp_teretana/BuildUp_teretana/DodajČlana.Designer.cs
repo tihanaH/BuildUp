@@ -368,7 +368,7 @@
             // 
             // btnOkDodajClan
             // 
-            this.btnOkDodajClan.Location = new System.Drawing.Point(351, 364);
+            this.btnOkDodajClan.Location = new System.Drawing.Point(351, 366);
             this.btnOkDodajClan.Name = "btnOkDodajClan";
             this.btnOkDodajClan.Size = new System.Drawing.Size(155, 49);
             this.btnOkDodajClan.TabIndex = 18;

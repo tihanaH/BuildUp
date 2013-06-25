@@ -128,3 +128,5 @@ C:\Users\Boki\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Deb
 C:\Users\Boki\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.FrmClanarine.resources
 C:\Users\Boki\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.FrmČlanovi.resources
 C:\Users\Boki\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.csproj.GenerateResource.Cache
+F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.IzmijeniMjere.resources
+F:\Documents\GitHub\BuildUp\BuildUp_teretana\BuildUp_teretana\obj\Debug\BuildUp_teretana.frmProgramVjezbanja.resources

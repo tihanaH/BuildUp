@@ -171,7 +171,7 @@
         </orm:identity>
         <orm:concurrency strategy="changed" />
         <orm:field name="_brojIskaznice" property="BrojIskaznice" behavior="readwrite" uniqueId="275a9b80-1b58-4697-8c94-f062b1a35e85" type="System.Int32">
-          <orm:column name="BrojIskaznice" sql-type="int4" nullable="false" length="0" scale="0" primary-key="true" has-default-value="true" backend-calculated="true" ado-type="Int32" />
+          <orm:column name="BrojIskaznice" sql-type="int4" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
         </orm:field>
         <orm:field name="_ime" property="Ime" behavior="readwrite" uniqueId="cabf6a21-2ff3-4747-88b9-bbf7a2442b05" type="System.String">
           <orm:column name="Ime" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="UnicodeStringVariableLength" />
@@ -277,7 +277,7 @@
         </orm:constraint>
       </orm:table>
       <orm:table name="Clan">
-        <orm:column name="BrojIskaznice" sql-type="int4" nullable="false" length="0" scale="0" primary-key="true" has-default-value="true" backend-calculated="true" ado-type="Int32" />
+        <orm:column name="BrojIskaznice" sql-type="int4" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
         <orm:column name="Ime" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="UnicodeStringVariableLength" />
         <orm:column name="Prezime" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="UnicodeStringVariableLength" />
         <orm:column name="Adresa" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="UnicodeStringVariableLength" />
@@ -316,7 +316,11 @@
     <CodeGenerationSettings>
       <MappingDefinitionType>Xml</MappingDefinitionType>
     </CodeGenerationSettings>
-    <SchemaUpdateSettings />
+    <SchemaUpdateSettings>
+      <ExecuteScript>true</ExecuteScript>
+      <DeploymentProject>BuildUp_teretana</DeploymentProject>
+      <UpdateDatabaseOperation>Migrate</UpdateDatabaseOperation>
+    </SchemaUpdateSettings>
     <BackendConfigurationSettings>
       <BackendConfiguration>
         <Backend>PostgreSql</Backend>
