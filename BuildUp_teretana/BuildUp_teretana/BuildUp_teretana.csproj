@@ -63,23 +63,11 @@
     <Compile Include="DodajClanarinu.Designer.cs">
       <DependentUpon>DodajClanarinu.cs</DependentUpon>
     </Compile>
-    <Compile Include="DodajMjestoVježbanja.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DodajMjestoVježbanja.Designer.cs">
-      <DependentUpon>DodajMjestoVježbanja.cs</DependentUpon>
-    </Compile>
     <Compile Include="DodajČlana.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DodajČlana.Designer.cs">
       <DependentUpon>DodajČlana.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DodajČlanuMjestoVježbanja.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DodajČlanuMjestoVježbanja.Designer.cs">
-      <DependentUpon>DodajČlanuMjestoVježbanja.cs</DependentUpon>
     </Compile>
     <Compile Include="Evidencija.cs">
       <SubType>Form</SubType>
@@ -108,23 +96,11 @@
     <Compile Include="Izvjesce.generated.cs">
       <DependentUpon>BuildUp.rlinq</DependentUpon>
     </Compile>
-    <Compile Include="IzvješćeONapretku.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="IzvješćeONapretku.Designer.cs">
-      <DependentUpon>IzvješćeONapretku.cs</DependentUpon>
-    </Compile>
     <Compile Include="LogInForma.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LogInForma.Designer.cs">
       <DependentUpon>LogInForma.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MjestoVježbanja.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MjestoVježbanja.Designer.cs">
-      <DependentUpon>MjestoVježbanja.cs</DependentUpon>
     </Compile>
     <Compile Include="Obavljeni_izvještaji.generated.cs">
       <DependentUpon>BuildUp.rlinq</DependentUpon>
@@ -152,12 +128,6 @@
     <Compile Include="Zaposlenik.generated.cs">
       <DependentUpon>BuildUp.rlinq</DependentUpon>
     </Compile>
-    <Compile Include="Članarine.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Članarine.Designer.cs">
-      <DependentUpon>Članarine.cs</DependentUpon>
-    </Compile>
     <Compile Include="Članovi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,14 +137,8 @@
     <EmbeddedResource Include="DodajClanarinu.resx">
       <DependentUpon>DodajClanarinu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DodajMjestoVježbanja.resx">
-      <DependentUpon>DodajMjestoVježbanja.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DodajČlana.resx">
       <DependentUpon>DodajČlana.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DodajČlanuMjestoVježbanja.resx">
-      <DependentUpon>DodajČlanuMjestoVježbanja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Evidencija.resx">
       <DependentUpon>Evidencija.cs</DependentUpon>
@@ -188,14 +152,8 @@
     <EmbeddedResource Include="IzmjeniForma.resx">
       <DependentUpon>IzmjeniForma.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IzvješćeONapretku.resx">
-      <DependentUpon>IzvješćeONapretku.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="LogInForma.resx">
       <DependentUpon>LogInForma.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MjestoVježbanja.resx">
-      <DependentUpon>MjestoVježbanja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProgramVjezbanja.resx">
       <DependentUpon>ProgramVjezbanja.cs</DependentUpon>
@@ -211,9 +169,6 @@
     </Compile>
     <EmbeddedResource Include="Sprave.resx">
       <DependentUpon>Sprave.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Članarine.resx">
-      <DependentUpon>Članarine.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Članovi.resx">
       <DependentUpon>Članovi.cs</DependentUpon>
