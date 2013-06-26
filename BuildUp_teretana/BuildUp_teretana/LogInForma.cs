@@ -50,13 +50,18 @@ namespace BuildUp_teretana
                     txtKorisnickoIme.Text = "";
                     txtLozinka.Text = "";
                     glavna_forma.ShowDialog();
-                    this.Show();
+                    this.Close();
                 }
                 else
                 {
                     MessageBox.Show("Krivi podaci za login!");
                 }
             }
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
